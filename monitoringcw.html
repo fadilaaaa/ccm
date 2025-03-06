@@ -1,0 +1,3066 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://unilaprojectheti.id/monitoring/cvw?timeline_week=41 -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONITORING CIVIL WORK -</title>
+    <link
+      href="./MONITORING CIVIL WORK -41_files/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.css"
+    />
+
+    <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+
+      .loader {
+        width: 50%;
+        height: 8px;
+        background-color: #e5e7eb; /* gray-200 */
+        overflow: hidden;
+        position: relative;
+        margin-top: 25px; /* Jarak antara gambar dan animasi loading */
+      }
+
+      .loader::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 25%;
+        background-color: #3b82f6; /* blue-500 */
+        animation: loading 1.5s infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          left: -25%;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .colorprimary {
+        background-color: #26778f;
+      }
+    </style>
+
+    <style>
+      .tab-button.active {
+        background-color: #3b82f6;
+        color: #ffffff;
+      }
+
+      .tab-button {
+        cursor: pointer;
+        background-color: #d1d5db;
+        color: #1f2937;
+      }
+
+      .gallery {
+        display: none;
+      }
+
+      .gallery.active {
+        display: block;
+      }
+
+      .gallery img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+      }
+
+      .gallery a {
+        display: block;
+      }
+
+      .gallery figcaption {
+        text-align: center;
+        padding: 0.5rem;
+        background-color: #f1f1f1;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      figure {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+      }
+
+      figcaption {
+        padding: 10px;
+        font-size: 0.8em;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: #f5f5f5;
+        max-width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        figcaption {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+    <link
+      href="./MONITORING CIVIL WORK -41_files/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" style="display: none">
+      <img
+        src="./MONITORING CIVIL WORK -41_files/logo.png"
+        alt="Logos"
+        class="h-18"
+      />
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow text-white shadow-lg sticky top-0 z-50">
+      <div
+        class="ml-6 mr-6 mx-auto flex justify-between items-center py-4 px-4"
+      >
+        <a href="https://unilaprojectheti.id/" class="text-2xl font-bold">
+          <img
+            src="./MONITORING CIVIL WORK -41_files/logo.png"
+            alt="Logo"
+            class="h-14"
+        /></a>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="https://unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >HOME</a
+          >
+          <div class="relative">
+            <button class="text-gray-800 font-semibold">MONITORING</button>
+            <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
+              <a
+                href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=47"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >CIVIL WORK</a
+              >
+              <a
+                href="https://unilaprojectheti.id/monitoring/pmsc"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >PMSC</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://e-prog.unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >E-PROG</a
+          >
+          <a
+            href="https://unilaprojectheti.id/#about"
+            class="text-gray-800 font-semibold"
+            >ABOUT</a
+          >
+          <a
+            href="https://unilaprojectheti.id/#contact"
+            class="text-gray-800 font-semibold"
+            >CONTACT</a
+          >
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-button" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow text-white">
+        <nav class="flex flex-col space-y-2 py-4 px-4">
+          <a
+            href="https://unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >HOME</a
+          >
+          <div class="relative">
+            <button class="text-gray-800 font-semibold">MONITORING</button>
+            <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
+              <a
+                href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=47"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >CIVIL WORK</a
+              >
+              <a
+                href="https://unilaprojectheti.id/monitoring/pmsc"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >PMSC</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://e-prog.unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >E-PROG</a
+          >
+          <a
+            href="https://unilaprojectheti.id/#about"
+            class="text-gray-800 font-semibold"
+            >ABOUT</a
+          >
+          <a
+            href="https://unilaprojectheti.id/#contact"
+            class="text-gray-800 font-semibold"
+            >CONTACT</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <div class="m-5 space-y-4">
+      <div class="p-6 bg-white shadow rounded-lg">
+        <div class="pt-6 pb-6">
+          <div class="mb-4 colorprimary text-white p-4">
+            <h1 class="text-xl font-extrabold text-center text-white">
+              MONITORING CIVIL WORK UNILA
+            </h1>
+          </div>
+
+          <table
+            class="table-auto w-full border-collapse border border-gray-200"
+          >
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Work</td>
+                <td class="py-2 px-4 border">
+                  CWU Development of RSPTN, IRC and WWTP University of Lampung
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Client</td>
+                <td class="py-2 px-4 border">University of Lampung (UNILA)</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract No</td>
+                <td class="py-2 px-4 border">1484/UN26/HK.01/2024</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract Time</td>
+                <td class="py-2 px-4 border">
+                  Febuary 26, 2024 - August 29, 2025
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract Value</td>
+                <td class="py-2 px-4 border">IDR 198.865.665.859</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Budget</td>
+                <td class="py-2 px-4 border">LOAN ADB No. 4110-INO</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Project</td>
+                <td class="py-2 px-4 border">
+                  Higher Education for Technology and Innovation (HETI) Project
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Location</td>
+                <td class="py-2 px-4 border">
+                  Jalan Prof. Dr. Ir. Sumantri Brojonegoro No.1, Kota Bandar
+                  Lampung, Lampung 35141
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <div class="block mb-4 text-bold colorprimary text-white p-4">
+            S-curve
+          </div>
+          <canvas
+            id="ctxGrafik3"
+            style="
+              display: block;
+              box-sizing: border-box;
+              height: 500px;
+              width: 1000px;
+            "
+            width="1261"
+            height="630"
+          ></canvas>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <table
+            class="table-auto w-full border-collapse border border-white-200"
+          >
+            <thead>
+              <tr class="colorprimary text-white">
+                <th colspan="3" class="text-center py-2">Filter Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border" style="width: 10%">Periode</td>
+                <td class="py-2 px-4 border" style="width: 90%">
+                  <form
+                    method="GET"
+                    action="https://unilaprojectheti.id/monitoring/cvw"
+                  >
+                    <select
+                      name="timeline_week"
+                      id="weekFilter"
+                      class="select2 w-full border border-black rounded p-1 text-black select2-hidden-accessible"
+                      onchange="this.form.submit()"
+                      data-select2-id="select2-data-weekFilter"
+                      tabindex="-1"
+                      aria-hidden="true"
+                    >
+                      <option value="1">Week 1</option>
+                      <option value="2">Week 2</option>
+                      <option value="3">Week 3</option>
+                      <option value="4">Week 4</option>
+                      <option value="5">Week 5</option>
+                      <option value="6">Week 6</option>
+                      <option value="7">Week 7</option>
+                      <option value="8">Week 8</option>
+                      <option value="9">Week 9</option>
+                      <option value="10">Week 10</option>
+                      <option value="11">Week 11</option>
+                      <option value="12">Week 12</option>
+                      <option value="13">Week 13</option>
+                      <option value="14">Week 14</option>
+                      <option value="15">Week 15</option>
+                      <option value="16">Week 16</option>
+                      <option value="17">Week 17</option>
+                      <option value="18">Week 18</option>
+                      <option value="19">Week 19</option>
+                      <option value="20">Week 20</option>
+                      <option value="21">Week 21</option>
+                      <option value="22">Week 22</option>
+                      <option value="23">Week 23</option>
+                      <option value="24">Week 24</option>
+                      <option value="25">Week 25</option>
+                      <option value="26">Week 26</option>
+                      <option value="27">Week 27</option>
+                      <option value="28">Week 28</option>
+                      <option value="29">Week 29</option>
+                      <option value="30">Week 30</option>
+                      <option value="31">Week 31</option>
+                      <option value="32">Week 32</option>
+                      <option value="33">Week 33</option>
+                      <option value="34">Week 34</option>
+                      <option value="35">Week 35</option>
+                      <option value="36">Week 36</option>
+                      <option value="37">Week 37</option>
+                      <option value="38">Week 38</option>
+                      <option value="39">Week 39</option>
+                      <option value="40">Week 40</option>
+                      <option
+                        value="41"
+                        selected=""
+                        data-select2-id="select2-data-2-dnli"
+                      >
+                        Week 41
+                      </option>
+                      <option value="42">Week 42</option>
+                      <option value="43">Week 43</option>
+                      <option value="44">Week 44</option>
+                      <option value="45">Week 45</option>
+                      <option value="46">Week 46</option>
+                      <option value="47">Week 47</option>
+                      <option value="48">Week 48</option>
+                      <option value="49">Week 49</option>
+                      <option value="50">Week 50</option>
+                      <option value="51">Week 51</option>
+                      <option value="52">Week 52</option>
+                      <option value="53">Week 53</option>
+                      <option value="54">Week 54</option>
+                      <option value="55">Week 55</option>
+                      <option value="56">Week 56</option>
+                      <option value="57">Week 57</option>
+                      <option value="58">Week 58</option>
+                      <option value="59">Week 59</option>
+                      <option value="60">Week 60</option>
+                      <option value="61">Week 61</option>
+                      <option value="62">Week 62</option>
+                      <option value="63">Week 63</option>
+                      <option value="64">Week 64</option>
+                      <option value="65">Week 65</option>
+                      <option value="66">Week 66</option>
+                      <option value="67">Week 67</option>
+                      <option value="68">Week 68</option>
+                      <option value="69">Week 69</option>
+                      <option value="70">Week 70</option>
+                      <option value="71">Week 71</option>
+                      <option value="72">Week 72</option>
+                      <option value="73">Week 73</option>
+                      <option value="74">Week 74</option>
+                      <option value="75">Week 75</option>
+                      <option value="76">Week 76</option>
+                      <option value="77">Week 77</option>
+                      <option value="78">Week 78</option>
+                      <option value="79">Week 79</option>
+                      <option value="80">Week 80</option>
+                      <option value="81">Week 81</option>
+                      <option value="82">Week 82</option>
+                      <option value="83">Week 83</option>
+                      <option value="84">Week 84</option>
+                      <option value="85">Week 85</option></select
+                    ><span
+                      class="select2 select2-container select2-container--default"
+                      dir="ltr"
+                      data-select2-id="select2-data-1-s1ff"
+                      style="width: 1101px"
+                      ><span class="selection"
+                        ><span
+                          class="select2-selection select2-selection--single"
+                          role="combobox"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          tabindex="0"
+                          aria-disabled="false"
+                          aria-labelledby="select2-weekFilter-container"
+                          aria-controls="select2-weekFilter-container"
+                          ><span
+                            class="select2-selection__rendered"
+                            id="select2-weekFilter-container"
+                            role="textbox"
+                            aria-readonly="true"
+                            title="Week 41"
+                            >Week 41</span
+                          ><span
+                            class="select2-selection__arrow"
+                            role="presentation"
+                            ><b role="presentation"></b></span></span></span
+                      ><span class="dropdown-wrapper" aria-hidden="true"></span
+                    ></span>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border">Date</td>
+                <td class="py-2 px-4 border">
+                  December 8, 2024 - December 14, 2024
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <table
+            class="table-auto w-full border-collapse border border-white-200"
+          >
+            <thead class="colorprimary text-white">
+              <tr>
+                <th class="py-2 px-4 border" rowspan="2">
+                  Contract<br />Information
+                </th>
+                <th class="py-2 px-4 border" colspan="3">
+                  Work Progress this ( Week 41 )
+                </th>
+                <th class="py-2 px-4 border" colspan="3">
+                  Time Schedule up to ( Week 41 )
+                </th>
+              </tr>
+              <tr>
+                <th class="py-2 px-4 border">Plan Cumm.</th>
+                <th class="py-2 px-4 border">Real Cumm.</th>
+                <th class="py-2 px-4 border">Deviation</th>
+                <th class="py-2 px-4 border">Based</th>
+                <th class="py-2 px-4 border">Used</th>
+                <th class="py-2 px-4 border">Reminder</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border">
+                  INITIAL<br />0150/UN26/HETI.RSPTN/2024<br />March 8, 2023 -
+                  August 30, 2024
+                </td>
+                <td class="py-2 px-4 border">45.04%</td>
+                <td class="py-2 px-4 border">0.00%</td>
+                <td class="py-2 px-4 border">0.00%</td>
+                <td class="py-2 px-4 border">542 Days<br />78 Week</td>
+                <td class="py-2 px-4 border">282 Days<br />41 Week</td>
+                <td class="py-2 px-4 border">260 Days<br />37 Week</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border">
+                  CCO-01<br />xxxxxxxxxxxxxxxx<br />March 8, 2023 - October 18,
+                  2024
+                </td>
+                <td class="py-2 px-4 border">34.32%</td>
+                <td class="py-2 px-4 border">37.98%</td>
+                <td class="py-2 px-4 border">3.65%</td>
+                <td class="py-2 px-4 border">591 Days<br />85 Week</td>
+                <td class="py-2 px-4 border">282 Days<br />41 Week</td>
+                <td class="py-2 px-4 border">309 Days<br />44 Week</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <div class="block mb-4 text-bold colorprimary text-white p-4">
+                Graph of work progress for all locations this ( Week 41 ) and
+                the previous ( Week 40 )
+              </div>
+              <canvas
+                id="ctxGrafik1"
+                style="
+                  display: block;
+                  box-sizing: border-box;
+                  height: 311px;
+                  width: 622px;
+                "
+                width="622"
+                height="311"
+              ></canvas>
+            </div>
+            <div>
+              <div class="block mb-4 text-bold colorprimary text-white p-4">
+                Work progress graph for each building this ( Week 41 )
+              </div>
+              <canvas
+                id="ctxGrafik2"
+                style="
+                  display: block;
+                  box-sizing: border-box;
+                  height: 311px;
+                  width: 622px;
+                "
+                width="622"
+                height="311"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <div class="overflow-x-auto pb-10">
+            <table
+              class="table-auto w-full border-collapse border border-white-200"
+            >
+              <thead class="colorprimary text-white">
+                <tr class="colorprimary text-white">
+                  <th colspan="9" class="text-center py-2">
+                    Monitoring Work Progress ( Week 41 )
+                  </th>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="py-2 px-4 border">Description</th>
+                  <th colspan="3" class="text-center py-2 px-4 border">Plan</th>
+                  <th colspan="3" class="text-center py-2 px-4 border">
+                    Realization
+                  </th>
+                  <th rowspan="2" class="py-2 px-4 border">Deviation</th>
+                  <th rowspan="2" class="py-2 px-4 border">
+                    Remaining Progress from (100%)
+                  </th>
+                </tr>
+                <tr>
+                  <th class="py-2 px-4 border">until Last Sunday</th>
+                  <th class="py-2 px-4 border">This Week's Progress</th>
+                  <th class="py-2 px-4 border">until This Week</th>
+                  <th class="py-2 px-4 border">until Last Sunday</th>
+                  <th class="py-2 px-4 border">This Week's Progress</th>
+                  <th class="py-2 px-4 border">until This Week</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    colspan="9"
+                    class="text-center font-bold py-2 px-4 border"
+                  >
+                    INITIAL
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">RSPTN</td>
+                  <td class="py-2 px-4 border">30.85%</td>
+                  <td class="py-2 px-4 border">2.83%</td>
+                  <td class="py-2 px-4 border">45.04%</td>
+                  <td class="py-2 px-4 border">25.06%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">68.74%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">IRC</td>
+                  <td class="py-2 px-4 border">8.78%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">12.15%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">31.26%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">WWTP</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                </tr>
+                <tr class="bg-blue-200">
+                  <td class="py-2 px-4 border font-bold">Total</td>
+                  <td class="py-2 px-4 border">39.63%</td>
+                  <td class="py-2 px-4 border">2.83%</td>
+                  <td class="py-2 px-4 border">45.04%</td>
+                  <td class="py-2 px-4 border">37.21%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">100.00%</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="9"
+                    class="text-center font-bold py-2 px-4 border"
+                  >
+                    CCO-01
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">RSPTN</td>
+                  <td class="py-2 px-4 border">22.81%</td>
+                  <td class="py-2 px-4 border">0.37%</td>
+                  <td class="py-2 px-4 border">23.18%</td>
+                  <td class="py-2 px-4 border">26.28%</td>
+                  <td class="py-2 px-4 border">1.53%</td>
+                  <td class="py-2 px-4 border">27.82%</td>
+                  <td class="py-2 px-4 border">4.64%</td>
+                  <td class="py-2 px-4 border">44.08%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">IRC</td>
+                  <td class="py-2 px-4 border">11.00%</td>
+                  <td class="py-2 px-4 border">0.15%</td>
+                  <td class="py-2 px-4 border">11.14%</td>
+                  <td class="py-2 px-4 border">9.89%</td>
+                  <td class="py-2 px-4 border">0.27%</td>
+                  <td class="py-2 px-4 border">10.16%</td>
+                  <td class="py-2 px-4 border">-0.99%</td>
+                  <td class="py-2 px-4 border">17.84%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">WWTP</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                </tr>
+                <tr class="bg-blue-200">
+                  <td class="py-2 px-4 border font-bold">Total</td>
+                  <td class="py-2 px-4 border">33.81%</td>
+                  <td class="py-2 px-4 border">0.52%</td>
+                  <td class="py-2 px-4 border">34.32%</td>
+                  <td class="py-2 px-4 border">36.17%</td>
+                  <td class="py-2 px-4 border">1.80%</td>
+                  <td class="py-2 px-4 border">37.98%</td>
+                  <td class="py-2 px-4 border">3.65%</td>
+                  <td class="py-2 px-4 border">61.92%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table
+              class="table-auto w-full border-collapse border border-white-200"
+            >
+              <thead class="colorprimary text-white">
+                <tr>
+                  <th class="text-center py-2 border" rowspan="2">
+                    Description
+                  </th>
+                  <th class="text-center py-2 border" colspan="2">
+                    Plan for Next (Week 42)
+                  </th>
+                </tr>
+                <tr>
+                  <th class="text-center py-2 border">Weekly Plan</th>
+                  <th class="text-center py-2 border">Cumulative Plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    colspan="3"
+                    class="text-center font-bold py-2 px-4 border"
+                  >
+                    INITIAL
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">RSPTN</td>
+                  <td class="py-2 px-4 border">2.84%</td>
+                  <td class="py-2 px-4 border">47.87%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">IRC</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">WWTP</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                </tr>
+                <tr class="bg-blue-200">
+                  <td class="py-2 px-4 border font-bold">Total</td>
+                  <td class="py-2 px-4 border">2.84%</td>
+                  <td class="py-2 px-4 border">47.87%</td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="3"
+                    class="text-center font-bold py-2 px-4 border"
+                  >
+                    CCO-01
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">RSPTN</td>
+                  <td class="py-2 px-4 border">0.39%</td>
+                  <td class="py-2 px-4 border">23.57%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">IRC</td>
+                  <td class="py-2 px-4 border">0.15%</td>
+                  <td class="py-2 px-4 border">11.29%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border">WWTP</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                  <td class="py-2 px-4 border">0.00%</td>
+                </tr>
+                <tr class="bg-blue-200">
+                  <td class="py-2 px-4 border font-bold">Total</td>
+                  <td class="py-2 px-4 border">0.54%</td>
+                  <td class="py-2 px-4 border">34.86%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <div class="block mb-4 text-bold colorprimary text-white p-4">
+            WORK PROGRESS (PHOTO) WEEK 41
+          </div>
+          <div class="flex space-x-4 border-b-2 mb-4">
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none active"
+              onclick="showGallery(&#39;RSPTN&#39;, this)"
+            >
+              RSPTN
+            </button>
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+              onclick="showGallery(&#39;IRC&#39;, this)"
+            >
+              IRC
+            </button>
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+              onclick="showGallery(&#39;WWTP&#39;, this)"
+            >
+              WWTP
+            </button>
+          </div>
+          <div class="gallery-container">
+            <div id="RSPTN" class="gallery active">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              >
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/SEV99HB4srI7zccvMa6Vd82pw6HeOtGxqA432bvH.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="NURSECALL LT2 GD-RSPTN CLAMP GREEN COUNDUIT INSTALLATION"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/SEV99HB4srI7zccvMa6Vd82pw6HeOtGxqA432bvH.jpg"
+                    alt="NURSECALL LT2 GD-RSPTN CLAMP GREEN COUNDUIT INSTALLATION"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    NURSECALL LT2 GD-RSPTN CLAMP GREEN COUNDUIT INSTALLATION
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Zqvac3PcBiMJE3ziC0j7VgPLCWSNoFM95ljjbgwt.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="HYDRANT SPRINKLER PIPING INSTALLATION LT2 GD-RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Zqvac3PcBiMJE3ziC0j7VgPLCWSNoFM95ljjbgwt.jpg"
+                    alt="HYDRANT SPRINKLER PIPING INSTALLATION LT2 GD-RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    HYDRANT SPRINKLER PIPING INSTALLATION LT2 GD-RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/dpfT90XLsELYdbtwEed4FWeLQQpYDFABSA1c2nas.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CLEANING OF THE PLANNED AREA FOR CASTING THE CONNECTING PLATE ON THE NORTH SIDE OF THE RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/dpfT90XLsELYdbtwEed4FWeLQQpYDFABSA1c2nas.jpg"
+                    alt="CLEANING OF THE PLANNED AREA FOR CASTING THE CONNECTING PLATE ON THE NORTH SIDE OF THE RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CLEANING OF THE PLANNED AREA FOR CASTING THE CONNECTING
+                    PLATE ON THE NORTH SIDE OF THE RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/xQ02qJWK1Z230q6BkQ3XKiEi4U8q2Uk36TG8EtUR.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/xQ02qJWK1Z230q6BkQ3XKiEi4U8q2Uk36TG8EtUR.jpg"
+                    alt="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON FLOOR RAMPS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/sDYZ6eSvouCF0KTYQaYBzB3HPTzaLOxavlcWjSsu.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/sDYZ6eSvouCF0KTYQaYBzB3HPTzaLOxavlcWjSsu.jpg"
+                    alt="PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/XHKFNaro0oYT0ClJ4eXLFLfxdby15p3FqdcmALgY.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="POURING INTEGRAL WATERPROOFING SIKA VISCOCRETE 3115N"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/XHKFNaro0oYT0ClJ4eXLFLfxdby15p3FqdcmALgY.jpg"
+                    alt="POURING INTEGRAL WATERPROOFING SIKA VISCOCRETE 3115N"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    POURING INTEGRAL WATERPROOFING SIKA VISCOCRETE&nbsp;3115N
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/TcFIsaaTBo9UR3kK6Dc6k8o3bW3Ukf870ENuZsfu.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="NORTH SIDE CONNECTING PLATE CASTING WORK OF RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/TcFIsaaTBo9UR3kK6Dc6k8o3bW3Ukf870ENuZsfu.jpg"
+                    alt="NORTH SIDE CONNECTING PLATE CASTING WORK OF RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    NORTH SIDE CONNECTING PLATE CASTING WORK OF&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/kDhZYtbbbHwxJ0MbHiuUlqE7d7DUNt5nYn96YkTO.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="FINISH CASTING THE NORTH SIDE OF THE RSPTN CONNECTING PLATE"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/kDhZYtbbbHwxJ0MbHiuUlqE7d7DUNt5nYn96YkTO.jpg"
+                    alt="FINISH CASTING THE NORTH SIDE OF THE RSPTN CONNECTING PLATE"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    FINISH CASTING THE NORTH SIDE OF THE RSPTN CONNECTING PLATE
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/tWi1GsGGFZF3PXHhJTqh9KoCVz951WmVXPcLLeCY.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="LIGHT BRICK WORK MATERNITY ROOM FLOOR 04 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/tWi1GsGGFZF3PXHhJTqh9KoCVz951WmVXPcLLeCY.jpg"
+                    alt="LIGHT BRICK WORK MATERNITY ROOM FLOOR 04 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    LIGHT BRICK WORK MATERNITY ROOM FLOOR 04&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/P6HQOAxPZeVaIAhKUWrWXGt2J67aJgDzhUpZxcRk.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRNA LIGHT BRICK WORK FLOOR 04 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/P6HQOAxPZeVaIAhKUWrWXGt2J67aJgDzhUpZxcRk.jpg"
+                    alt="IRNA LIGHT BRICK WORK FLOOR 04 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRNA LIGHT BRICK WORK FLOOR 04&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/8748lAAg7BEW4X4X0YJ50iBUoebpiYY44kxmG6nu.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="INSTALLATION OF PRACTICAL COLUMNS CONSULTATION ROOM FLOOR 04 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/8748lAAg7BEW4X4X0YJ50iBUoebpiYY44kxmG6nu.jpg"
+                    alt="INSTALLATION OF PRACTICAL COLUMNS CONSULTATION ROOM FLOOR 04 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    INSTALLATION OF PRACTICAL COLUMNS CONSULTATION ROOM FLOOR
+                    04&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/tdhjPenlAYw5xl8cGAqfFav2J4yAXGqHi3PE5EIu.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON RAMP REINFORCEMENT AND FORMWORK FOR FLOORS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/tdhjPenlAYw5xl8cGAqfFav2J4yAXGqHi3PE5EIu.jpg"
+                    alt="PROGRESS OF WORK ON RAMP REINFORCEMENT AND FORMWORK FOR FLOORS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON RAMP REINFORCEMENT AND FORMWORK FOR
+                    FLOORS&nbsp;4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/681Z1obWbrne4ks1eLOhhb1OtlcUmHIHAe2Mb78E.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/681Z1obWbrne4ks1eLOhhb1OtlcUmHIHAe2Mb78E.jpg"
+                    alt="PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/inzyYcymkAeMa0YAi13Pg9sTAKuoi8WULmBPPmVS.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RSPTN 3RD FLOOR HYDRANT  SPRINKLER PIPING INSTALLATION"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/inzyYcymkAeMa0YAi13Pg9sTAKuoi8WULmBPPmVS.jpg"
+                    alt="RSPTN 3RD FLOOR HYDRANT  SPRINKLER PIPING INSTALLATION"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RSPTN 3RD FLOOR HYDRANT SPRINKLER PIPING INSTALLATION
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/zLWGQr220pS2CYGoBZKftgkG4gXiqILWsryU6Up0.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="COUNDUIT LIGHTING  SOCKET PIPING INSTALLATION ON THE 2ND FLOOR OF RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/zLWGQr220pS2CYGoBZKftgkG4gXiqILWsryU6Up0.jpg"
+                    alt="COUNDUIT LIGHTING  SOCKET PIPING INSTALLATION ON THE 2ND FLOOR OF RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    COUNDUIT LIGHTING SOCKET PIPING INSTALLATION ON THE 2ND
+                    FLOOR OF RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/29ymCKKXNSgyTlLHPF2i9mVrOvQEtscYGgPxyZaK.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/29ymCKKXNSgyTlLHPF2i9mVrOvQEtscYGgPxyZaK.jpg"
+                    alt="CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CASTING OF FLOOR RAMPS 4-5 AS F-J&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/mk3Gp3stz9SFRB1bqc7uwDxY21nUdOjwAM6FO89A.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/mk3Gp3stz9SFRB1bqc7uwDxY21nUdOjwAM6FO89A.jpg"
+                    alt="CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CASTING OF FLOOR RAMPS 4-5 AS F-J&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/iiIrRG9xAgYMu1NXURymMultEORbrCB8VFtfDv7C.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="K3 MONITORING OF ELEVATOR SEPARATOR WELDING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/iiIrRG9xAgYMu1NXURymMultEORbrCB8VFtfDv7C.jpg"
+                    alt="K3 MONITORING OF ELEVATOR SEPARATOR WELDING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    K3 MONITORING OF ELEVATOR SEPARATOR WELDING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/pxwVxdMyvoB15T09NYXxJKVqR9vlkaxPwu9WRAW2.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/pxwVxdMyvoB15T09NYXxJKVqR9vlkaxPwu9WRAW2.jpg"
+                    alt="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON FLOOR RAMPS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/kPCksLBqqKq9Gg13JUEPDc570Q7033nnmRpI5HrL.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CORRIDOR SKIMCOAT PLASTERING WORK (SIDE OF TRAIN. NUTRITIONAL INSTALLATION) BASEMENT RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/kPCksLBqqKq9Gg13JUEPDc570Q7033nnmRpI5HrL.jpg"
+                    alt="CORRIDOR SKIMCOAT PLASTERING WORK (SIDE OF TRAIN. NUTRITIONAL INSTALLATION) BASEMENT RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CORRIDOR SKIMCOAT PLASTERING WORK (SIDE OF TRAIN.
+                    NUTRITIONAL INSTALLATION) BASEMENT&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Q2l6Jl677OYlasZeL62TpKR3txzYxACgAtxKADE8.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RSPTN 2ND FLOOR SPRINKLER PIPING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Q2l6Jl677OYlasZeL62TpKR3txzYxACgAtxKADE8.jpg"
+                    alt="RSPTN 2ND FLOOR SPRINKLER PIPING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RSPTN 2ND FLOOR SPRINKLER PIPING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/4d06DWVSS63SYFR0HyF66TbjZzSvxLjtKF4EjrSw.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RSPTN 4TH FLOOR RAMP COLUMN CASTING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/4d06DWVSS63SYFR0HyF66TbjZzSvxLjtKF4EjrSw.jpg"
+                    alt="RSPTN 4TH FLOOR RAMP COLUMN CASTING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RSPTN 4TH FLOOR RAMP COLUMN CASTING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/CJHCPBSgJSJmLgMyux8rHeG6f150sQFyVzYTplCK.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="SLAB AND RAMP BEAM CASTING WORK FOR FLOORS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/CJHCPBSgJSJmLgMyux8rHeG6f150sQFyVzYTplCK.jpg"
+                    alt="SLAB AND RAMP BEAM CASTING WORK FOR FLOORS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    SLAB AND RAMP BEAM CASTING WORK FOR FLOORS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/ZWfPVDnOhuoYFni2YhvIAJobXerUjEuWxERjRtMa.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CASTING OF RSPTN 4TH TO 5TH FLOOR RAMPS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/ZWfPVDnOhuoYFni2YhvIAJobXerUjEuWxERjRtMa.jpg"
+                    alt="CASTING OF RSPTN 4TH TO 5TH FLOOR RAMPS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CASTING OF RSPTN 4TH TO 5TH FLOOR RAMPS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/LbK8llAvU5gN1a3ZLPaSUwyfYxCl76zfkjf1v6ZR.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PLASTERING THE OUTER WALLS OF THE CORRIDOR. RSPTN 2ND FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/LbK8llAvU5gN1a3ZLPaSUwyfYxCl76zfkjf1v6ZR.jpg"
+                    alt="PLASTERING THE OUTER WALLS OF THE CORRIDOR. RSPTN 2ND FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PLASTERING THE OUTER WALLS OF THE CORRIDOR. RSPTN&nbsp;2ND
+                    FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/NWDbkedj0vt5o9hx1rkArC0ch3kw7OR53hh8alvr.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="COLUMN SKIMCOAT. RSPTN 3RD FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/NWDbkedj0vt5o9hx1rkArC0ch3kw7OR53hh8alvr.jpg"
+                    alt="COLUMN SKIMCOAT. RSPTN 3RD FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    COLUMN SKIMCOAT. RSPTN&nbsp;3RD FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/A62GEhpVMzd6Fguj6c951OoCsNkxN1O2vMnOns0Z.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="BASEMENT FLOOR ELEVATION CASTING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/A62GEhpVMzd6Fguj6c951OoCsNkxN1O2vMnOns0Z.jpg"
+                    alt="BASEMENT FLOOR ELEVATION CASTING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    BASEMENT FLOOR ELEVATION CASTING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/CL2o5JcOqCOElRLoirRA1Z27XiulYB7CeNwhIO75.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IMPLEMENTATION OF WEEKLY TBM/SAFETY TALK ACTIVITIES."
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/CL2o5JcOqCOElRLoirRA1Z27XiulYB7CeNwhIO75.jpg"
+                    alt="IMPLEMENTATION OF WEEKLY TBM/SAFETY TALK ACTIVITIES."
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IMPLEMENTATION OF WEEKLY TBM/SAFETY TALK ACTIVITIES.
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/c4MDx1chDPELLMAE3EX1ZfyfYlcw3wkqGssMZgNk.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/c4MDx1chDPELLMAE3EX1ZfyfYlcw3wkqGssMZgNk.jpg"
+                    alt="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON FLOOR RAMPS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/HTR71pWwjESA47qbA1ZIiiVSYZair6XeLWh9f9ZL.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="MONITORING AND ATTACHING DEFECT POINTS USING STICKERS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/HTR71pWwjESA47qbA1ZIiiVSYZair6XeLWh9f9ZL.jpg"
+                    alt="MONITORING AND ATTACHING DEFECT POINTS USING STICKERS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    MONITORING AND ATTACHING DEFECT POINTS USING STICKERS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Cal0Z1GWR5tvplQ3PYn9Dahdha9RO8Q5PqGwzvBn.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="EXCAVATION WORK FOR THE FOUNDATION OF THE PLN HOUSE AND THE RSPTN POWERHOUSE"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Cal0Z1GWR5tvplQ3PYn9Dahdha9RO8Q5PqGwzvBn.jpg"
+                    alt="EXCAVATION WORK FOR THE FOUNDATION OF THE PLN HOUSE AND THE RSPTN POWERHOUSE"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    EXCAVATION WORK FOR THE FOUNDATION OF THE PLN HOUSE AND THE
+                    RSPTN POWERHOUSE
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/iJz9XzBDwrUtG7UrqJMp9T5j582RR5a93MrOEnLi.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PLASTERING THE WALLS OF THE OUTER CORRIDOR AREA. RSPTN FLOOR 2"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/iJz9XzBDwrUtG7UrqJMp9T5j582RR5a93MrOEnLi.jpg"
+                    alt="PLASTERING THE WALLS OF THE OUTER CORRIDOR AREA. RSPTN FLOOR 2"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PLASTERING THE WALLS OF THE OUTER CORRIDOR AREA.
+                    RSPTN&nbsp;FLOOR&nbsp;2
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/IREpxmh44tvKxuENt2vBfuFaciTQBJwVY6wPIYVp.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="DRESSING ROOM WALL PAIR AND SCRUB UP. RSPTN 2ND FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/IREpxmh44tvKxuENt2vBfuFaciTQBJwVY6wPIYVp.jpg"
+                    alt="DRESSING ROOM WALL PAIR AND SCRUB UP. RSPTN 2ND FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    DRESSING ROOM WALL PAIR AND SCRUB UP.&nbsp;RSPTN&nbsp;2ND
+                    FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/mldP53kwxLHw83jIJ0jLqfiYEDLF6qtIV8Ior8cB.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRNA&#39;S ROOM WALL COUPLE. RSPTN FLOOR 4"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/mldP53kwxLHw83jIJ0jLqfiYEDLF6qtIV8Ior8cB.jpg"
+                    alt="IRNA&#39;S ROOM WALL COUPLE. RSPTN FLOOR 4"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRNA'S ROOM WALL COUPLE. RSPTN&nbsp;FLOOR&nbsp;4
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/t83U19EAGVVRP4349j7vin4SnwzaHaSvwEnOgwU4.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRNA&#39;S ROOM WALL COUPLE. RSPTN FLOOR 4"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/t83U19EAGVVRP4349j7vin4SnwzaHaSvwEnOgwU4.jpg"
+                    alt="IRNA&#39;S ROOM WALL COUPLE. RSPTN FLOOR 4"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRNA'S ROOM WALL COUPLE. RSPTN&nbsp;FLOOR&nbsp;4
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/UyZeKBCg7Yo8RcYF3Y5Gy6J5HJwI6u7PmXdgA7Hm.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PAIR OF IRNA&#39;S ROOM WALLS FOR STD CLASS. RSPTN FLOOR 5"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/UyZeKBCg7Yo8RcYF3Y5Gy6J5HJwI6u7PmXdgA7Hm.jpg"
+                    alt="PAIR OF IRNA&#39;S ROOM WALLS FOR STD CLASS. RSPTN FLOOR 5"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PAIR OF IRNA'S ROOM WALLS FOR STD CLASS.
+                    RSPTN&nbsp;FLOOR&nbsp;5
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/o2EFHDgHMQL91aoSzbWq2DdBOQcU8pidZj6AHWnF.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="COLUMN SKIMCOAT. RSPTN FLOOR 5"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/o2EFHDgHMQL91aoSzbWq2DdBOQcU8pidZj6AHWnF.jpg"
+                    alt="COLUMN SKIMCOAT. RSPTN FLOOR 5"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    COLUMN SKIMCOAT. RSPTN&nbsp;FLOOR&nbsp;5
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/GsL4uHcveFELqCwVDDzTEUxsCx0Qee7Vk5iDpu5k.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRNA&#39;S ROOM WALL COUPLE. RSPTN 5TH FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/GsL4uHcveFELqCwVDDzTEUxsCx0Qee7Vk5iDpu5k.jpg"
+                    alt="IRNA&#39;S ROOM WALL COUPLE. RSPTN 5TH FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRNA'S ROOM WALL COUPLE. RSPTN&nbsp;5TH FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/775LMJ1xKZFT1Ye9Y6gSoPI5hY132Osm5fMhiReP.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="REVIEW DRAWINGS WITH PLANNER, PMSC &amp; CONTRACTOR."
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/775LMJ1xKZFT1Ye9Y6gSoPI5hY132Osm5fMhiReP.jpg"
+                    alt="REVIEW DRAWINGS WITH PLANNER, PMSC &amp; CONTRACTOR."
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    REVIEW DRAWINGS WITH PLANNER, PMSC &amp; CONTRACTOR.
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/vt8ZO9jSqOKWeQ8vRpd3NiWxUkspPHRgoCkEGB90.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RSPTN POWERHOUSE PILECAP INSTALLATION WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/vt8ZO9jSqOKWeQ8vRpd3NiWxUkspPHRgoCkEGB90.jpg"
+                    alt="RSPTN POWERHOUSE PILECAP INSTALLATION WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RSPTN POWERHOUSE&nbsp;PILECAP INSTALLATION WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/K8K6LgFavhOgTY8Im4xxQ2zdBra05wkenCvmh3r1.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CASTING OF FLOOR RAMPS 4-5 RSPTN (25M3) K-400"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/K8K6LgFavhOgTY8Im4xxQ2zdBra05wkenCvmh3r1.jpg"
+                    alt="CASTING OF FLOOR RAMPS 4-5 RSPTN (25M3) K-400"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CASTING OF FLOOR RAMPS 4-5 RSPTN (25M3)&nbsp;K-400
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/tkHFKTnLN2heLJ8It1mPP0bNTSIaMbzi1eKu3I5Y.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="OPENING OF CORRIDOR AND WAITING ROOM AREAS. RSPTN 2ND FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/tkHFKTnLN2heLJ8It1mPP0bNTSIaMbzi1eKu3I5Y.jpg"
+                    alt="OPENING OF CORRIDOR AND WAITING ROOM AREAS. RSPTN 2ND FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    OPENING OF CORRIDOR AND WAITING ROOM AREAS. RSPTN&nbsp;2ND
+                    FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/kQBUsoqIL6BBEe9ZQpzZukZYlDgq8hfFW4peNHka.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="FITS DOCTOR &amp; ROOM WALL. RSPTN FLOOR 2"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/kQBUsoqIL6BBEe9ZQpzZukZYlDgq8hfFW4peNHka.jpg"
+                    alt="FITS DOCTOR &amp; ROOM WALL. RSPTN FLOOR 2"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    FITS DOCTOR &amp; ROOM WALL. RSPTN&nbsp;FLOOR&nbsp;2
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/WI8QPU4WP4Eeil1SSP57FCK1Qsc6A71nf9Dr3PkG.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="FITS THE WALLS OF THE CORRIDOR AREA. RSPTN FLOOR 2"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/WI8QPU4WP4Eeil1SSP57FCK1Qsc6A71nf9Dr3PkG.jpg"
+                    alt="FITS THE WALLS OF THE CORRIDOR AREA. RSPTN FLOOR 2"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    FITS THE WALLS OF THE CORRIDOR AREA. RSPTN&nbsp;FLOOR&nbsp;2
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/kE6WCBrHQ6ytiJxEKKz5hJ1zZ16EeTFCi0RvJP2N.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="WALL FITTING R. SCRUBUP. RSPTN 4TH FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/kE6WCBrHQ6ytiJxEKKz5hJ1zZ16EeTFCi0RvJP2N.jpg"
+                    alt="WALL FITTING R. SCRUBUP. RSPTN 4TH FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    WALL FITTING R. SCRUBUP. RSPTN&nbsp;4TH FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/p9pvxlgVGyOdnNaxlLGQ3MG8Dpyixr5tecc2939X.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CURING RAMP 4TH TO 5TH FLOOR RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/p9pvxlgVGyOdnNaxlLGQ3MG8Dpyixr5tecc2939X.jpg"
+                    alt="CURING RAMP 4TH TO 5TH FLOOR RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CURING RAMP 4TH TO 5TH FLOOR RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/MBn79TuXgufNNkb9sRyK1aZ11DhYYn9XAzOl9O9N.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="HYDRANT &amp; SPRINKLER PIPING ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/MBn79TuXgufNNkb9sRyK1aZ11DhYYn9XAzOl9O9N.jpg"
+                    alt="HYDRANT &amp; SPRINKLER PIPING ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    HYDRANT &amp; SPRINKLER PIPING ON THE 4TH FLOOR OF THE RSPTN
+                    BUILDING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/fcNyNQGXTr7io7y1S4J4uXH1dcvXk4610F4pKyWZ.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="SOUND SYSTEM PIPING &amp;  FIRE ALARM ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/fcNyNQGXTr7io7y1S4J4uXH1dcvXk4610F4pKyWZ.jpg"
+                    alt="SOUND SYSTEM PIPING &amp;  FIRE ALARM ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    SOUND SYSTEM PIPING &amp; FIRE ALARM ON THE 4TH FLOOR OF THE
+                    RSPTN BUILDING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/AnAdKZkRl7WkHkzpk2fSuQFCOBeunpjQwlajzE5c.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RSPTN BASEMENT FLOOR KM/WC PLASTERING WORK (CSSD AREA)"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/AnAdKZkRl7WkHkzpk2fSuQFCOBeunpjQwlajzE5c.jpg"
+                    alt="RSPTN BASEMENT FLOOR KM/WC PLASTERING WORK (CSSD AREA)"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RSPTN BASEMENT FLOOR KM/WC PLASTERING WORK (CSSD AREA)
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/dZaO66COEqOLSa3m6W7Qmc0CBqfzLPFtMLvKKrdk.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="BASEMENT RSPTN WINDOW OPENING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/dZaO66COEqOLSa3m6W7Qmc0CBqfzLPFtMLvKKrdk.jpg"
+                    alt="BASEMENT RSPTN WINDOW OPENING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    BASEMENT&nbsp;RSPTN WINDOW OPENING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/hTs09NozqWeDn4L5eSgJ4id415ryH9DScbYGs6lw.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/hTs09NozqWeDn4L5eSgJ4id415ryH9DScbYGs6lw.jpg"
+                    alt="PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON FLOOR RAMPS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Fhs0YWAVQ9nNLhtRy08L2q0vOVtnNE13MKfEHL2Q.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="WORK TO REPAIR PILE CAPS FOR PLN HOUSES AND RSPTN POWERHOUSES"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Fhs0YWAVQ9nNLhtRy08L2q0vOVtnNE13MKfEHL2Q.jpg"
+                    alt="WORK TO REPAIR PILE CAPS FOR PLN HOUSES AND RSPTN POWERHOUSES"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    WORK TO REPAIR PILE CAPS FOR PLN HOUSES AND RSPTN
+                    POWERHOUSES
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/gAkUT0msCq3MH7bpXbAUH3ssL0rV1OAwsa8a1ccM.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PLUMBING CORING POINTS OF USED WATER PIPES ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/gAkUT0msCq3MH7bpXbAUH3ssL0rV1OAwsa8a1ccM.jpg"
+                    alt="PLUMBING CORING POINTS OF USED WATER PIPES ON THE 4TH FLOOR OF THE RSPTN BUILDING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PLUMBING CORING POINTS OF USED WATER PIPES ON THE 4TH FLOOR
+                    OF THE RSPTN BUILDING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/QV6Oszh2O9Ae14Mm0I5KYUAL3olZu5GxPbKcC4il.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF THE PLN RSPTN HOUSE PILE CAP WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/QV6Oszh2O9Ae14Mm0I5KYUAL3olZu5GxPbKcC4il.jpg"
+                    alt="PROGRESS OF THE PLN RSPTN HOUSE PILE CAP WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF THE PLN RSPTN HOUSE PILE CAP WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/OpBYqH91Q3C1TqTOV1Pwf7cbONTZSkhaVXUH3j9E.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="WORK PROGRESS ON FLOOR RAMPS 4-5 RSPTN"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/OpBYqH91Q3C1TqTOV1Pwf7cbONTZSkhaVXUH3j9E.jpg"
+                    alt="WORK PROGRESS ON FLOOR RAMPS 4-5 RSPTN"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    WORK PROGRESS ON FLOOR RAMPS 4-5&nbsp;RSPTN
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/9TKm4NddmyvsXfXaQi5dVQoeaagcH24UgLJjHThT.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="SOIL COMPACTION IN THE RSPTN POWERHOUSE AREA USING A COMPACTOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/9TKm4NddmyvsXfXaQi5dVQoeaagcH24UgLJjHThT.jpg"
+                    alt="SOIL COMPACTION IN THE RSPTN POWERHOUSE AREA USING A COMPACTOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    SOIL COMPACTION IN THE RSPTN POWERHOUSE AREA USING A
+                    COMPACTOR
+                  </figcaption>
+                </a>
+              </div>
+            </div>
+            <div id="IRC" class="gallery">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              >
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/M9N5ykrcTDxlyMiWqesNzHYIp7HgQDjCxEvc8eAB.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="MONITORING IRC PLASTERING WORK RIGHT SIDE VIEW"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/M9N5ykrcTDxlyMiWqesNzHYIp7HgQDjCxEvc8eAB.jpg"
+                    alt="MONITORING IRC PLASTERING WORK RIGHT SIDE VIEW"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    MONITORING IRC PLASTERING WORK RIGHT SIDE VIEW
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/m5DYdnmqOqCEh8Fc5FOfKidnXmDH9MqSBSEeQ9kx.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC BATHROOM PLASTERING WORK 03RD FLOOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/m5DYdnmqOqCEh8Fc5FOfKidnXmDH9MqSBSEeQ9kx.jpg"
+                    alt="IRC BATHROOM PLASTERING WORK 03RD FLOOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC BATHROOM PLASTERING WORK&nbsp;03RD FLOOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/80rNzTyNtHomI05lVuBYGqA9tEsORRUIAIq4VkK0.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC TOP FLOOR SKYLIGHT AREA LIGHT BRICK WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/80rNzTyNtHomI05lVuBYGqA9tEsORRUIAIq4VkK0.jpg"
+                    alt="IRC TOP FLOOR SKYLIGHT AREA LIGHT BRICK WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC TOP&nbsp;FLOOR SKYLIGHT AREA LIGHT BRICK WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/dov9s2C1ob6MXjlerJ1rj7wYeHjkuImimVAoFsQk.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC TOP FLOOR SKYLIGHT AREA BALK RING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/dov9s2C1ob6MXjlerJ1rj7wYeHjkuImimVAoFsQk.jpg"
+                    alt="IRC TOP FLOOR SKYLIGHT AREA BALK RING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC TOP&nbsp;FLOOR SKYLIGHT AREA BALK RING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/6CxOejsjOcNaiLA7IrcHtRQMk2tFINCK946UCILe.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF THE IRC HALLWAY STONE MASONRY WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/6CxOejsjOcNaiLA7IrcHtRQMk2tFINCK946UCILe.jpg"
+                    alt="PROGRESS OF THE IRC HALLWAY STONE MASONRY WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF THE IRC HALLWAY STONE MASONRY WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/RhaHSz0QYqHjisAWm8vuT2NQEMONhDqXsUkmys8K.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC 1ST FLOOR ELEVATOR SEPARATOR INSTALLATION PROCESS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/RhaHSz0QYqHjisAWm8vuT2NQEMONhDqXsUkmys8K.jpg"
+                    alt="IRC 1ST FLOOR ELEVATOR SEPARATOR INSTALLATION PROCESS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC&nbsp;1ST FLOOR&nbsp;ELEVATOR SEPARATOR INSTALLATION
+                    PROCESS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/NZzoLaPu2XqU4MxcQCKSyFmMB4oVaWbYiGF00QEf.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PLN IRC HOME WIRE MESH INSTALLATION PROCESS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/NZzoLaPu2XqU4MxcQCKSyFmMB4oVaWbYiGF00QEf.jpg"
+                    alt="PLN IRC HOME WIRE MESH INSTALLATION PROCESS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PLN&nbsp;IRC HOME WIRE MESH INSTALLATION PROCESS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/z4m89xpyQjBRC6P4wlTy1lzvuyoqUXqN0gzUd7Cf.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC WALKWAY EMBANKMENT WORK AND LEVELING OF THE IRC ZONE 1 AREA"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/z4m89xpyQjBRC6P4wlTy1lzvuyoqUXqN0gzUd7Cf.jpg"
+                    alt="IRC WALKWAY EMBANKMENT WORK AND LEVELING OF THE IRC ZONE 1 AREA"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC WALKWAY EMBANKMENT WORK AND LEVELING OF
+                    THE&nbsp;IRC&nbsp;ZONE&nbsp;1 AREA
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/VanCsxhOOCplCSBtB9CU1EJBnPSEsPyQGxh25RBv.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="SOIL COMPACTION USING IRC ZONE 1 VIBRO AREA"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/VanCsxhOOCplCSBtB9CU1EJBnPSEsPyQGxh25RBv.jpg"
+                    alt="SOIL COMPACTION USING IRC ZONE 1 VIBRO AREA"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    SOIL COMPACTION USING IRC&nbsp;ZONE&nbsp;1 VIBRO AREA
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/xaujJLPdBfvLrd6Y0b1jMLoWQExHttLbP79QQiWS.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PLASTERING WORK ON BATHROOM AND TOILET WALL AREAS GROUND FLOOR IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/xaujJLPdBfvLrd6Y0b1jMLoWQExHttLbP79QQiWS.jpg"
+                    alt="PLASTERING WORK ON BATHROOM AND TOILET WALL AREAS GROUND FLOOR IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PLASTERING WORK ON BATHROOM AND TOILET WALL
+                    AREAS&nbsp;GROUND FLOOR&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/iAjS8K7Od4VdenQeh2HeaTujeWNpgkCTZEuQtyeC.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RIVER MASONRY WORK IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/iAjS8K7Od4VdenQeh2HeaTujeWNpgkCTZEuQtyeC.jpg"
+                    alt="RIVER MASONRY WORK IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RIVER MASONRY WORK&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/AxKQ5Lbu76Na76zKFb9l9TZHHm8NJLgbFLLlbQ5X.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="RIVER MASONRY WORK IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/AxKQ5Lbu76Na76zKFb9l9TZHHm8NJLgbFLLlbQ5X.jpg"
+                    alt="RIVER MASONRY WORK IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    RIVER MASONRY WORK&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/XNJ9bTq9SpC4CaHH7htbD8p34DbvbkFR5xNjyyRZ.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="LIGHT BRICK MASONRY SHAFT WALL GROUND FLOOR IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/XNJ9bTq9SpC4CaHH7htbD8p34DbvbkFR5xNjyyRZ.jpg"
+                    alt="LIGHT BRICK MASONRY SHAFT WALL GROUND FLOOR IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    LIGHT BRICK MASONRY SHAFT WALL GROUND FLOOR&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/i6CYycYrUw0Ro3JWx4ObbM7RzzZs6vGozq0We5zP.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="GROUND FLOOR LIBRARY AREA WALL PLASTERING WORK IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/i6CYycYrUw0Ro3JWx4ObbM7RzzZs6vGozq0We5zP.jpg"
+                    alt="GROUND FLOOR LIBRARY AREA WALL PLASTERING WORK IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    GROUND FLOOR LIBRARY AREA WALL PLASTERING WORK&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/oIBgVH5wCIOkbrOLy2Ao470OLAsJV3D8cAGI2GyH.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="INSTALLATION OF LIGHT BRICKS IN THE MAIN STAIR AREA OF FLOOR 01 IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/oIBgVH5wCIOkbrOLy2Ao470OLAsJV3D8cAGI2GyH.jpg"
+                    alt="INSTALLATION OF LIGHT BRICKS IN THE MAIN STAIR AREA OF FLOOR 01 IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    INSTALLATION OF LIGHT BRICKS IN THE MAIN STAIR AREA
+                    OF&nbsp;FLOOR 01&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/o1r2COn1c58aXK5YiGfjRepQHLt5YXbLhEG952ze.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC ELEVATOR SEPARATOR STEEL INSTALLATION PROGRESS ( 2ND FLOOR)"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/o1r2COn1c58aXK5YiGfjRepQHLt5YXbLhEG952ze.jpg"
+                    alt="IRC ELEVATOR SEPARATOR STEEL INSTALLATION PROGRESS ( 2ND FLOOR)"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC ELEVATOR SEPARATOR STEEL INSTALLATION
+                    PROGRESS&nbsp;(&nbsp;2ND&nbsp;FLOOR)
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/h8AU5Rismy4LAX8ochARyjoROPd7NwMgmyj1qH0V.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="BASEPLATE INSTALLATION ON THE STEEL ANCHOR OF THE 3RD FLOOR IRC LIFT SEPARATOR"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/h8AU5Rismy4LAX8ochARyjoROPd7NwMgmyj1qH0V.jpg"
+                    alt="BASEPLATE INSTALLATION ON THE STEEL ANCHOR OF THE 3RD FLOOR IRC LIFT SEPARATOR"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    BASEPLATE INSTALLATION ON THE STEEL ANCHOR OF THE 3RD FLOOR
+                    IRC LIFT SEPARATOR
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/H0PMRnN0qFCPzfCaXFJ8V8EeCNbhjYshnyw0rZQ8.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROCESS OF SETTING AND STRENGTHENING IRC POWERHOUSE COLUMN FORMWORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/H0PMRnN0qFCPzfCaXFJ8V8EeCNbhjYshnyw0rZQ8.jpg"
+                    alt="PROCESS OF SETTING AND STRENGTHENING IRC POWERHOUSE COLUMN FORMWORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROCESS OF SETTING AND STRENGTHENING IRC POWERHOUSE COLUMN
+                    FORMWORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/ivi9ExrjYvxT9aQgXnAzYLMut4XwAtINfDWODrYF.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC WALKWAY PLATE REINFORCEMENT WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/ivi9ExrjYvxT9aQgXnAzYLMut4XwAtINfDWODrYF.jpg"
+                    alt="IRC WALKWAY PLATE REINFORCEMENT WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC WALKWAY PLATE REINFORCEMENT WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/bC27jnYd96XKRM0IDoaKkOxWT5PEagIqpJqObT4U.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC GROUNDING TEST WITH A RESISTANCE VALUE OF 0.01 OHM"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/bC27jnYd96XKRM0IDoaKkOxWT5PEagIqpJqObT4U.jpg"
+                    alt="IRC GROUNDING TEST WITH A RESISTANCE VALUE OF 0.01 OHM"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC GROUNDING TEST WITH A RESISTANCE VALUE
+                    OF&nbsp;0.01&nbsp;OHM
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/dm5uQ5W9o5NeR8kBytykAciOVVKkZfJZgYIJgEvt.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="LIGHTING OUTLET TEST ON 1ST FLOOR IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/dm5uQ5W9o5NeR8kBytykAciOVVKkZfJZgYIJgEvt.jpg"
+                    alt="LIGHTING OUTLET TEST ON 1ST FLOOR IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    LIGHTING OUTLET TEST ON 1ST FLOOR&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/4n2o8DO5HCjnRmkzefn58oKKmM7ooHKAJgG5BEau.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PAIR OF NUTRITION LAB ROOM WALLS. IRC FLOOR 1"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/4n2o8DO5HCjnRmkzefn58oKKmM7ooHKAJgG5BEau.jpg"
+                    alt="PAIR OF NUTRITION LAB ROOM WALLS. IRC FLOOR 1"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PAIR OF NUTRITION LAB ROOM WALLS. IRC&nbsp;FLOOR&nbsp;1
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/TltLa4AqDE9GeLnoNw1LtNECYkf3sTuUXFoK5knm.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="OPENING OF THE LECTURE AREA. IRC FLOOR 3"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/TltLa4AqDE9GeLnoNw1LtNECYkf3sTuUXFoK5knm.jpg"
+                    alt="OPENING OF THE LECTURE AREA. IRC FLOOR 3"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    OPENING OF THE LECTURE AREA. IRC FLOOR&nbsp;3
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/EkYmcWFuuaYfuFTm2TMzgmpUxON8MF7jFcHH2nUy.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="COMMITTEE ROOM WALL PLASTERING. IRC FLOOR 3"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/EkYmcWFuuaYfuFTm2TMzgmpUxON8MF7jFcHH2nUy.jpg"
+                    alt="COMMITTEE ROOM WALL PLASTERING. IRC FLOOR 3"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    COMMITTEE ROOM WALL PLASTERING. IRC&nbsp;FLOOR&nbsp;3
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/gURag0iDvijaIKemmXbuTe8VULBh9deuT8zyRTsb.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PAIR OF WALLS IN THE AUDITORIUM CORRIDOR AREA. IRC FLOOR 3"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/gURag0iDvijaIKemmXbuTe8VULBh9deuT8zyRTsb.jpg"
+                    alt="PAIR OF WALLS IN THE AUDITORIUM CORRIDOR AREA. IRC FLOOR 3"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PAIR OF WALLS IN THE AUDITORIUM CORRIDOR AREA.
+                    IRC&nbsp;FLOOR&nbsp;3
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/LkmXUOHH3oOpamrlH9keZoL3RDp0JA86E4TH4kR9.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC 1ST FLOOR SOCKET FLAME TEST"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/LkmXUOHH3oOpamrlH9keZoL3RDp0JA86E4TH4kR9.jpg"
+                    alt="IRC 1ST FLOOR SOCKET FLAME TEST"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC 1ST FLOOR SOCKET FLAME TEST
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/jNrhwPhnIydmgAf2ASWQzMkq1bucdlazDUa4fLMj.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="SLAB AND BEAM CASTING WORK FOR THE PLN IRC HOUSE"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/jNrhwPhnIydmgAf2ASWQzMkq1bucdlazDUa4fLMj.jpg"
+                    alt="SLAB AND BEAM CASTING WORK FOR THE PLN IRC HOUSE"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    SLAB AND BEAM CASTING WORK FOR THE&nbsp;PLN&nbsp;IRC HOUSE
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/zvXLuaLcE816GXBU3yhZdc35yS98BZe2azkssVC5.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC ZONE 1 BREEZEWAY CASTING WORKS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/zvXLuaLcE816GXBU3yhZdc35yS98BZe2azkssVC5.jpg"
+                    alt="IRC ZONE 1 BREEZEWAY CASTING WORKS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC&nbsp;ZONE&nbsp;1 BREEZEWAY CASTING WORKS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Lo9eoSPMrtccP8uM1CVQlSEN4xO03whkaR7h2X7X.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="POWERHOUSE IRC COLUMN VERTICALITY AND STRENGTHENING PROCESS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Lo9eoSPMrtccP8uM1CVQlSEN4xO03whkaR7h2X7X.jpg"
+                    alt="POWERHOUSE IRC COLUMN VERTICALITY AND STRENGTHENING PROCESS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    POWERHOUSE&nbsp;IRC COLUMN VERTICALITY AND STRENGTHENING
+                    PROCESS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/XgqOMzbHdvdoWp5kn9RJVV96PBq1OSyHlKomlgzZ.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC POWERHOUSE COLUMN CASTING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/XgqOMzbHdvdoWp5kn9RJVV96PBq1OSyHlKomlgzZ.jpg"
+                    alt="IRC POWERHOUSE COLUMN CASTING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC POWERHOUSE&nbsp;COLUMN CASTING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/VDYptVN37AB5zGEYQUmLpeA2E0nQHbBVQq1LczAq.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC POWERHOUSE COLUMN CASTING WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/VDYptVN37AB5zGEYQUmLpeA2E0nQHbBVQq1LczAq.jpg"
+                    alt="IRC POWERHOUSE COLUMN CASTING WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC POWERHOUSE&nbsp;COLUMN CASTING WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/Vz5ZyxWq1t0hUuzenHHX3pkAnnjuqPkpeeVeau7Y.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="COUNDUIT PLUMBING INSTALLATION LIGHTING GROUND FLOOR IRC OUTLETS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/Vz5ZyxWq1t0hUuzenHHX3pkAnnjuqPkpeeVeau7Y.jpg"
+                    alt="COUNDUIT PLUMBING INSTALLATION LIGHTING GROUND FLOOR IRC OUTLETS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    COUNDUIT PLUMBING INSTALLATION LIGHTING GROUND
+                    FLOOR&nbsp;IRC&nbsp;OUTLETS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/jVrZVB4rA0Qm8IbSK1HUYrre9bPZvENdw2gCuOmv.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="WIRING LIGHTING CABLES SOCKETS LT2  IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/jVrZVB4rA0Qm8IbSK1HUYrre9bPZvENdw2gCuOmv.jpg"
+                    alt="WIRING LIGHTING CABLES SOCKETS LT2  IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    WIRING LIGHTING CABLES SOCKETS&nbsp;LT2&nbsp;&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/s5PufhI1A7vFRuuKYAwIajQ5D86CXgdbQ7gK53GW.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC GROUNDING TEST WITH RESISTANCE VALUE OF 0.02 OHM"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/s5PufhI1A7vFRuuKYAwIajQ5D86CXgdbQ7gK53GW.jpg"
+                    alt="IRC GROUNDING TEST WITH RESISTANCE VALUE OF 0.02 OHM"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC GROUNDING TEST WITH RESISTANCE VALUE
+                    OF&nbsp;0.02&nbsp;OHM
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/qijTvMSA0TQWBTgmmCnZ3v7EKcfFzTStiwd6d9cZ.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="POWERHOUSE IRC SCAFFOLDING PROGRESS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/qijTvMSA0TQWBTgmmCnZ3v7EKcfFzTStiwd6d9cZ.jpg"
+                    alt="POWERHOUSE IRC SCAFFOLDING PROGRESS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    POWERHOUSE&nbsp;IRC SCAFFOLDING PROGRESS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/QUdCzRcq2bxcK58NwKoXp6on9jTc8Yb52At5FeKx.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC 2ND FLOOR LIGHTING CABLE WIRING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/QUdCzRcq2bxcK58NwKoXp6on9jTc8Yb52At5FeKx.jpg"
+                    alt="IRC 2ND FLOOR LIGHTING CABLE WIRING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC 2ND FLOOR LIGHTING CABLE WIRING
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/I0GUhlqLlL00RwYi8xqkPj1IqW7LYFFlTsMo07Zy.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="MONITORING AND ATTACHING IRC DEFECT POINT STICKERS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/I0GUhlqLlL00RwYi8xqkPj1IqW7LYFFlTsMo07Zy.jpg"
+                    alt="MONITORING AND ATTACHING IRC DEFECT POINT STICKERS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    MONITORING AND ATTACHING IRC DEFECT POINT STICKERS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/NEOpS8MQJXjd40VwRHheiFtkkJKeT4Y3qu8QvenH.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC GROUND FLOOR LIFT SEPARATOR STEEL INSTALLATION WORK"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/NEOpS8MQJXjd40VwRHheiFtkkJKeT4Y3qu8QvenH.jpg"
+                    alt="IRC GROUND FLOOR LIFT SEPARATOR STEEL INSTALLATION WORK"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC&nbsp;GROUND FLOOR&nbsp;LIFT SEPARATOR STEEL INSTALLATION
+                    WORK
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/DU24d0KlJsl28c0df4wnN3lZIS3ZKIx6G0DE2ruu.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="THE PROCESS OF STRENGTHENING PLN IRC HOUSE COLUMNS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/DU24d0KlJsl28c0df4wnN3lZIS3ZKIx6G0DE2ruu.jpg"
+                    alt="THE PROCESS OF STRENGTHENING PLN IRC HOUSE COLUMNS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    THE PROCESS OF STRENGTHENING PLN IRC HOUSE COLUMNS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/iIfwssriExOI0doAlzR2RlncMeNjlohq94vBT4PX.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF INSTALLING THE IRC POWERHOUSE GENERATOR MOUNT"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/iIfwssriExOI0doAlzR2RlncMeNjlohq94vBT4PX.jpg"
+                    alt="PROGRESS OF INSTALLING THE IRC POWERHOUSE GENERATOR MOUNT"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF INSTALLING THE IRC POWERHOUSE GENERATOR MOUNT
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/TJLOh3sVOTCM6wVn4Ul94Kqd8ShGeQexRRAgbtWJ.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC POWERHOUSE SCAFFOLDING PROGRESS"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/TJLOh3sVOTCM6wVn4Ul94Kqd8ShGeQexRRAgbtWJ.jpg"
+                    alt="IRC POWERHOUSE SCAFFOLDING PROGRESS"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC POWERHOUSE&nbsp;SCAFFOLDING PROGRESS
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/2SMeAUSKYRu3AebxA8Brel0O68gso8TDs9UzkTOl.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="PROGRESS OF WORK ON THE IRC POWERHOUSE AND PLN HOUSE"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/2SMeAUSKYRu3AebxA8Brel0O68gso8TDs9UzkTOl.jpg"
+                    alt="PROGRESS OF WORK ON THE IRC POWERHOUSE AND PLN HOUSE"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    PROGRESS OF WORK ON THE IRC POWERHOUSE AND PLN HOUSE
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/YItmZUqzClfBYb2LayQHamlbtqUfuuhAZuFWuSDn.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="CASTING OF PRESSURIZED FAN MOUNTS 2 IRC"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/YItmZUqzClfBYb2LayQHamlbtqUfuuhAZuFWuSDn.jpg"
+                    alt="CASTING OF PRESSURIZED FAN MOUNTS 2 IRC"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    CASTING OF PRESSURIZED FAN MOUNTS&nbsp;2&nbsp;IRC
+                  </figcaption>
+                </a>
+                <a
+                  href="./MONITORING CIVIL WORK -41_files/ukw7foczC0PX0bmRSZHShXC4IfyPdSBePQSqk5Xo.jpg"
+                  data-fancybox="gallery"
+                  class="block"
+                  data-caption="IRC POWERHOUSE GENERATOR MOUNT CASTING"
+                >
+                  <img
+                    src="./MONITORING CIVIL WORK -41_files/ukw7foczC0PX0bmRSZHShXC4IfyPdSBePQSqk5Xo.jpg"
+                    alt="IRC POWERHOUSE GENERATOR MOUNT CASTING"
+                    class="w-full h-auto shadow-md"
+                  />
+                  <figcaption class="bg-gray-200 p-2">
+                    IRC POWERHOUSE&nbsp;GENERATOR MOUNT CASTING
+                  </figcaption>
+                </a>
+              </div>
+            </div>
+            <div id="WWTP" class="gallery">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              >
+                <p>No images available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="colorprimary text-white py-16">
+      <div
+        class="ml-6 mr-6 mx-auto flex flex-wrap items-center justify-between px-4"
+      >
+        <!-- Bagian kiri: Peta -->
+        <div class="w-full md:w-1/2 mb-6 md:mb-0">
+          <iframe
+            src="./MONITORING CIVIL WORK -41_files/embed.html"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- Bagian kanan: Alamat dan Kontak -->
+        <div class="w-full md:w-1/2 text-center md:text-left md:pl-8">
+          <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+          <p class="mb-6">
+            Get in touch with us for more information about our programs and
+            services.
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-envelope mr-2"></i><strong>Email:</strong>
+            <a
+              href="mailto:pmsc.unilaproject@gmail.com"
+              class="text-gray-200 hover:underline"
+              >pmsc.unilaproject@gmail.com</a
+            >
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-phone-alt mr-2"></i><strong>Phone:</strong>
+            <a
+              href="https://wa.me/6285954041681"
+              class="text-gray-200 hover:underline"
+              >+62 859-5404-1681</a
+            >
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-map-marker-alt mr-2"></i
+            ><strong>Address:</strong> Universitas Lampung, Jl. Sumantri
+            Brojonegoro No.1, Bandar Lampung
+          </p>
+          <div class="mt-6">
+            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+            <div class="flex justify-center md:justify-start space-x-4">
+              <a
+                href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
+                class="text-gray-200 hover:underline"
+                >Facebook <i class="fas fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
+                class="text-gray-200 hover:underline"
+                >Twitter/X <i class="fas fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/heti_unila/"
+                class="text-gray-200 hover:underline"
+                >Instagram <i class="fas fa-instagram"></i
+              ></a>
+              <a
+                href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
+                class="text-gray-200 hover:underline"
+                ><i class="fas fa-linkedin-in"></i>Linkedin
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center px-4">
+        <p>
+          © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved | Created by
+          <a
+            href="https://wiiver.id/about-us/"
+            target="_blank"
+            class="text-gray-200 hover:underline"
+            >Rio Ananda Putra</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="./MONITORING CIVIL WORK -41_files/jquery-3.7.1.min.js.download"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/chart.js.download"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.js.download"></script>
+    <script src="/data/week41.js"></script>
+
+    <script>
+      // JavaScript untuk menyembunyikan preloader setelah halaman dimuat
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.display = "none";
+      });
+      document.querySelector("button").addEventListener("click", function () {
+        const dropdown = this.nextElementSibling;
+        dropdown.classList.toggle("hidden");
+      });
+    </script>
+
+    <script src="./MONITORING CIVIL WORK -41_files/select2.min.js.download"></script>
+    <script src="/data/week51.js"></script>
+    <script>
+      $(document).ready(function () {
+        grafik_1();
+        grafik_2();
+        grafik_3();
+
+        $("#weekFilter").select2();
+      });
+
+      function showGallery(location, btn) {
+        document.querySelectorAll(".gallery").forEach((gallery) => {
+          gallery.classList.remove("active");
+        });
+        document.getElementById(location).classList.add("active");
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+        btn.classList.add("active");
+      }
+
+      const latestSelectedTimeline = {
+        timeline_id: "44",
+        timeline_week: "41",
+        timeline_day: 282,
+        timeline_start: "2024-12-08",
+        timeline_end: "2024-12-14",
+        timeline_video: null,
+        timeline_selected: true,
+        timeline_data: [
+          {
+            contract_id: "1",
+            contract_name: "INITIAL",
+            contract_number: "0150\/UN26\/HETI.RSPTN\/2024",
+            contract_date_start: "2023-03-08",
+            contract_date_end: "2024-08-30",
+            contract_day_count: 542,
+            contract_week_count: 78,
+            contract_selected_plan: 1,
+            contract_selected_real: 0,
+            contract_color_plan: "#FF6181",
+            contract_color_real: "#36A3ED",
+            contract_cumm_plan: "45.04",
+            contract_cumm_real: "0.00",
+            contract_deviation: "0.00",
+            contract_data: [
+              {
+                location_id: "1",
+                location_name: "RSPTN",
+                location_weight: "68.74",
+                proggress_curr_plan: "2.83",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "45.04",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+              {
+                location_id: "2",
+                location_name: "IRC",
+                location_weight: "31.26",
+                proggress_curr_plan: "0.00",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "0.00",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+              {
+                location_id: "3",
+                location_name: "WWTP",
+                location_weight: "0.00",
+                proggress_curr_plan: "0.00",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "0.00",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+            ],
+          },
+          {
+            contract_id: "2",
+            contract_name: "CCO-01",
+            contract_number: "xxxxxxxxxxxxxxxx",
+            contract_date_start: "2023-03-08",
+            contract_date_end: "2024-10-18",
+            contract_day_count: 591,
+            contract_week_count: 85,
+            contract_selected_plan: 1,
+            contract_selected_real: 1,
+            contract_color_plan: "#FFA041",
+            contract_color_real: "#008000",
+            contract_cumm_plan: "34.32",
+            contract_cumm_real: "37.98",
+            contract_deviation: "3.65",
+            contract_data: [
+              {
+                location_id: "1",
+                location_name: "RSPTN",
+                location_weight: "71.90",
+                proggress_curr_plan: "0.37",
+                proggress_curr_real: "1.53",
+                proggress_cumm_plan: "23.18",
+                proggress_cumm_real: "27.82",
+                proggress_deviation: "4.64",
+              },
+              {
+                location_id: "2",
+                location_name: "IRC",
+                location_weight: "28.00",
+                proggress_curr_plan: "0.15",
+                proggress_curr_real: "0.27",
+                proggress_cumm_plan: "11.14",
+                proggress_cumm_real: "10.16",
+                proggress_deviation: "-0.99",
+              },
+              {
+                location_id: "3",
+                location_name: "WWTP",
+                location_weight: "0.00",
+                proggress_curr_plan: "0.00",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "0.00",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+            ],
+          },
+        ],
+      };
+      const previousTimeline = {
+        timeline_id: "43",
+        timeline_week: "40",
+        timeline_day: 275,
+        timeline_start: "2024-12-01",
+        timeline_end: "2024-12-07",
+        timeline_video: null,
+        timeline_selected: true,
+        timeline_data: [
+          {
+            contract_id: "1",
+            contract_name: "INITIAL",
+            contract_number: "0150\/UN26\/HETI.RSPTN\/2024",
+            contract_date_start: "2023-03-08",
+            contract_date_end: "2024-08-30",
+            contract_day_count: 542,
+            contract_week_count: 78,
+            contract_selected_plan: 1,
+            contract_selected_real: 0,
+            contract_color_plan: "#FF6181",
+            contract_color_real: "#36A3ED",
+            contract_cumm_plan: "39.63",
+            contract_cumm_real: "37.21",
+            contract_deviation: "-2.43",
+            contract_data: [
+              {
+                location_id: "1",
+                location_name: "RSPTN",
+                location_weight: "68.74",
+                proggress_curr_plan: "1.66",
+                proggress_curr_real: "0.42",
+                proggress_cumm_plan: "30.85",
+                proggress_cumm_real: "25.06",
+                proggress_deviation: "-5.80",
+              },
+              {
+                location_id: "2",
+                location_name: "IRC",
+                location_weight: "31.26",
+                proggress_curr_plan: "0.92",
+                proggress_curr_real: "0.05",
+                proggress_cumm_plan: "8.78",
+                proggress_cumm_real: "12.15",
+                proggress_deviation: "3.37",
+              },
+              {
+                location_id: "3",
+                location_name: "WWTP",
+                location_weight: "0.00",
+                proggress_curr_plan: "0.00",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "0.00",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+            ],
+          },
+          {
+            contract_id: "2",
+            contract_name: "CCO-01",
+            contract_number: "xxxxxxxxxxxxxxxx",
+            contract_date_start: "2023-03-08",
+            contract_date_end: "2024-10-18",
+            contract_day_count: 591,
+            contract_week_count: 85,
+            contract_selected_plan: 1,
+            contract_selected_real: 1,
+            contract_color_plan: "#FFA041",
+            contract_color_real: "#008000",
+            contract_cumm_plan: "33.81",
+            contract_cumm_real: "36.17",
+            contract_deviation: "2.37",
+            contract_data: [
+              {
+                location_id: "1",
+                location_name: "RSPTN",
+                location_weight: "71.90",
+                proggress_curr_plan: "0.35",
+                proggress_curr_real: "2.82",
+                proggress_cumm_plan: "22.81",
+                proggress_cumm_real: "26.28",
+                proggress_deviation: "3.48",
+              },
+              {
+                location_id: "2",
+                location_name: "IRC",
+                location_weight: "28.00",
+                proggress_curr_plan: "0.15",
+                proggress_curr_real: "0.04",
+                proggress_cumm_plan: "11.00",
+                proggress_cumm_real: "9.89",
+                proggress_deviation: "-1.11",
+              },
+              {
+                location_id: "3",
+                location_name: "WWTP",
+                location_weight: "0.00",
+                proggress_curr_plan: "0.00",
+                proggress_curr_real: "0.00",
+                proggress_cumm_plan: "0.00",
+                proggress_cumm_real: "0.00",
+                proggress_deviation: "0.00",
+              },
+            ],
+          },
+        ],
+      };
+
+      function grafik_1() {
+        const ctx = document.getElementById("ctxGrafik1");
+        const labels = [];
+        const datasets = [];
+
+        function addData(timeline, labelPrefix) {
+          if (timeline) {
+            labels.push(labelPrefix + " " + timeline.timeline_week);
+            timeline.timeline_data.forEach((contract) => {
+              let dataset = datasets.find(
+                (ds) =>
+                  ds.label ===
+                  "PLAN CUMULATIVE [ " + contract.contract_name + " ]"
+              );
+              if (!dataset) {
+                dataset = {
+                  label: "PLAN CUMULATIVE [ " + contract.contract_name + " ]",
+                  data: [],
+                  borderWidth: 1,
+                  backgroundColor: contract.contract_color_plan,
+                  borderColor: contract.contract_color_plan,
+                };
+                datasets.push(dataset);
+              }
+              dataset.data.push(
+                contract.contract_selected_plan
+                  ? parseFloat(contract.contract_cumm_plan)
+                  : null
+              );
+
+              dataset = datasets.find(
+                (ds) =>
+                  ds.label ===
+                  "REAL CUMULATIVE [ " + contract.contract_name + " ]"
+              );
+              if (!dataset) {
+                dataset = {
+                  label: "REAL CUMULATIVE [ " + contract.contract_name + " ]",
+                  data: [],
+                  borderWidth: 1,
+                  backgroundColor: contract.contract_color_real,
+                  borderColor: contract.contract_color_real,
+                };
+                datasets.push(dataset);
+              }
+              dataset.data.push(
+                timeline.timeline_selected && contract.contract_selected_real
+                  ? parseFloat(contract.contract_cumm_real)
+                  : null
+              );
+            });
+          }
+        }
+
+        addData(previousTimeline, "WEEK");
+        addData(latestSelectedTimeline, "WEEK");
+
+        new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: labels,
+            datasets: datasets,
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+              mode: "index",
+            },
+            plugins: {
+              legend: {
+                display: true,
+                labels: {
+                  boxWidth: 20,
+                },
+                position: "top",
+                maxWidth: 1,
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    let label = context.dataset.label || "";
+                    if (label) {
+                      label += " : ";
+                    }
+                    if (context.parsed.y !== null) {
+                      label += context.parsed.y.toFixed(2) + "%";
+                    }
+                    if (context.dataset.label.includes("REAL CUMULATIVE")) {
+                      const contractName = context.dataset.label
+                        .split(" [ ")[1]
+                        .split(" ]")[0];
+                      const timeline = context.label.includes(
+                        "WEEK " + latestSelectedTimeline.timeline_week
+                      )
+                        ? latestSelectedTimeline
+                        : previousTimeline;
+                      const contract = timeline.timeline_data.find(
+                        (c) => c.contract_name === contractName
+                      );
+                      if (contract) {
+                        label +=
+                          " ( Deviation: " +
+                          parseFloat(contract.contract_deviation).toFixed(2) +
+                          "% )";
+                      }
+                    }
+                    return label;
+                  },
+                },
+              },
+              responsive: true,
+            },
+          },
+        });
+      }
+
+      function grafik_2() {
+        const ctx = document.getElementById("ctxGrafik2");
+        const labels = [];
+        const datasets = [];
+
+        if (latestSelectedTimeline) {
+          latestSelectedTimeline.timeline_data.forEach((contract) => {
+            contract.contract_data.forEach((location) => {
+              if (!labels.includes(location.location_name)) {
+                labels.push(location.location_name);
+              }
+            });
+
+            let planDataset = {
+              label: "PLAN CUMULATIVE [ " + contract.contract_name + " ]",
+              data: [],
+              borderWidth: 1,
+              backgroundColor: contract.contract_color_plan,
+              borderColor: contract.contract_color_plan,
+            };
+
+            let realDataset = {
+              label: "REAL CUMULATIVE [ " + contract.contract_name + " ]",
+              data: [],
+              borderWidth: 1,
+              backgroundColor: contract.contract_color_real,
+              borderColor: contract.contract_color_real,
+            };
+
+            if (contract.contract_data.length === 0) {
+              labels.forEach(() => {
+                planDataset.data.push(0);
+                realDataset.data.push(0);
+              });
+            } else {
+              contract.contract_data.forEach((location) => {
+                planDataset.data.push(
+                  contract.contract_selected_plan
+                    ? parseFloat(location.proggress_cumm_plan)
+                    : null
+                );
+                realDataset.data.push(
+                  latestSelectedTimeline.timeline_selected &&
+                    contract.contract_selected_real
+                    ? parseFloat(location.proggress_cumm_real)
+                    : null
+                );
+              });
+            }
+
+            datasets.push(planDataset);
+            datasets.push(realDataset);
+          });
+        }
+
+        new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: labels,
+            datasets: datasets,
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+              mode: "index",
+            },
+            plugins: {
+              legend: {
+                display: true,
+                labels: {
+                  boxWidth: 20,
+                },
+                position: "top",
+                maxWidth: 1,
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    let label = context.dataset.label || "";
+                    if (label) {
+                      label += " : ";
+                    }
+                    if (context.parsed.y !== null) {
+                      label += context.parsed.y.toFixed(2) + "%";
+                    }
+                    if (context.dataset.label.includes("REAL CUMULATIVE")) {
+                      const contractName = context.dataset.label
+                        .split(" [ ")[1]
+                        .split(" ]")[0];
+                      const contract =
+                        latestSelectedTimeline.timeline_data.find(
+                          (c) => c.contract_name === contractName
+                        );
+                      if (contract) {
+                        const location =
+                          contract.contract_data[context.dataIndex];
+                        if (location) {
+                          label +=
+                            " ( Deviation: " +
+                            parseFloat(location.proggress_deviation).toFixed(
+                              2
+                            ) +
+                            "% )";
+                        }
+                      }
+                    }
+                    return label;
+                  },
+                },
+              },
+              responsive: true,
+            },
+          },
+        });
+      }
+
+      function grafik_3() {
+        const ctx = document.getElementById("ctxGrafik3");
+        const labels = [];
+        const datasets = [
+          {
+            label: "PLAN CUMULATIVE [ INITIAL ]",
+            data: initialPlan,
+          },
+          {
+            label: "REAL CUMULATIVE [ INITIAL ]",
+            data: initialReal,
+          },
+          {
+            label: "PLAN CUMULATIVE [ CCO-01 ]",
+            data: cco1Plan,
+          },
+          {
+            label: "REAL CUMULATIVE [ CCO-01 ]",
+            data: cco1Real,
+          },
+        ];
+
+        for (let i = 0; i < 85; i++) {
+          labels.push(i + 1);
+        }
+
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: labels,
+            datasets: datasets,
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+              mode: "index",
+            },
+            plugins: {
+              legend: {
+                display: true,
+                labels: {
+                  boxWidth: 20,
+                },
+                position: "top",
+                maxWidth: 1,
+              },
+              tooltip: {
+                callbacks: {
+                  title: function (context) {
+                    return "WEEK " + context[0].label;
+                  },
+                  label: function (context) {
+                    let label = context.dataset.label || "";
+                    if (label) {
+                      label += " : ";
+                    }
+                    if (context.parsed.y !== null) {
+                      label += context.parsed.y.toFixed(2) + "%";
+                    }
+                    if (context.dataset.label.includes("REAL")) {
+                      if (context.dataset.label.includes("INITIAL")) {
+                        const deviation =
+                          initialPlan[context.dataIndex] === 0
+                            ? 0
+                            : initialReal[context.dataIndex] -
+                              initialPlan[context.dataIndex];
+                        label +=
+                          " ( Deviation: " + deviation.toFixed(2) + "% )";
+                      } else if (context.dataset.label.includes("CCO-01")) {
+                        const deviation =
+                          cco1Plan[context.dataIndex] === 0
+                            ? 0
+                            : cco1Real[context.dataIndex] -
+                              cco1Plan[context.dataIndex];
+                        label +=
+                          " ( Deviation: " + deviation.toFixed(2) + "% )";
+                      }
+                    }
+
+                    return label;
+                  },
+                },
+              },
+              responsive: true,
+            },
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
