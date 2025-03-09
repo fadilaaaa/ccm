@@ -1,3 +1,4 @@
+var lastWeek = 41;
 var initialPlan = [
   0.02,
   0.03,
