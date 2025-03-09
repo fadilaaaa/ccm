@@ -273,93 +273,7 @@
               <td class="py-2 px-4 border" style="width: 90%">
                 <select name="timeline_week" id="weekFilter"
                   class="select2 w-full border border-black rounded p-1 text-black ">
-                  <option value="1">Week 1</option>
-                  <option value="2">Week 2</option>
-                  <option value="3">Week 3</option>
-                  <option value="4">Week 4</option>
-                  <option value="5">Week 5</option>
-                  <option value="6">Week 6</option>
-                  <option value="7">Week 7</option>
-                  <option value="8">Week 8</option>
-                  <option value="9">Week 9</option>
-                  <option value="10">Week 10</option>
-                  <option value="11">Week 11</option>
-                  <option value="12">Week 12</option>
-                  <option value="13">Week 13</option>
-                  <option value="14">Week 14</option>
-                  <option value="15">Week 15</option>
-                  <option value="16">Week 16</option>
-                  <option value="17">Week 17</option>
-                  <option value="18">Week 18</option>
-                  <option value="19">Week 19</option>
-                  <option value="20">Week 20</option>
-                  <option value="21">Week 21</option>
-                  <option value="22">Week 22</option>
-                  <option value="23">Week 23</option>
-                  <option value="24">Week 24</option>
-                  <option value="25">Week 25</option>
-                  <option value="26">Week 26</option>
-                  <option value="27">Week 27</option>
-                  <option value="28">Week 28</option>
-                  <option value="29">Week 29</option>
-                  <option value="30">Week 30</option>
-                  <option value="31">Week 31</option>
-                  <option value="32">Week 32</option>
-                  <option value="33">Week 33</option>
-                  <option value="34">Week 34</option>
-                  <option value="35">Week 35</option>
-                  <option value="36">Week 36</option>
-                  <option value="37">Week 37</option>
-                  <option value="38">Week 38</option>
-                  <option value="39">Week 39</option>
-                  <option value="40">Week 40</option>
-                  <option value="41">
-                    Week 41
-                  </option>
-                  <option value="42">Week 42</option>
-                  <option value="43">Week 43</option>
-                  <option value="44">Week 44</option>
-                  <option value="45">Week 45</option>
-                  <option value="46">Week 46</option>
-                  <option value="47">Week 47</option>
-                  <option value="48">Week 48</option>
-                  <option value="49">Week 49</option>
-                  <option value="50">Week 50</option>
-                  <option selected value="51">Week 51</option>
-                  <option value="52">Week 52</option>
-                  <option value="53">Week 53</option>
-                  <option value="54">Week 54</option>
-                  <option value="55">Week 55</option>
-                  <option value="56">Week 56</option>
-                  <option value="57">Week 57</option>
-                  <option value="58">Week 58</option>
-                  <option value="59">Week 59</option>
-                  <option value="60">Week 60</option>
-                  <option value="61">Week 61</option>
-                  <option value="62">Week 62</option>
-                  <option value="63">Week 63</option>
-                  <option value="64">Week 64</option>
-                  <option value="65">Week 65</option>
-                  <option value="66">Week 66</option>
-                  <option value="67">Week 67</option>
-                  <option value="68">Week 68</option>
-                  <option value="69">Week 69</option>
-                  <option value="70">Week 70</option>
-                  <option value="71">Week 71</option>
-                  <option value="72">Week 72</option>
-                  <option value="73">Week 73</option>
-                  <option value="74">Week 74</option>
-                  <option value="75">Week 75</option>
-                  <option value="76">Week 76</option>
-                  <option value="77">Week 77</option>
-                  <option value="78">Week 78</option>
-                  <option value="79">Week 79</option>
-                  <option value="80">Week 80</option>
-                  <option value="81">Week 81</option>
-                  <option value="82">Week 82</option>
-                  <option value="83">Week 83</option>
-                  <option value="84">Week 84</option>
-                  <option value="85">Week 85</option>
+
                 </select>
 
               </td>
@@ -582,15 +496,13 @@
         </div>
         <div class="flex space-x-4 border-b-2 mb-4">
           <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none active"
-            onclick="showGallery(&#39;RSPTN&#39;, this)">
+            onclick="showGallery('RSPTN', this)">
             RSPTN
           </button>
-          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
-            onclick="showGallery(&#39;IRC&#39;, this)">
+          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none" onclick="showGallery('IRC', this)">
             IRC
           </button>
-          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
-            onclick="showGallery(&#39;WWTP&#39;, this)">
+          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none" onclick="showGallery('WWTP', this)">
             WWTP
           </button>
         </div>
@@ -612,14 +524,14 @@
   </div>
 
   <!-- Contact Section -->
-  <section id="contact" class="colorprimary text-white py-16">
-    <div class="ml-6 mr-6 mx-auto flex flex-wrap items-center justify-between px-4">
-      <!-- Bagian kiri: Peta -->
+  <section id="contact" class="text-white py-16" style="background-color: #26778f">
+    <div class="container mx-auto flex flex-wrap items-center justify-between px-4">
       <div class="w-full md:w-1/2 mb-6 md:mb-0">
-        <iframe src="./MONITORING CIVIL WORK -41_files/embed.html" width="600" height="300" style="border: 0"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.307637898451!2d105.23466907014732!3d-5.369966441784363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbcd47ce7835%3A0x234fee8ad9173d21!2sHETI%20Project%20Office!5e0!3m2!1sid!2sid!4v1741123722549!5m2!1sid!2sid"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <!-- Bagian kanan: Alamat dan Kontak -->
       <div class="w-full md:w-1/2 text-center md:text-left md:pl-8">
         <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
         <p class="mb-6">
@@ -636,20 +548,20 @@
           <a href="https://wa.me/6285954041681" class="text-gray-200 hover:underline">+62 859-5404-1681</a>
         </p>
         <p class="mb-2">
-          <i class="fas fa-map-marker-alt mr-2"></i><strong>Address:</strong> Universitas Lampung, Jl. Sumantri
-          Brojonegoro No.1, Bandar Lampung
+          <i class="fas fa-map-marker-alt mr-2"></i><strong>Address:</strong> Jl. Sumantri Brojonegoro No.1, Bandar
+          Lampung, Indonesia
         </p>
         <div class="mt-6">
           <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
           <div class="flex justify-center md:justify-start space-x-4">
-            <a href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
-              class="text-gray-200 hover:underline">Facebook <i class="fas fa-facebook-f"></i></a>
-            <a href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
-              class="text-gray-200 hover:underline">Twitter/X <i class="fas fa-twitter"></i></a>
+            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline">Facebook <i
+                class="fas fa-facebook-f"></i></a>
+            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline">Twitter/X <i
+                class="fas fa-twitter"></i></a>
             <a href="https://www.instagram.com/heti_unila/" class="text-gray-200 hover:underline">Instagram <i
                 class="fas fa-instagram"></i></a>
-            <a href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=41#"
-              class="text-gray-200 hover:underline"><i class="fas fa-linkedin-in"></i>Linkedin
+            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline"><i
+                class="fas fa-linkedin-in"></i>Linkedin
             </a>
           </div>
         </div>
@@ -687,29 +599,34 @@
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="/data/scurve.js"></script>
   <script>
-    fetch("/data/week41.json")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        $("[data-nameweek='true']").text(data.name);
-      });
     $(document).ready(function () {
-      // grafik_1();
-      // grafik_2();
+      const urlParams = new URLSearchParams(window.location.search);
+      const week = urlParams.get("week");
+      if (week) {
+        lastWeek = parseInt(week);
+      }
+      let weekoption = ''
+      for (let i = lastWeek; i >= 1; i--) {
+        let selected = ''
+        if (i === lastWeek) {
+          selected = 'selected'
+        }
+        weekoption += `<option ${selected} value="${i}">Week ${i}</option>`
+      }
+      $("#weekFilter").html(weekoption)
       grafik_3();
-
-
 
       $("#weekFilter").select2({
         placeholder: "Select week",
-
       });
 
-      fetch("/data/week41.json")
+      const selectedWeek = window.location.search.split("=")[1];
+
+      fetch(`/data/week${lastWeek}.json`)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-
+          $("[data-nameweek='true']").text(data.name);
 
           $("#buildingRSPTN").html(`
          <td class="py-2 px-4 border">RSPTN</td>
@@ -824,463 +741,6 @@
       });
       btn.classList.add("active");
     }
-
-    // const latestSelectedTimeline = {
-    //   timeline_id: "44",
-    //   timeline_week: "41",
-    //   timeline_day: 282,
-    //   timeline_start: "2024-12-08",
-    //   timeline_end: "2024-12-14",
-    //   timeline_video: null,
-    //   timeline_selected: true,
-    //   timeline_data: [
-    //     {
-    //       contract_id: "1",
-    //       contract_name: "INITIAL",
-    //       contract_number: "0150\/UN26\/HETI.RSPTN\/2024",
-    //       contract_date_start: "2023-03-08",
-    //       contract_date_end: "2024-08-30",
-    //       contract_day_count: 542,
-    //       contract_week_count: 78,
-    //       contract_selected_plan: 1,
-    //       contract_selected_real: 0,
-    //       contract_color_plan: "#FF6181",
-    //       contract_color_real: "#36A3ED",
-    //       contract_cumm_plan: "45.04",
-    //       contract_cumm_real: "0.00",
-    //       contract_deviation: "0.00",
-    //       contract_data: [
-    //         {
-    //           location_id: "1",
-    //           location_name: "RSPTN",
-    //           location_weight: "68.74",
-    //           proggress_curr_plan: "2.83",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "45.04",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //         {
-    //           location_id: "2",
-    //           location_name: "IRC",
-    //           location_weight: "31.26",
-    //           proggress_curr_plan: "0.00",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "0.00",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //         {
-    //           location_id: "3",
-    //           location_name: "WWTP",
-    //           location_weight: "0.00",
-    //           proggress_curr_plan: "0.00",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "0.00",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       contract_id: "2",
-    //       contract_name: "CCO-01",
-    //       contract_number: "xxxxxxxxxxxxxxxx",
-    //       contract_date_start: "2023-03-08",
-    //       contract_date_end: "2024-10-18",
-    //       contract_day_count: 591,
-    //       contract_week_count: 85,
-    //       contract_selected_plan: 1,
-    //       contract_selected_real: 1,
-    //       contract_color_plan: "#FFA041",
-    //       contract_color_real: "#008000",
-    //       contract_cumm_plan: "34.32",
-    //       contract_cumm_real: "37.98",
-    //       contract_deviation: "3.65",
-    //       contract_data: [
-    //         {
-    //           location_id: "1",
-    //           location_name: "RSPTN",
-    //           location_weight: "71.90",
-    //           proggress_curr_plan: "0.37",
-    //           proggress_curr_real: "1.53",
-    //           proggress_cumm_plan: "23.18",
-    //           proggress_cumm_real: "27.82",
-    //           proggress_deviation: "4.64",
-    //         },
-    //         {
-    //           location_id: "2",
-    //           location_name: "IRC",
-    //           location_weight: "28.00",
-    //           proggress_curr_plan: "0.15",
-    //           proggress_curr_real: "0.27",
-    //           proggress_cumm_plan: "11.14",
-    //           proggress_cumm_real: "10.16",
-    //           proggress_deviation: "-0.99",
-    //         },
-    //         {
-    //           location_id: "3",
-    //           location_name: "WWTP",
-    //           location_weight: "0.00",
-    //           proggress_curr_plan: "0.00",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "0.00",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // };
-    // const previousTimeline = {
-    //   timeline_id: "43",
-    //   timeline_week: "40",
-    //   timeline_day: 275,
-    //   timeline_start: "2024-12-01",
-    //   timeline_end: "2024-12-07",
-    //   timeline_video: null,
-    //   timeline_selected: true,
-    //   timeline_data: [
-    //     {
-    //       contract_id: "1",
-    //       contract_name: "INITIAL",
-    //       contract_number: "0150\/UN26\/HETI.RSPTN\/2024",
-    //       contract_date_start: "2023-03-08",
-    //       contract_date_end: "2024-08-30",
-    //       contract_day_count: 542,
-    //       contract_week_count: 78,
-    //       contract_selected_plan: 1,
-    //       contract_selected_real: 0,
-    //       contract_color_plan: "#FF6181",
-    //       contract_color_real: "#36A3ED",
-    //       contract_cumm_plan: "39.63",
-    //       contract_cumm_real: "37.21",
-    //       contract_deviation: "-2.43",
-    //       contract_data: [
-    //         {
-    //           location_id: "1",
-    //           location_name: "RSPTN",
-    //           location_weight: "68.74",
-    //           proggress_curr_plan: "1.66",
-    //           proggress_curr_real: "0.42",
-    //           proggress_cumm_plan: "30.85",
-    //           proggress_cumm_real: "25.06",
-    //           proggress_deviation: "-5.80",
-    //         },
-    //         {
-    //           location_id: "2",
-    //           location_name: "IRC",
-    //           location_weight: "31.26",
-    //           proggress_curr_plan: "0.92",
-    //           proggress_curr_real: "0.05",
-    //           proggress_cumm_plan: "8.78",
-    //           proggress_cumm_real: "12.15",
-    //           proggress_deviation: "3.37",
-    //         },
-    //         {
-    //           location_id: "3",
-    //           location_name: "WWTP",
-    //           location_weight: "0.00",
-    //           proggress_curr_plan: "0.00",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "0.00",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       contract_id: "2",
-    //       contract_name: "CCO-01",
-    //       contract_number: "xxxxxxxxxxxxxxxx",
-    //       contract_date_start: "2023-03-08",
-    //       contract_date_end: "2024-10-18",
-    //       contract_day_count: 591,
-    //       contract_week_count: 85,
-    //       contract_selected_plan: 1,
-    //       contract_selected_real: 1,
-    //       contract_color_plan: "#FFA041",
-    //       contract_color_real: "#008000",
-    //       contract_cumm_plan: "33.81",
-    //       contract_cumm_real: "36.17",
-    //       contract_deviation: "2.37",
-    //       contract_data: [
-    //         {
-    //           location_id: "1",
-    //           location_name: "RSPTN",
-    //           location_weight: "71.90",
-    //           proggress_curr_plan: "0.35",
-    //           proggress_curr_real: "2.82",
-    //           proggress_cumm_plan: "22.81",
-    //           proggress_cumm_real: "26.28",
-    //           proggress_deviation: "3.48",
-    //         },
-    //         {
-    //           location_id: "2",
-    //           location_name: "IRC",
-    //           location_weight: "28.00",
-    //           proggress_curr_plan: "0.15",
-    //           proggress_curr_real: "0.04",
-    //           proggress_cumm_plan: "11.00",
-    //           proggress_cumm_real: "9.89",
-    //           proggress_deviation: "-1.11",
-    //         },
-    //         {
-    //           location_id: "3",
-    //           location_name: "WWTP",
-    //           location_weight: "0.00",
-    //           proggress_curr_plan: "0.00",
-    //           proggress_curr_real: "0.00",
-    //           proggress_cumm_plan: "0.00",
-    //           proggress_cumm_real: "0.00",
-    //           proggress_deviation: "0.00",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // };
-
-    // function grafik_1() {
-    //   const ctx = document.getElementById("ctxGrafik1");
-    //   const labels = [];
-    //   const datasets = [];
-
-    //   function addData(timeline, labelPrefix) {
-    //     if (timeline) {
-    //       labels.push(labelPrefix + " " + timeline.timeline_week);
-    //       timeline.timeline_data.forEach((contract) => {
-    //         let dataset = datasets.find(
-    //           (ds) =>
-    //             ds.label ===
-    //             "PLAN CUMULATIVE [ " + contract.contract_name + " ]"
-    //         );
-    //         if (!dataset) {
-    //           dataset = {
-    //             label: "PLAN CUMULATIVE [ " + contract.contract_name + " ]",
-    //             data: [],
-    //             borderWidth: 1,
-    //             backgroundColor: contract.contract_color_plan,
-    //             borderColor: contract.contract_color_plan,
-    //           };
-    //           datasets.push(dataset);
-    //         }
-    //         dataset.data.push(
-    //           contract.contract_selected_plan
-    //             ? parseFloat(contract.contract_cumm_plan)
-    //             : null
-    //         );
-
-    //         dataset = datasets.find(
-    //           (ds) =>
-    //             ds.label ===
-    //             "REAL CUMULATIVE [ " + contract.contract_name + " ]"
-    //         );
-    //         if (!dataset) {
-    //           dataset = {
-    //             label: "REAL CUMULATIVE [ " + contract.contract_name + " ]",
-    //             data: [],
-    //             borderWidth: 1,
-    //             backgroundColor: contract.contract_color_real,
-    //             borderColor: contract.contract_color_real,
-    //           };
-    //           datasets.push(dataset);
-    //         }
-    //         dataset.data.push(
-    //           timeline.timeline_selected && contract.contract_selected_real
-    //             ? parseFloat(contract.contract_cumm_real)
-    //             : null
-    //         );
-    //       });
-    //     }
-    //   }
-
-    //   addData(previousTimeline, "WEEK");
-    //   addData(latestSelectedTimeline, "WEEK");
-
-    //   new Chart(ctx, {
-    //     type: "bar",
-    //     data: {
-    //       labels: labels,
-    //       datasets: datasets,
-    //     },
-    //     options: {
-    //       scales: {
-    //         y: {
-    //           beginAtZero: true,
-    //         },
-    //       },
-    //       interaction: {
-    //         intersect: false,
-    //         mode: "index",
-    //       },
-    //       plugins: {
-    //         legend: {
-    //           display: true,
-    //           labels: {
-    //             boxWidth: 20,
-    //           },
-    //           position: "top",
-    //           maxWidth: 1,
-    //         },
-    //         tooltip: {
-    //           callbacks: {
-    //             label: function (context) {
-    //               let label = context.dataset.label || "";
-    //               if (label) {
-    //                 label += " : ";
-    //               }
-    //               if (context.parsed.y !== null) {
-    //                 label += context.parsed.y.toFixed(2) + "%";
-    //               }
-    //               if (context.dataset.label.includes("REAL CUMULATIVE")) {
-    //                 const contractName = context.dataset.label
-    //                   .split(" [ ")[1]
-    //                   .split(" ]")[0];
-    //                 const timeline = context.label.includes(
-    //                   "WEEK " + latestSelectedTimeline.timeline_week
-    //                 )
-    //                   ? latestSelectedTimeline
-    //                   : previousTimeline;
-    //                 const contract = timeline.timeline_data.find(
-    //                   (c) => c.contract_name === contractName
-    //                 );
-    //                 if (contract) {
-    //                   label +=
-    //                     " ( Deviation: " +
-    //                     parseFloat(contract.contract_deviation).toFixed(2) +
-    //                     "% )";
-    //                 }
-    //               }
-    //               return label;
-    //             },
-    //           },
-    //         },
-    //         responsive: true,
-    //       },
-    //     },
-    //   });
-    // }
-
-    // function grafik_2() {
-    //   const ctx = document.getElementById("ctxGrafik2");
-    //   const labels = [];
-    //   const datasets = [];
-
-    //   if (latestSelectedTimeline) {
-    //     latestSelectedTimeline.timeline_data.forEach((contract) => {
-    //       contract.contract_data.forEach((location) => {
-    //         if (!labels.includes(location.location_name)) {
-    //           labels.push(location.location_name);
-    //         }
-    //       });
-
-    //       let planDataset = {
-    //         label: "PLAN CUMULATIVE [ " + contract.contract_name + " ]",
-    //         data: [],
-    //         borderWidth: 1,
-    //         backgroundColor: contract.contract_color_plan,
-    //         borderColor: contract.contract_color_plan,
-    //       };
-
-    //       let realDataset = {
-    //         label: "REAL CUMULATIVE [ " + contract.contract_name + " ]",
-    //         data: [],
-    //         borderWidth: 1,
-    //         backgroundColor: contract.contract_color_real,
-    //         borderColor: contract.contract_color_real,
-    //       };
-
-    //       if (contract.contract_data.length === 0) {
-    //         labels.forEach(() => {
-    //           planDataset.data.push(0);
-    //           realDataset.data.push(0);
-    //         });
-    //       } else {
-    //         contract.contract_data.forEach((location) => {
-    //           planDataset.data.push(
-    //             contract.contract_selected_plan
-    //               ? parseFloat(location.proggress_cumm_plan)
-    //               : null
-    //           );
-    //           realDataset.data.push(
-    //             latestSelectedTimeline.timeline_selected &&
-    //               contract.contract_selected_real
-    //               ? parseFloat(location.proggress_cumm_real)
-    //               : null
-    //           );
-    //         });
-    //       }
-
-    //       datasets.push(planDataset);
-    //       datasets.push(realDataset);
-    //     });
-    //   }
-
-    //   new Chart(ctx, {
-    //     type: "bar",
-    //     data: {
-    //       labels: labels,
-    //       datasets: datasets,
-    //     },
-    //     options: {
-    //       scales: {
-    //         y: {
-    //           beginAtZero: true,
-    //         },
-    //       },
-    //       interaction: {
-    //         intersect: false,
-    //         mode: "index",
-    //       },
-    //       plugins: {
-    //         legend: {
-    //           display: true,
-    //           labels: {
-    //             boxWidth: 20,
-    //           },
-    //           position: "top",
-    //           maxWidth: 1,
-    //         },
-    //         tooltip: {
-    //           callbacks: {
-    //             label: function (context) {
-    //               let label = context.dataset.label || "";
-    //               if (label) {
-    //                 label += " : ";
-    //               }
-    //               if (context.parsed.y !== null) {
-    //                 label += context.parsed.y.toFixed(2) + "%";
-    //               }
-    //               if (context.dataset.label.includes("REAL CUMULATIVE")) {
-    //                 const contractName = context.dataset.label
-    //                   .split(" [ ")[1]
-    //                   .split(" ]")[0];
-    //                 const contract =
-    //                   latestSelectedTimeline.timeline_data.find(
-    //                     (c) => c.contract_name === contractName
-    //                   );
-    //                 if (contract) {
-    //                   const location =
-    //                     contract.contract_data[context.dataIndex];
-    //                   if (location) {
-    //                     label +=
-    //                       " ( Deviation: " +
-    //                       parseFloat(location.proggress_deviation).toFixed(
-    //                         2
-    //                       ) +
-    //                       "% )";
-    //                   }
-    //                 }
-    //               }
-    //               return label;
-    //             },
-    //           },
-    //         },
-    //         responsive: true,
-    //       },
-    //     },
-    //   });
-    // }
 
     function grafik_3() {
       const ctx = document.getElementById("ctxGrafik3");
