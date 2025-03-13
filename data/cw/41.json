@@ -1,5 +1,52 @@
 {
-    "name_week": "41MONITORING CIVIL WORK -41.html",
+    "name" : "Week 41",
+    "startDate" : "2021-12-08",
+    "endDate" : "2021-12-14",
+    "weekNumber" : 41,
+    "planCummulative" : 34.32,
+    "realCummulative" : 37.98,
+    "details":{
+        "RSPTN" : {
+            "plan" : 0.77,
+            "real" : 0.19,
+            "cummPlan" : 30.81,
+            "cummReal" : 30.94,
+            "prevCummPlan" : 30.04,
+            "prevCummReal" : 30.75,
+            "deviation" : -0.13,
+            "remaining" : 37.80
+        },
+        "IRC" : {
+            "plan" : 0.17,
+            "real" : 0.30,
+            "cummPlan" :8.26,
+            "cummReal" : 11.57,
+            "prevCummPlan" : 8.09,
+            "prevCummReal" : 11.27,
+            "deviation" : 3.31,
+            "remaining" : 19.69
+        },
+        "WWTP" : {
+            "plan" : 0.00,
+            "real" : 0.00,
+            "cummPlan" : 0.00,
+            "cummReal" : 0.00,
+            "prevCummPlan" : 0.00,
+            "prevCummReal" : 0.00,
+            "deviation" : 0.00,
+            "remaining" : 100
+        },
+        "total":{
+            "prevCummPlan" : 38.13,
+            "plan" : 0.94,
+            "cummPlan" : 39.07,
+            "prevCummReal" : 42.02,
+            "real" : 0.49,
+            "cummReal" : 42.51,
+            "deviation" : 3.44,
+            "remaining" : 57.49
+        }
+    },
     "photos": [
         {
             "file_name": "./MONITORING CIVIL WORK -41_files/SEV99HB4srI7zccvMa6Vd82pw6HeOtGxqA432bvH.jpg",
