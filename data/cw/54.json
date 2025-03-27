@@ -1,0 +1,50 @@
+{
+    "name" : "Week 54",
+    "startDate" : "2025-03-09",
+    "endDate" : "2025-03-15",
+    "weekNumber" : 54,
+    "planCummulative" : 45.53,
+    "realCummulative" : 45.48,
+    "details":{
+        "RSPTN" : {
+            "plan" : null,
+            "real" : 0.10,
+            "cummPlan" : 35.79,
+            "cummReal" : 32.51,
+            "prevCummPlan" : null,
+            "prevCummReal" : 32.40,
+            "deviation" : 3.29,
+            "remaining" : null
+        },
+        "IRC" : {
+            "plan" : null,
+            "real" : 0.21,
+            "cummPlan" :9.74,
+            "cummReal" : 12.98,
+            "prevCummPlan" : null,
+            "prevCummReal" : 28.1,
+            "deviation" : 3.24,
+            "remaining" : null
+        },
+        "WWTP" : {
+            "plan" : 0.00,
+            "real" : 0.00,
+            "cummPlan" : 0.00,
+            "cummReal" : 0.00,
+            "prevCummPlan" : 0.00,
+            "prevCummReal" : 0.00,
+            "deviation" : 0.00,
+            "remaining" : 100
+        },
+        "total":{
+            "prevCummPlan" : null,
+            "plan" : null,
+            "cummPlan" : 45.53,
+            "prevCummReal" : 45.17,
+            "real" : 0.31,
+            "cummReal" : 45.53,
+            "deviation" : 0.05,
+            "remaining" : null
+        }
+    }
+}

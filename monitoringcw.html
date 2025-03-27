@@ -283,7 +283,7 @@
             </tr>
             <tr>
               <td class="py-2 px-4 border">Date</td>
-              <td class="py-2 px-4 border">
+              <td class="py-2 px-4 border" id="weekDate">
                 December 8, 2024 - December 14, 2024
               </td>
             </tr>
@@ -311,10 +311,10 @@
                 </th>
               </tr>
               <tr>
-                <th class="py-2 px-4 border">until Last Sunday</th>
+                <th class="py-2 px-4 border">until Previous Week</th>
                 <th class="py-2 px-4 border">This Week's Progress</th>
                 <th class="py-2 px-4 border">until This Week</th>
-                <th class="py-2 px-4 border">until Last Sunday</th>
+                <th class="py-2 px-4 border">until Previous Week</th>
                 <th class="py-2 px-4 border">This Week's Progress</th>
                 <th class="py-2 px-4 border">until This Week</th>
               </tr>
@@ -600,7 +600,7 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <script src="/data/scurve.js"></script>
+  <script src="/data/scurve.js?i=0"></script>
   <script>
     $(document).ready(function () {
       const urlParams = new URLSearchParams(window.location.search);
@@ -630,6 +630,11 @@
         .then((data) => {
           console.log(data);
           $("[data-nameweek='true']").text(data.name);
+          const startDate = new Date(data.startDate);
+          const endDate = new Date(data.endDate);
+          $("#weekDate").text(
+            `${startDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} - ${endDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`
+          );
 
           $("#buildingRSPTN").html(`
          <td class="py-2 px-4 border">RSPTN</td>
@@ -676,19 +681,19 @@
                   <td class="py-2 px-4 border">${data.details.total.remaining}%</td>
             `)
 
-          const rsptnPhotos = data.photos.filter((photo) =>
+          const rsptnPhotos = data.photos?.filter((photo) =>
             photo.building === "RSPTN"
           );
 
-          const ircPhotos = data.photos.filter((photo) =>
+          const ircPhotos = data.photos?.filter((photo) =>
             photo.building === "IRC"
           );
-          const wwtpPhotos = data.photos.filter((photo) =>
+          const wwtpPhotos = data.photos?.filter((photo) =>
             photo.building === "WWTP"
           );
 
           let gall = ''
-          rsptnPhotos.forEach((photo) => {
+          rsptnPhotos?.forEach((photo) => {
             gall += `
         <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
         <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
@@ -697,12 +702,12 @@
         </figcaption>
       </a>`
           })
-          if (rsptnPhotos.length === 0) {
+          if (rsptnPhotos?.length === 0 || rsptnPhotos === undefined) {
             gall = '<p>No images available</p>'
           }
           $("#RSPTN>div")[0].innerHTML = gall
           gall = ''
-          ircPhotos.forEach((photo) => {
+          ircPhotos?.forEach((photo) => {
             gall += `
         <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
         <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
@@ -712,12 +717,12 @@
       </a>
         `
           })
-          if (ircPhotos.length === 0) {
+          if (ircPhotos?.length === 0 || ircPhotos === undefined) {
             gall = '<p>No images available</p>'
           }
           $("#IRC>div")[0].innerHTML = gall
           gall = ''
-          wwtpPhotos.forEach((photo) => {
+          wwtpPhotos?.forEach((photo) => {
             gall += `
         <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
         <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
@@ -727,12 +732,13 @@
       </a>
         `
           })
-          if (wwtpPhotos.length === 0) {
+          if (wwtpPhotos?.length === 0 || wwtpPhotos === undefined) {
             gall = '<p>No images available</p>'
           }
           $("#WWTP>div")[0].innerHTML = gall
         });
     });
+
 
     function showGallery(location, btn) {
       document.querySelectorAll(".gallery").forEach((gallery) => {
