@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Gambar dan Caption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Form Input Gambar dan Caption</h2>
+        <form id="from" action="inputimg.php" method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="image-input">Pilih atau tempelkan gambar (Ctrl+V):</label>
+                <input name="image-input" type="file" id="image-input" accept="image/*"
+                    onchange="handleImageChange()" />
+                <p>Atau tempel gambar dari clipboard langsung.</p>
+            </div>
+
+            <div class="input-group">
+                <label for="caption-input">Caption:</label>
+                <textarea name="caption-input" id="caption-input" rows="4"
+                    placeholder="Masukkan caption gambar..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="option-select">Pilih Opsi:</label>
+                <select name="option-input" id="option-select">
+                    <option value="IRC">IRC</option>
+                    <option value="RSPTN">RSPTN</option>
+                    <option value="WWTP">WWTP</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="week-input">Nomor Minggu:</label>
+                <input name="week-input" type="number" id="week-input" min="1" max="52"
+                    placeholder="Masukkan nomor minggu (1-52)" />
+            </div>
+
+            <div class="image-preview">
+                <h3>Pratinjau Gambar:</h3>
+                <img id="image-preview" style="width: -webkit-fill-available" src="" alt="Preview Gambar" />
+            </div>
+
+            <button class="submit-btn" onclick="submitForm()">Kirim</button>
+        </form>
+    </div>
+    <script>
+        // Fungsi untuk menangani gambar yang diinput
+
+
+        // Fungsi untuk menangani tempelan gambar dari clipboard
+        document.addEventListener('paste', function (event) {
+            const clipboardItems = event.clipboardData.items;
+            for (let i = 0; i < clipboardItems.length; i++) {
+                const item = clipboardItems[i];
+                if (item.type.startsWith('image')) {
+                    const file = item.getAsFile();
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const imagePreview = document.getElementById('image-preview');
+                            const previewContainer = document.querySelector('.image-preview');
+                            imagePreview.src = e.target.result;
+                            previewContainer.style.display = 'block';
+                        };
+                        reader.readAsDataURL(file);
+                        const fileInput = document.getElementById('image-input');
+                        fileInput.files = event.clipboardData.files; // Simpan file ke input file
+                    }
+                }
+            }
+        });
+
+        // Fungsi untuk mengirimkan data
+        function submitForm() {
+            const caption = document.getElementById('caption-input').value;
+            const option = document.getElementById('option-select').value;
+            const week = document.getElementById('week-input').value;
+
+            if (!caption || !option || !week) {
+                alert('Harap isi semua kolom.');
+                return;
+            }
+            document.getElementById('from').submit(); // Kirim form
+            // alert('Data berhasil dikirim!\nCaption: ' + caption + '\nOpsi: ' + option + '\nNomor Minggu: ' + week);
+            // Anda dapat mengganti alert dengan pengiriman data melalui AJAX atau form submission
+        }
+    </script>
+</body>
+
+</html>
