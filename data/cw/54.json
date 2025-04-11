@@ -7,24 +7,24 @@
     "realCummulative" : 45.48,
     "details":{
         "RSPTN" : {
-            "plan" : null,
+            "plan" : 0.65,
             "real" : 0.10,
             "cummPlan" : 35.79,
             "cummReal" : 32.51,
-            "prevCummPlan" : null,
+            "prevCummPlan" : 35.14,
             "prevCummReal" : 32.40,
             "deviation" : 3.29,
-            "remaining" : null
+            "remaining" : 36.23
         },
         "IRC" : {
-            "plan" : null,
+            "plan" : 0.33,
             "real" : 0.21,
             "cummPlan" :9.74,
             "cummReal" : 12.98,
-            "prevCummPlan" : null,
-            "prevCummReal" : 28.1,
+            "prevCummPlan" : 9.41,
+            "prevCummReal" : 12.77,
             "deviation" : 3.24,
-            "remaining" : null
+            "remaining" : 18.28
         },
         "WWTP" : {
             "plan" : 0.00,
@@ -37,14 +37,14 @@
             "remaining" : 100
         },
         "total":{
-            "prevCummPlan" : null,
-            "plan" : null,
+            "prevCummPlan" : 44.55,
+            "plan" : 0.98,
             "cummPlan" : 45.53,
             "prevCummReal" : 45.17,
             "real" : 0.31,
-            "cummReal" : 45.53,
+            "cummReal" : 45.48,
             "deviation" : 0.05,
-            "remaining" : null
+            "remaining" : 54.52
         }
     }
 }
