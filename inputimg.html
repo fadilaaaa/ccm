@@ -22,6 +22,7 @@
 
         .input-group {
             margin-bottom: 15px;
+            margin-right: 20px;
         }
 
         .input-group label {
@@ -63,23 +64,26 @@
 
 <body>
     <div class="container">
-        <h2>Form Input Gambar dan Caption</h2>
+        <h2>Form Input Image Civil Working</h2>
         <form id="from" action="inputimg.php" method="post" enctype="multipart/form-data">
             <div class="input-group">
-                <label for="image-input">Pilih atau tempelkan gambar (Ctrl+V):</label>
+                <label for="name-input">Security Code:</label>
+                <input name="sec-code" type="password" id="name-input" placeholder="Security Code...." />
+            </div>
+            <div class="input-group">
+                <label for="image-input">choose or paste image (Ctrl+V):</label>
                 <input name="image-input" type="file" id="image-input" accept="image/*"
                     onchange="handleImageChange()" />
-                <p>Atau tempel gambar dari clipboard langsung.</p>
+
             </div>
 
             <div class="input-group">
                 <label for="caption-input">Caption:</label>
-                <textarea name="caption-input" id="caption-input" rows="4"
-                    placeholder="Masukkan caption gambar..."></textarea>
+                <textarea name="caption-input" id="caption-input" rows="4" placeholder="Input caption..."></textarea>
             </div>
 
             <div class="input-group">
-                <label for="option-select">Pilih Opsi:</label>
+                <label for="option-select">Building:</label>
                 <select name="option-input" id="option-select">
                     <option value="IRC">IRC</option>
                     <option value="RSPTN">RSPTN</option>
@@ -88,17 +92,16 @@
             </div>
 
             <div class="input-group">
-                <label for="week-input">Nomor Minggu:</label>
-                <input name="week-input" type="number" id="week-input" min="1" max="52"
-                    placeholder="Masukkan nomor minggu (1-52)" />
+                <label for="week-input">Week:</label>
+                <input name="week-input" type="number" id="week-input" min="1" max="52" placeholder="" />
             </div>
 
             <div class="image-preview">
-                <h3>Pratinjau Gambar:</h3>
+                <h3>Image Priview:</h3>
                 <img id="image-preview" style="width: -webkit-fill-available" src="" alt="Preview Gambar" />
             </div>
 
-            <button class="submit-btn" onclick="submitForm()">Kirim</button>
+            <button class="submit-btn" onclick="submitForm()">Send</button>
         </form>
     </div>
     <script>

@@ -150,22 +150,22 @@
     <!-- Header Section -->
     <header class="bg-white shadow text-white shadow-lg sticky top-0 z-50">
         <div class="ml-6 mr-6 mx-auto flex justify-between items-center py-4 px-4">
-            <a href="https://unilaprojectheti.id/" class="text-2xl font-bold">
+            <a href="/" class="text-2xl font-bold">
                 <img src="./MONITORING CIVIL WORK -41_files/logo.png" alt="Logo" class="h-14" /></a>
             <nav class="hidden md:flex space-x-8">
-                <a href="https://unilaprojectheti.id/" class="text-gray-800 font-semibold">HOME</a>
+                <a href="/" class="text-gray-800 font-semibold">HOME</a>
                 <div class="relative">
                     <button class="text-gray-800 font-semibold">MONITORING</button>
                     <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
-                        <a href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=47"
+                        <a href="/monitoringcw.html"
                             class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL WORK</a>
-                        <a href="https://unilaprojectheti.id/monitoring/pmsc"
+                        <a href="/monitoringpmsc.html"
                             class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">PMSC</a>
                     </div>
                 </div>
                 <a href="https://e-prog.unilaprojectheti.id/" class="text-gray-800 font-semibold">E-PROG</a>
-                <a href="https://unilaprojectheti.id/#about" class="text-gray-800 font-semibold">ABOUT</a>
-                <a href="https://unilaprojectheti.id/#contact" class="text-gray-800 font-semibold">CONTACT</a>
+                <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
+                <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
             </nav>
             <div class="md:hidden">
                 <button id="menu-button" class="focus:outline-none">
@@ -180,19 +180,19 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow text-white">
             <nav class="flex flex-col space-y-2 py-4 px-4">
-                <a href="https://unilaprojectheti.id/" class="text-gray-800 font-semibold">HOME</a>
+                <a href="/" class="text-gray-800 font-semibold">HOME</a>
                 <div class="relative">
                     <button class="text-gray-800 font-semibold">MONITORING</button>
                     <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
-                        <a href="https://unilaprojectheti.id/monitoring/cvw?timeline_week=47"
+                        <a href="/monitoringcw.html"
                             class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL WORK</a>
-                        <a href="https://unilaprojectheti.id/monitoring/pmsc"
+                        <a href="/monitoringpmsc.html"
                             class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">PMSC</a>
                     </div>
                 </div>
                 <a href="https://e-prog.unilaprojectheti.id/" class="text-gray-800 font-semibold">E-PROG</a>
-                <a href="https://unilaprojectheti.id/#about" class="text-gray-800 font-semibold">ABOUT</a>
-                <a href="https://unilaprojectheti.id/#contact" class="text-gray-800 font-semibold">CONTACT</a>
+                <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
+                <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -334,9 +334,7 @@
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center px-4">
             <p>
-                © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved | Created by
-                <a href="https://wiiver.id/about-us/" target="_blank" class="text-gray-200 hover:underline">Rio Ananda
-                    Putra</a>
+                © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved
             </p>
         </div>
     </footer>
@@ -359,13 +357,28 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="/data/scurve.js"></script>
+    <script src="/data/pmsc/meta.js?i=0"></script>
     <script>
         $(document).ready(() => {
-            fetch("/data/pmsc/week41.json")
+            weekoption = ''
+            for (let i = lastWeek; i >= 1; i--) {
+                let selected = ''
+                if (i === lastWeek) {
+                    selected = 'selected'
+                }
+                weekoption += `<option ${selected} value="${i}">Week ${i}</option>`
+            }
+            $("#weekFilter").html(weekoption)
+            $("#weekFilter").select2({
+                placeholder: "Select Week",
+
+            });
+
+            fetch(`/data/pmsc/week${lastWeek}.json`)
                 .then((response) => response.json())
                 .then((data) => {
                     console.log(data);
+                    document.getElementById("dates").innerHTML = data.date;
                     let agenda = "";
                     data.agendas.forEach(item => {
                         agenda += `<div class="block mb-4 text-bold colorprimary text-white p-4">
@@ -399,251 +412,7 @@
                         $("#agendas").html(agenda)
                     })
                 });
-        })
-        $(document).ready(function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            const week = urlParams.get("week");
-            if (week) {
-                lastWeek = parseInt(week);
-            }
-            let weekoption = ''
-            for (let i = lastWeek; i >= 1; i--) {
-                let selected = ''
-                if (i === lastWeek) {
-                    selected = 'selected'
-                }
-                weekoption += `<option ${selected} value="${i}">Week ${i}</option>`
-            }
-            $("#weekFilter").html(weekoption)
-            grafik_3();
-
-            $("#weekFilter").select2({
-                placeholder: "Select week",
-            });
-
-            const selectedWeek = window.location.search.split("=")[1];
-
-            fetch(`/data/week${lastWeek}.json`)
-                .then((response) => response.json())
-                .then((data) => {
-                    console.log(data);
-                    $("[data-nameweek='true']").text(data.name);
-
-                    $("#buildingRSPTN").html(`
-         <td class="py-2 px-4 border">RSPTN</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.prevCummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.plan}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.cummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.prevCummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.real}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.deviation}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.remaining}%</td>
-          `)
-                    $("#buildingIRC").html(`
-         <td class="py-2 px-4 border">IRC</td>
-                <td class="py-2 px-4 border">${data.details.IRC.prevCummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.plan}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.cummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.prevCummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.real}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.deviation}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.remaining}%</td>
-          `)
-                    $("#buildingWWTP").html(`
-         <td class="py-2 px-4 border">WWTP</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.prevCummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.plan}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.cummPlan}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.prevCummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.real}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.deviation}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.remaining}%</td>
-          `)
-                    $("#buildingTotal").html(`
-          <td class="py-2 px-4 border">Total</td>
-                  <td class="py-2 px-4 border">${data.details.total.prevCummPlan}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.plan}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.cummPlan}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.prevCummReal}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.real}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.cummReal}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.deviation}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.remaining}%</td>
-            `)
-
-                    const rsptnPhotos = data.photos.filter((photo) =>
-                        photo.building === "RSPTN"
-                    );
-
-                    const ircPhotos = data.photos.filter((photo) =>
-                        photo.building === "IRC"
-                    );
-                    const wwtpPhotos = data.photos.filter((photo) =>
-                        photo.building === "WWTP"
-                    );
-
-                    let gall = ''
-                    rsptnPhotos.forEach((photo) => {
-                        gall += `
-        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
-        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
-        <figcaption class="bg-gray-200 p-2">
-          ${photo.caption}
-        </figcaption>
-      </a>`
-                    })
-                    if (rsptnPhotos.length === 0) {
-                        gall = '<p>No images available</p>'
-                    }
-                    $("#RSPTN>div")[0].innerHTML = gall
-                    gall = ''
-                    ircPhotos.forEach((photo) => {
-                        gall += `
-        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
-        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
-        <figcaption class="bg-gray-200 p-2">
-          ${photo.caption}
-        </figcaption>
-      </a>
-        `
-                    })
-                    if (ircPhotos.length === 0) {
-                        gall = '<p>No images available</p>'
-                    }
-                    $("#IRC>div")[0].innerHTML = gall
-                    gall = ''
-                    wwtpPhotos.forEach((photo) => {
-                        gall += `
-        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
-        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
-        <figcaption class="bg-gray-200 p-2">
-          ${photo.caption}
-        </figcaption>
-      </a>
-        `
-                    })
-                    if (wwtpPhotos.length === 0) {
-                        gall = '<p>No images available</p>'
-                    }
-                    $("#WWTP>div")[0].innerHTML = gall
-                });
         });
-
-        function showGallery(location, btn) {
-            document.querySelectorAll(".gallery").forEach((gallery) => {
-                gallery.classList.remove("active");
-            });
-            document.getElementById(location).classList.add("active");
-            document.querySelectorAll(".tab-button").forEach((button) => {
-                button.classList.remove("active");
-            });
-            btn.classList.add("active");
-        }
-
-        function grafik_3() {
-            const ctx = document.getElementById("ctxGrafik3");
-            const labels = [];
-            const datasets = [
-                {
-                    label: "PLAN CUMULATIVE [ INITIAL ]",
-                    data: initialPlan,
-                    borderColor: "orange",
-                    backgroundColor: "orange",
-                },
-                {
-                    label: "REAL CUMULATIVE [ INITIAL ]",
-                    data: initialReal,
-                    borderColor: "#05f746",
-                    backgroundColor: "#05f746",
-                },
-                {
-                    label: "PLAN CUMULATIVE [ CCO-01 ]",
-                    data: cco1Plan,
-                    borderColor: "red",
-                    backgroundColor: "red",
-                },
-                {
-                    label: "REAL CUMULATIVE [ CCO-01 ]",
-                    data: cco1Real,
-                    borderColor: "#167d10",
-                    backgroundColor: "#167d10",
-                },
-            ];
-
-            for (let i = 0; i < 85; i++) {
-                labels.push(i + 1);
-            }
-
-            new Chart(ctx, {
-                type: "line",
-                data: {
-                    labels: labels,
-                    datasets: datasets,
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                        },
-                    },
-                    interaction: {
-                        intersect: false,
-                        mode: "index",
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            labels: {
-                                boxWidth: 20,
-                            },
-                            position: "top",
-                            maxWidth: 1,
-                        },
-                        tooltip: {
-                            callbacks: {
-                                title: function (context) {
-                                    return "WEEK " + context[0].label;
-                                },
-                                label: function (context) {
-                                    let label = context.dataset.label || "";
-                                    if (label) {
-                                        label += " : ";
-                                    }
-                                    if (context.parsed.y !== null) {
-                                        label += context.parsed.y.toFixed(2) + "%";
-                                    }
-                                    if (context.dataset.label.includes("REAL")) {
-                                        if (context.dataset.label.includes("INITIAL")) {
-                                            const deviation =
-                                                initialPlan[context.dataIndex] === 0
-                                                    ? 0
-                                                    : initialReal[context.dataIndex] -
-                                                    initialPlan[context.dataIndex];
-                                            label +=
-                                                " ( Deviation: " + deviation.toFixed(2) + "% )";
-                                        } else if (context.dataset.label.includes("CCO-01")) {
-                                            const deviation =
-                                                cco1Plan[context.dataIndex] === 0
-                                                    ? 0
-                                                    : cco1Real[context.dataIndex] -
-                                                    cco1Plan[context.dataIndex];
-                                            label +=
-                                                " ( Deviation: " + deviation.toFixed(2) + "% )";
-                                        }
-                                    }
-
-                                    return label;
-                                },
-                            },
-                        },
-                        responsive: true,
-                    },
-                },
-            });
-        }
     </script>
 </body>
 

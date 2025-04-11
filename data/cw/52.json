@@ -1,0 +1,552 @@
+{
+    "name": "Week 52",
+    "startDate": "2025-02-23",
+    "endDate": "2025-03-01",
+    "weekNumber": 52,
+    "planCummulative": 43.54,
+    "realCummulative": 44.86,
+    "details": {
+        "RSPTN": {
+            "plan": 0.68,
+            "real": 0.17,
+            "cummPlan": 34.47,
+            "cummReal": 32.35,
+            "prevCummPlan": 33.79,
+            "prevCummReal": 44.65,
+            "deviation": -2.12,
+            "remaining": 36.39
+        },
+        "IRC": {
+            "plan": 0.16,
+            "real": 0.04,
+            "cummPlan": 9.07,
+            "cummReal": 12.51,
+            "prevCummPlan": 8.91,
+            "prevCummReal": 12.47,
+            "deviation": 3.44,
+            "remaining": 18.75
+        },
+        "WWTP": {
+            "plan": 0,
+            "real": 0,
+            "cummPlan": 0,
+            "cummReal": 0,
+            "prevCummPlan": 0,
+            "prevCummReal": 0,
+            "deviation": 0,
+            "remaining": 100
+        },
+        "total": {
+            "prevCummPlan": 42.70,
+            "plan": 0.84,
+            "cummPlan": 43.54,
+            "prevCummReal": 44.65,
+            "real": 0.21,
+            "cummReal": 44.86,
+            "deviation": 1.32,
+            "remaining": 55.14
+        }
+    },
+    "photos": [
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/SEV99HB4srI7zccvMa6Vd82pw6HeOtGxqA432bvH.jpg",
+            "caption": "NURSECALL LT2 GD-RSPTN CLAMP GREEN COUNDUIT INSTALLATION",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Zqvac3PcBiMJE3ziC0j7VgPLCWSNoFM95ljjbgwt.jpg",
+            "caption": "HYDRANT SPRINKLER PIPING INSTALLATION LT2 GD-RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/dpfT90XLsELYdbtwEed4FWeLQQpYDFABSA1c2nas.jpg",
+            "caption": "CLEANING OF THE PLANNED AREA FOR CASTING THE CONNECTING PLATE ON THE NORTH SIDE OF THE RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/xQ02qJWK1Z230q6BkQ3XKiEi4U8q2Uk36TG8EtUR.jpg",
+            "caption": "PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/sDYZ6eSvouCF0KTYQaYBzB3HPTzaLOxavlcWjSsu.jpg",
+            "caption": "PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/XHKFNaro0oYT0ClJ4eXLFLfxdby15p3FqdcmALgY.jpg",
+            "caption": "POURING INTEGRAL WATERPROOFING SIKA VISCOCRETE 3115N",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/TcFIsaaTBo9UR3kK6Dc6k8o3bW3Ukf870ENuZsfu.jpg",
+            "caption": "NORTH SIDE CONNECTING PLATE CASTING WORK OF RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/kDhZYtbbbHwxJ0MbHiuUlqE7d7DUNt5nYn96YkTO.jpg",
+            "caption": "FINISH CASTING THE NORTH SIDE OF THE RSPTN CONNECTING PLATE",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/tWi1GsGGFZF3PXHhJTqh9KoCVz951WmVXPcLLeCY.jpg",
+            "caption": "LIGHT BRICK WORK MATERNITY ROOM FLOOR 04 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/P6HQOAxPZeVaIAhKUWrWXGt2J67aJgDzhUpZxcRk.jpg",
+            "caption": "IRNA LIGHT BRICK WORK FLOOR 04 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/8748lAAg7BEW4X4X0YJ50iBUoebpiYY44kxmG6nu.jpg",
+            "caption": "INSTALLATION OF PRACTICAL COLUMNS CONSULTATION ROOM FLOOR 04 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/tdhjPenlAYw5xl8cGAqfFav2J4yAXGqHi3PE5EIu.jpg",
+            "caption": "PROGRESS OF WORK ON RAMP REINFORCEMENT AND FORMWORK FOR FLOORS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/681Z1obWbrne4ks1eLOhhb1OtlcUmHIHAe2Mb78E.jpg",
+            "caption": "PROCESS OF REPAIRING DEFECTS ON THE 5TH FLOOR OF THE RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/inzyYcymkAeMa0YAi13Pg9sTAKuoi8WULmBPPmVS.jpg",
+            "caption": "RSPTN 3RD FLOOR HYDRANT  SPRINKLER PIPING INSTALLATION",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/zLWGQr220pS2CYGoBZKftgkG4gXiqILWsryU6Up0.jpg",
+            "caption": "COUNDUIT LIGHTING  SOCKET PIPING INSTALLATION ON THE 2ND FLOOR OF RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/29ymCKKXNSgyTlLHPF2i9mVrOvQEtscYGgPxyZaK.jpg",
+            "caption": "CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/mk3Gp3stz9SFRB1bqc7uwDxY21nUdOjwAM6FO89A.jpg",
+            "caption": "CASTING OF FLOOR RAMPS 4-5 AS F-J RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/iiIrRG9xAgYMu1NXURymMultEORbrCB8VFtfDv7C.jpg",
+            "caption": "K3 MONITORING OF ELEVATOR SEPARATOR WELDING WORK",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/pxwVxdMyvoB15T09NYXxJKVqR9vlkaxPwu9WRAW2.jpg",
+            "caption": "PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/kPCksLBqqKq9Gg13JUEPDc570Q7033nnmRpI5HrL.jpg",
+            "caption": "CORRIDOR SKIMCOAT PLASTERING WORK (SIDE OF TRAIN. NUTRITIONAL INSTALLATION) BASEMENT RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Q2l6Jl677OYlasZeL62TpKR3txzYxACgAtxKADE8.jpg",
+            "caption": "RSPTN 2ND FLOOR SPRINKLER PIPING",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/4d06DWVSS63SYFR0HyF66TbjZzSvxLjtKF4EjrSw.jpg",
+            "caption": "RSPTN 4TH FLOOR RAMP COLUMN CASTING WORK",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/CJHCPBSgJSJmLgMyux8rHeG6f150sQFyVzYTplCK.jpg",
+            "caption": "SLAB AND RAMP BEAM CASTING WORK FOR FLOORS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/ZWfPVDnOhuoYFni2YhvIAJobXerUjEuWxERjRtMa.jpg",
+            "caption": "CASTING OF RSPTN 4TH TO 5TH FLOOR RAMPS",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/LbK8llAvU5gN1a3ZLPaSUwyfYxCl76zfkjf1v6ZR.jpg",
+            "caption": "PLASTERING THE OUTER WALLS OF THE CORRIDOR. RSPTN 2ND FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/NWDbkedj0vt5o9hx1rkArC0ch3kw7OR53hh8alvr.jpg",
+            "caption": "COLUMN SKIMCOAT. RSPTN 3RD FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/A62GEhpVMzd6Fguj6c951OoCsNkxN1O2vMnOns0Z.jpg",
+            "caption": "BASEMENT FLOOR ELEVATION CASTING",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/CL2o5JcOqCOElRLoirRA1Z27XiulYB7CeNwhIO75.jpg",
+            "caption": "IMPLEMENTATION OF WEEKLY TBM/SAFETY TALK ACTIVITIES.",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/c4MDx1chDPELLMAE3EX1ZfyfYlcw3wkqGssMZgNk.jpg",
+            "caption": "PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/HTR71pWwjESA47qbA1ZIiiVSYZair6XeLWh9f9ZL.jpg",
+            "caption": "MONITORING AND ATTACHING DEFECT POINTS USING STICKERS",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Cal0Z1GWR5tvplQ3PYn9Dahdha9RO8Q5PqGwzvBn.jpg",
+            "caption": "EXCAVATION WORK FOR THE FOUNDATION OF THE PLN HOUSE AND THE RSPTN POWERHOUSE",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/iJz9XzBDwrUtG7UrqJMp9T5j582RR5a93MrOEnLi.jpg",
+            "caption": "PLASTERING THE WALLS OF THE OUTER CORRIDOR AREA. RSPTN FLOOR 2",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/IREpxmh44tvKxuENt2vBfuFaciTQBJwVY6wPIYVp.jpg",
+            "caption": "DRESSING ROOM WALL PAIR AND SCRUB UP. RSPTN 2ND FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/mldP53kwxLHw83jIJ0jLqfiYEDLF6qtIV8Ior8cB.jpg",
+            "caption": "IRNA'S ROOM WALL COUPLE. RSPTN FLOOR 4",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/t83U19EAGVVRP4349j7vin4SnwzaHaSvwEnOgwU4.jpg",
+            "caption": "IRNA'S ROOM WALL COUPLE. RSPTN FLOOR 4",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/UyZeKBCg7Yo8RcYF3Y5Gy6J5HJwI6u7PmXdgA7Hm.jpg",
+            "caption": "PAIR OF IRNA'S ROOM WALLS FOR STD CLASS. RSPTN FLOOR 5",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/o2EFHDgHMQL91aoSzbWq2DdBOQcU8pidZj6AHWnF.jpg",
+            "caption": "COLUMN SKIMCOAT. RSPTN FLOOR 5",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/GsL4uHcveFELqCwVDDzTEUxsCx0Qee7Vk5iDpu5k.jpg",
+            "caption": "IRNA'S ROOM WALL COUPLE. RSPTN 5TH FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/775LMJ1xKZFT1Ye9Y6gSoPI5hY132Osm5fMhiReP.jpg",
+            "caption": "REVIEW DRAWINGS WITH PLANNER, PMSC & CONTRACTOR.",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/vt8ZO9jSqOKWeQ8vRpd3NiWxUkspPHRgoCkEGB90.jpg",
+            "caption": "RSPTN POWERHOUSE PILECAP INSTALLATION WORK",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/K8K6LgFavhOgTY8Im4xxQ2zdBra05wkenCvmh3r1.jpg",
+            "caption": "CASTING OF FLOOR RAMPS 4-5 RSPTN (25M3) K-400",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/tkHFKTnLN2heLJ8It1mPP0bNTSIaMbzi1eKu3I5Y.jpg",
+            "caption": "OPENING OF CORRIDOR AND WAITING ROOM AREAS. RSPTN 2ND FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/kQBUsoqIL6BBEe9ZQpzZukZYlDgq8hfFW4peNHka.jpg",
+            "caption": "FITS DOCTOR & ROOM WALL. RSPTN FLOOR 2",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/WI8QPU4WP4Eeil1SSP57FCK1Qsc6A71nf9Dr3PkG.jpg",
+            "caption": "FITS THE WALLS OF THE CORRIDOR AREA. RSPTN FLOOR 2",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/kE6WCBrHQ6ytiJxEKKz5hJ1zZ16EeTFCi0RvJP2N.jpg",
+            "caption": "WALL FITTING R. SCRUBUP. RSPTN 4TH FLOOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/p9pvxlgVGyOdnNaxlLGQ3MG8Dpyixr5tecc2939X.jpg",
+            "caption": "CURING RAMP 4TH TO 5TH FLOOR RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/MBn79TuXgufNNkb9sRyK1aZ11DhYYn9XAzOl9O9N.jpg",
+            "caption": "HYDRANT & SPRINKLER PIPING ON THE 4TH FLOOR OF THE RSPTN BUILDING",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/fcNyNQGXTr7io7y1S4J4uXH1dcvXk4610F4pKyWZ.jpg",
+            "caption": "SOUND SYSTEM PIPING &  FIRE ALARM ON THE 4TH FLOOR OF THE RSPTN BUILDING",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/AnAdKZkRl7WkHkzpk2fSuQFCOBeunpjQwlajzE5c.jpg",
+            "caption": "RSPTN BASEMENT FLOOR KM/WC PLASTERING WORK (CSSD AREA)",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/dZaO66COEqOLSa3m6W7Qmc0CBqfzLPFtMLvKKrdk.jpg",
+            "caption": "BASEMENT RSPTN WINDOW OPENING WORK",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/hTs09NozqWeDn4L5eSgJ4id415ryH9DScbYGs6lw.jpg",
+            "caption": "PROGRESS OF WORK ON FLOOR RAMPS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Fhs0YWAVQ9nNLhtRy08L2q0vOVtnNE13MKfEHL2Q.jpg",
+            "caption": "WORK TO REPAIR PILE CAPS FOR PLN HOUSES AND RSPTN POWERHOUSES",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/gAkUT0msCq3MH7bpXbAUH3ssL0rV1OAwsa8a1ccM.jpg",
+            "caption": "PLUMBING CORING POINTS OF USED WATER PIPES ON THE 4TH FLOOR OF THE RSPTN BUILDING",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/QV6Oszh2O9Ae14Mm0I5KYUAL3olZu5GxPbKcC4il.jpg",
+            "caption": "PROGRESS OF THE PLN RSPTN HOUSE PILE CAP WORK",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/OpBYqH91Q3C1TqTOV1Pwf7cbONTZSkhaVXUH3j9E.jpg",
+            "caption": "WORK PROGRESS ON FLOOR RAMPS 4-5 RSPTN",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/9TKm4NddmyvsXfXaQi5dVQoeaagcH24UgLJjHThT.jpg",
+            "caption": "SOIL COMPACTION IN THE RSPTN POWERHOUSE AREA USING A COMPACTOR",
+            "building": "RSPTN"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/M9N5ykrcTDxlyMiWqesNzHYIp7HgQDjCxEvc8eAB.jpg",
+            "caption": "MONITORING IRC PLASTERING WORK RIGHT SIDE VIEW",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/m5DYdnmqOqCEh8Fc5FOfKidnXmDH9MqSBSEeQ9kx.jpg",
+            "caption": "IRC BATHROOM PLASTERING WORK 03RD FLOOR",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/80rNzTyNtHomI05lVuBYGqA9tEsORRUIAIq4VkK0.jpg",
+            "caption": "IRC TOP FLOOR SKYLIGHT AREA LIGHT BRICK WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/dov9s2C1ob6MXjlerJ1rj7wYeHjkuImimVAoFsQk.jpg",
+            "caption": "IRC TOP FLOOR SKYLIGHT AREA BALK RING WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/6CxOejsjOcNaiLA7IrcHtRQMk2tFINCK946UCILe.jpg",
+            "caption": "PROGRESS OF THE IRC HALLWAY STONE MASONRY WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/RhaHSz0QYqHjisAWm8vuT2NQEMONhDqXsUkmys8K.jpg",
+            "caption": "IRC 1ST FLOOR ELEVATOR SEPARATOR INSTALLATION PROCESS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/NZzoLaPu2XqU4MxcQCKSyFmMB4oVaWbYiGF00QEf.jpg",
+            "caption": "PLN IRC HOME WIRE MESH INSTALLATION PROCESS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/z4m89xpyQjBRC6P4wlTy1lzvuyoqUXqN0gzUd7Cf.jpg",
+            "caption": "IRC WALKWAY EMBANKMENT WORK AND LEVELING OF THE IRC ZONE 1 AREA",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/VanCsxhOOCplCSBtB9CU1EJBnPSEsPyQGxh25RBv.jpg",
+            "caption": "SOIL COMPACTION USING IRC ZONE 1 VIBRO AREA",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/xaujJLPdBfvLrd6Y0b1jMLoWQExHttLbP79QQiWS.jpg",
+            "caption": "PLASTERING WORK ON BATHROOM AND TOILET WALL AREAS GROUND FLOOR IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/iAjS8K7Od4VdenQeh2HeaTujeWNpgkCTZEuQtyeC.jpg",
+            "caption": "RIVER MASONRY WORK IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/AxKQ5Lbu76Na76zKFb9l9TZHHm8NJLgbFLLlbQ5X.jpg",
+            "caption": "RIVER MASONRY WORK IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/XNJ9bTq9SpC4CaHH7htbD8p34DbvbkFR5xNjyyRZ.jpg",
+            "caption": "LIGHT BRICK MASONRY SHAFT WALL GROUND FLOOR IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/i6CYycYrUw0Ro3JWx4ObbM7RzzZs6vGozq0We5zP.jpg",
+            "caption": "GROUND FLOOR LIBRARY AREA WALL PLASTERING WORK IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/oIBgVH5wCIOkbrOLy2Ao470OLAsJV3D8cAGI2GyH.jpg",
+            "caption": "INSTALLATION OF LIGHT BRICKS IN THE MAIN STAIR AREA OF FLOOR 01 IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/o1r2COn1c58aXK5YiGfjRepQHLt5YXbLhEG952ze.jpg",
+            "caption": "IRC ELEVATOR SEPARATOR STEEL INSTALLATION PROGRESS ( 2ND FLOOR)",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/h8AU5Rismy4LAX8ochARyjoROPd7NwMgmyj1qH0V.jpg",
+            "caption": "BASEPLATE INSTALLATION ON THE STEEL ANCHOR OF THE 3RD FLOOR IRC LIFT SEPARATOR",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/H0PMRnN0qFCPzfCaXFJ8V8EeCNbhjYshnyw0rZQ8.jpg",
+            "caption": "PROCESS OF SETTING AND STRENGTHENING IRC POWERHOUSE COLUMN FORMWORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/ivi9ExrjYvxT9aQgXnAzYLMut4XwAtINfDWODrYF.jpg",
+            "caption": "IRC WALKWAY PLATE REINFORCEMENT WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/bC27jnYd96XKRM0IDoaKkOxWT5PEagIqpJqObT4U.jpg",
+            "caption": "IRC GROUNDING TEST WITH A RESISTANCE VALUE OF 0.01 OHM",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/dm5uQ5W9o5NeR8kBytykAciOVVKkZfJZgYIJgEvt.jpg",
+            "caption": "LIGHTING OUTLET TEST ON 1ST FLOOR IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/4n2o8DO5HCjnRmkzefn58oKKmM7ooHKAJgG5BEau.jpg",
+            "caption": "PAIR OF NUTRITION LAB ROOM WALLS. IRC FLOOR 1",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/TltLa4AqDE9GeLnoNw1LtNECYkf3sTuUXFoK5knm.jpg",
+            "caption": "OPENING OF THE LECTURE AREA. IRC FLOOR 3",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/EkYmcWFuuaYfuFTm2TMzgmpUxON8MF7jFcHH2nUy.jpg",
+            "caption": "COMMITTEE ROOM WALL PLASTERING. IRC FLOOR 3",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/gURag0iDvijaIKemmXbuTe8VULBh9deuT8zyRTsb.jpg",
+            "caption": "PAIR OF WALLS IN THE AUDITORIUM CORRIDOR AREA. IRC FLOOR 3",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/LkmXUOHH3oOpamrlH9keZoL3RDp0JA86E4TH4kR9.jpg",
+            "caption": "IRC 1ST FLOOR SOCKET FLAME TEST",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/jNrhwPhnIydmgAf2ASWQzMkq1bucdlazDUa4fLMj.jpg",
+            "caption": "SLAB AND BEAM CASTING WORK FOR THE PLN IRC HOUSE",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/zvXLuaLcE816GXBU3yhZdc35yS98BZe2azkssVC5.jpg",
+            "caption": "IRC ZONE 1 BREEZEWAY CASTING WORKS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Lo9eoSPMrtccP8uM1CVQlSEN4xO03whkaR7h2X7X.jpg",
+            "caption": "POWERHOUSE IRC COLUMN VERTICALITY AND STRENGTHENING PROCESS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/XgqOMzbHdvdoWp5kn9RJVV96PBq1OSyHlKomlgzZ.jpg",
+            "caption": "IRC POWERHOUSE COLUMN CASTING WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/VDYptVN37AB5zGEYQUmLpeA2E0nQHbBVQq1LczAq.jpg",
+            "caption": "IRC POWERHOUSE COLUMN CASTING WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/Vz5ZyxWq1t0hUuzenHHX3pkAnnjuqPkpeeVeau7Y.jpg",
+            "caption": "COUNDUIT PLUMBING INSTALLATION LIGHTING GROUND FLOOR IRC OUTLETS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/jVrZVB4rA0Qm8IbSK1HUYrre9bPZvENdw2gCuOmv.jpg",
+            "caption": "WIRING LIGHTING CABLES SOCKETS LT2  IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/s5PufhI1A7vFRuuKYAwIajQ5D86CXgdbQ7gK53GW.jpg",
+            "caption": "IRC GROUNDING TEST WITH RESISTANCE VALUE OF 0.02 OHM",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/qijTvMSA0TQWBTgmmCnZ3v7EKcfFzTStiwd6d9cZ.jpg",
+            "caption": "POWERHOUSE IRC SCAFFOLDING PROGRESS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/QUdCzRcq2bxcK58NwKoXp6on9jTc8Yb52At5FeKx.jpg",
+            "caption": "IRC 2ND FLOOR LIGHTING CABLE WIRING",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/I0GUhlqLlL00RwYi8xqkPj1IqW7LYFFlTsMo07Zy.jpg",
+            "caption": "MONITORING AND ATTACHING IRC DEFECT POINT STICKERS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/NEOpS8MQJXjd40VwRHheiFtkkJKeT4Y3qu8QvenH.jpg",
+            "caption": "IRC GROUND FLOOR LIFT SEPARATOR STEEL INSTALLATION WORK",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/DU24d0KlJsl28c0df4wnN3lZIS3ZKIx6G0DE2ruu.jpg",
+            "caption": "THE PROCESS OF STRENGTHENING PLN IRC HOUSE COLUMNS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/iIfwssriExOI0doAlzR2RlncMeNjlohq94vBT4PX.jpg",
+            "caption": "PROGRESS OF INSTALLING THE IRC POWERHOUSE GENERATOR MOUNT",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/TJLOh3sVOTCM6wVn4Ul94Kqd8ShGeQexRRAgbtWJ.jpg",
+            "caption": "IRC POWERHOUSE SCAFFOLDING PROGRESS",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/2SMeAUSKYRu3AebxA8Brel0O68gso8TDs9UzkTOl.jpg",
+            "caption": "PROGRESS OF WORK ON THE IRC POWERHOUSE AND PLN HOUSE",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/YItmZUqzClfBYb2LayQHamlbtqUfuuhAZuFWuSDn.jpg",
+            "caption": "CASTING OF PRESSURIZED FAN MOUNTS 2 IRC",
+            "building": "IRC"
+        },
+        {
+            "file_name": "./MONITORING CIVIL WORK -41_files/ukw7foczC0PX0bmRSZHShXC4IfyPdSBePQSqk5Xo.jpg",
+            "caption": "IRC POWERHOUSE GENERATOR MOUNT CASTING",
+            "building": "IRC"
+        }
+    ]
+}

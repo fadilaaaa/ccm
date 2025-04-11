@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* New styling for the start time and end time to be displayed on the same line */
+        .time-group {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .image-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .image-preview img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Meeting Details Input</h2>
+        <form id="meetingForm" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="name-input">Security Code:</label>
+                <input name="sec-code" type="password" id="name-input" placeholder="Security Code...." />
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Meeting:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Start Time and End Time on the same line -->
+            <div class="form-group time-group">
+                <div>
+                    <label for="start_time">Start Time :</label>
+                    <input type="time" id="start_time" name="start_time" value="08:00" min="08:00" max="09:00" required>
+                </div>
+                <div>
+                    <label for="end_time">End Time :</label>
+                    <input type="time" id="end_time" name="end_time" value="09:00" min="08:00" max="09:00" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="place">Place of Meeting:</label>
+                <input type="text" id="place" name="place" placeholder="Enter meeting place" required>
+            </div>
+
+            <div class="form-group">
+                <label for="agenda">Agenda of Meeting:</label>
+                <textarea id="agenda" name="agenda" rows="4" placeholder="Enter meeting agenda" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="images">Upload Images:</label>
+                <input type="file" id="images" name="images[]" accept="image/*" multiple>
+            </div>
+
+            <div class="form-group">
+                <label>Image Preview:</label>
+                <div id="imagePreview" class="image-preview"></div>
+            </div>
+
+            <button type="submit">Submit Meeting Details</button>
+        </form>
+    </div>
+
+    <script>
+        // Preview images before upload
+        document.getElementById('images').addEventListener('change', function (event) {
+            const imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = ''; // Clear previous previews
+
+            const files = event.target.files;
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = e.target.result;
+                    imagePreview.appendChild(imgElement);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // JavaScript to handle form submission (for demonstration)
+        document.getElementById('meetingForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const date = document.getElementById('date').value;
+            const startTime = document.getElementById('start_time').value;
+            const endTime = document.getElementById('end_time').value;
+            const place = document.getElementById('place').value;
+            const agenda = document.getElementById('agenda').value;
+            const images = document.getElementById('images').files;
+
+            let imageNames = [];
+            for (let i = 0; i < images.length; i++) {
+                imageNames.push(images[i].name);
+            }
+
+            alert(`Meeting Details:\nDate: ${date}\nStart Time: ${startTime}\nEnd Time: ${endTime}\nPlace: ${place}\nAgenda: ${agenda}\nImages: ${imageNames.join(', ')}`);
+
+            // Clear the form
+            document.getElementById('meetingForm').reset();
+            document.getElementById('imagePreview').innerHTML = '';  // Clear image previews
+        });
+    </script>
+
+</body>
+
+</html>
