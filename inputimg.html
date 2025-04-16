@@ -111,6 +111,10 @@
         // Fungsi untuk menangani tempelan gambar dari clipboard
         document.addEventListener('paste', function (event) {
             const clipboardItems = event.clipboardData.items;
+            const captionInput = document.getElementById('caption-input');
+            if (document.activeElement == captionInput) {
+                return; // Jika fokus pada input caption, jangan lakukan apa-apa
+            }
             for (let i = 0; i < clipboardItems.length; i++) {
                 const item = clipboardItems[i];
                 if (item.type.startsWith('image')) {
