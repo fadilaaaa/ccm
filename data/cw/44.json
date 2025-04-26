@@ -1,0 +1,50 @@
+{
+    "name": "Week 44",
+    "startDate": "2024-12-29",
+    "endDate": "2025-01-4",
+    "weekNumber": 44,
+    "planCummulative": 36.30,
+    "realCummulative": 41.09,
+    "details": {
+        "RSPTN": {
+            "plan": 0.75,
+            "real": 0.39,
+            "cummPlan": 23.96,
+            "cummReal": 30.18,
+            "prevCummPlan": 23.56,
+            "prevCummReal": 29.78,
+            "deviation": 5.47,
+            "remaining": 38.56
+        },
+        "IRC": {
+            "plan": 0.15,
+            "real": 0.39,
+            "cummPlan": 11.59,
+            "cummReal": 10.91,
+            "prevCummPlan": 11.44,
+            "prevCummReal": 10.57,
+            "deviation": -0.68,
+            "remaining": 20.35
+        },
+        "WWTP": {
+            "plan": 0.00,
+            "real": 0.00,
+            "cummPlan": 0.00,
+            "cummReal": 0.00,
+            "prevCummPlan": 0.00,
+            "prevCummReal": 0.00,
+            "deviation": 0.00,
+            "remaining": 100
+        },
+        "total": {
+            "prevCummPlan": 35.41,
+            "plan": 0.89,
+            "cummPlan": 36.30,
+            "prevCummReal": 40.35,
+            "real": 0.73,
+            "cummReal": 41.09,
+            "deviation": 4.95,
+            "remaining": 58.91
+        }
+    }
+}
