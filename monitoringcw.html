@@ -1,345 +1,393 @@
 <!DOCTYPE html>
 <!-- saved from url=(0059)https://unilaprojectheti.id/monitoring/cvw?timeline_week=41 -->
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MONITORING CIVIL WORK -</title>
+    <meta name="description" content="Monitoring Civil Work UNILA" />
+    <meta name="keywords" content="Monitoring Civil Work UNILA" />
+    <link rel="icon" href="./img/logopotrait.png" type="image/x-icon" />
+    <link
+      href="./MONITORING CIVIL WORK -41_files/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.css"
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MONITORING CIVIL WORK -</title>
-  <meta name="description" content="Monitoring Civil Work UNILA" />
-  <meta name="keywords" content="Monitoring Civil Work UNILA" />
-  <link rel="icon" href="./img/logopotrait.png" type="image/x-icon" />
-  <link href="./MONITORING CIVIL WORK -41_files/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.css" />
-
-  <style>
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    .loader {
-      width: 50%;
-      height: 8px;
-      background-color: #e5e7eb;
-      /* gray-200 */
-      overflow: hidden;
-      position: relative;
-      margin-top: 25px;
-      /* Jarak antara gambar dan animasi loading */
-    }
-
-    .loader::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 25%;
-      background-color: #3b82f6;
-      /* blue-500 */
-      animation: loading 1.5s infinite;
-    }
-
-    @keyframes loading {
-      0% {
-        left: -25%;
+    <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
       }
 
-      50% {
-        left: 50%;
+      .loader {
+        width: 50%;
+        height: 8px;
+        background-color: #e5e7eb;
+        /* gray-200 */
+        overflow: hidden;
+        position: relative;
+        margin-top: 25px;
+        /* Jarak antara gambar dan animasi loading */
       }
 
-      100% {
-        left: 100%;
+      .loader::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 25%;
+        background-color: #3b82f6;
+        /* blue-500 */
+        animation: loading 1.5s infinite;
       }
-    }
 
-    .colorprimary {
-      background-color: #26778f;
-    }
-  </style>
+      @keyframes loading {
+        0% {
+          left: -25%;
+        }
 
-  <style>
-    .tab-button.active {
-      background-color: #3b82f6;
-      color: #ffffff;
-    }
+        50% {
+          left: 50%;
+        }
 
-    .tab-button {
-      cursor: pointer;
-      background-color: #d1d5db;
-      color: #1f2937;
-    }
+        100% {
+          left: 100%;
+        }
+      }
 
-    .gallery {
-      display: none;
-    }
+      .colorprimary {
+        background-color: #26778f;
+      }
+    </style>
 
-    .gallery.active {
-      display: block;
-    }
+    <style>
+      .tab-button.active {
+        background-color: #3b82f6;
+        color: #ffffff;
+      }
 
-    .gallery img {
-      object-fit: cover;
-      width: 100%;
-      height: 200px;
-    }
+      .tab-button {
+        cursor: pointer;
+        background-color: #d1d5db;
+        color: #1f2937;
+      }
 
-    .gallery a {
-      display: block;
-    }
+      .gallery {
+        display: none;
+      }
 
-    .gallery figcaption {
-      text-align: center;
-      padding: 0.5rem;
-      background-color: #f1f1f1;
-      height: 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      .gallery.active {
+        display: block;
+      }
 
-    figure {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      max-width: 100%;
-    }
+      .gallery img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+      }
 
-    figure img {
-      width: 100%;
-      height: auto;
-    }
+      .gallery a {
+        display: block;
+      }
 
-    figcaption {
-      padding: 10px;
-      font-size: 0.8em;
-      text-align: center;
-      word-wrap: break-word;
-      background-color: #f5f5f5;
-      max-width: 100%;
-    }
+      .gallery figcaption {
+        text-align: center;
+        padding: 0.5rem;
+        background-color: #f1f1f1;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    @media (max-width: 600px) {
+      figure {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+      }
+
       figcaption {
-        font-size: 0.9em;
+        padding: 10px;
+        font-size: 0.8em;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: #f5f5f5;
+        max-width: 100%;
       }
-    }
-  </style>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-</head>
 
-<body>
-  <!-- Preloader -->
-  <div id="preloader" style="display: none">
-    <img src="./MONITORING CIVIL WORK -41_files/logo.png" alt="Logos" class="h-18" />
-    <div class="loader"></div>
-  </div>
+      @media (max-width: 600px) {
+        figcaption {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Header Section -->
-  <header class="bg-white shadow text-white shadow-lg sticky top-0 z-50">
-    <div class="ml-6 mr-6 mx-auto flex justify-between items-center py-4 px-4">
-      <a href="/" class="text-2xl font-bold">
-        <img src="./MONITORING CIVIL WORK -41_files/logo.png" alt="Logo" class="h-14" /></a>
-      <nav class="hidden md:flex space-x-8">
-        <a href="/" class="text-gray-800 font-semibold">HOME</a>
-        <div class="relative">
-          <button class="text-gray-800 font-semibold">MONITORING</button>
-          <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
-            <a href="/monitoringcw.html" class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL
-              WORK</a>
-            <a href="/monitoringpmsc.html"
-              class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">PMSC</a>
-          </div>
-        </div>
-        <a href="https://e-prog.unilaprojectheti.id/" class="text-gray-800 font-semibold">E-PROG</a>
-        <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
-        <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
-      </nav>
-      <div class="md:hidden">
-        <button id="menu-button" class="focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" style="display: none">
+      <img
+        src="./MONITORING CIVIL WORK -41_files/logo.png"
+        alt="Logos"
+        class="h-18"
+      />
+      <div class="loader"></div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow text-white">
-      <nav class="flex flex-col space-y-2 py-4 px-4">
-        <a href="/" class="text-gray-800 font-semibold">HOME</a>
-        <div class="relative">
-          <button class="text-gray-800 font-semibold">MONITORING</button>
-          <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
-            <a href="/monitoringcw.html" class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL
-              WORK</a>
-            <a href="/monitoringpmsc.html"
-              class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">PMSC</a>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow text-white shadow-lg sticky top-0 z-50">
+      <div
+        class="ml-6 mr-6 mx-auto flex justify-between items-center py-4 px-4"
+      >
+        <a href="/" class="text-2xl font-bold">
+          <img
+            src="./MONITORING CIVIL WORK -41_files/logo.png"
+            alt="Logo"
+            class="h-14"
+        /></a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="/" class="text-gray-800 font-semibold">HOME</a>
+          <div class="relative">
+            <button class="text-gray-800 font-semibold">MONITORING</button>
+            <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
+              <a
+                href="/monitoringcw.html"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >CIVIL WORK</a
+              >
+              <a
+                href="/monitoringpmsc.html"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >PMSC</a
+              >
+            </div>
           </div>
+          <a
+            href="https://e-prog.unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >E-PROG</a
+          >
+          <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
+          <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-button" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
-        <a href="https://e-prog.unilaprojectheti.id/" class="text-gray-800 font-semibold">E-PROG</a>
-        <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
-        <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="m-5 space-y-4">
-    <div class="p-6 bg-white shadow rounded-lg">
-      <div class="pt-6 pb-6">
-        <div class="mb-4 colorprimary text-white p-4">
-          <h1 class="text-xl font-extrabold text-center text-white">
-            MONITORING CIVIL WORK UNILA
-          </h1>
-        </div>
-
-        <table class="table-auto w-full border-collapse border border-gray-200">
-          <tbody>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Work</td>
-              <td class="py-2 px-4 border">
-                CWU Development of RSPTN, IRC and WWTP University of Lampung
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Client</td>
-              <td class="py-2 px-4 border">University of Lampung (UNILA)</td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Contract No</td>
-              <td class="py-2 px-4 border">1484/UN26/HK.01/2024</td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Contract Time</td>
-              <td class="py-2 px-4 border">
-                Febuary 26, 2024 - August 29, 2025
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Contract Value</td>
-              <td class="py-2 px-4 border">IDR 198.865.665.859</td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Budget</td>
-              <td class="py-2 px-4 border">LOAN ADB No. 4110-INO</td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Project</td>
-              <td class="py-2 px-4 border">
-                Higher Education for Technology and Innovation (HETI) Project
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border bg-gray-100">Location</td>
-              <td class="py-2 px-4 border">
-                Jalan Prof. Dr. Ir. Sumantri Brojonegoro No.1, Kota Bandar
-                Lampung, Lampung 35141
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-
-      <div class="pt-6 pb-6">
-        <div class="block mb-4 text-bold colorprimary text-white p-4">
-          S-curve
-        </div>
-        <canvas id="ctxGrafik3" style="
-              display: block;
-              box-sizing: border-box;
-             
-            " width="400"></canvas>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow text-white">
+        <nav class="flex flex-col space-y-2 py-4 px-4">
+          <a href="/" class="text-gray-800 font-semibold">HOME</a>
+          <div class="relative">
+            <button class="text-gray-800 font-semibold">MONITORING</button>
+            <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
+              <a
+                href="/monitoringcw.html"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >CIVIL WORK</a
+              >
+              <a
+                href="/monitoringpmsc.html"
+                class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100"
+                >PMSC</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://e-prog.unilaprojectheti.id/"
+            class="text-gray-800 font-semibold"
+            >E-PROG</a
+          >
+          <a href="/#about" class="text-gray-800 font-semibold">ABOUT</a>
+          <a href="/#contact" class="text-gray-800 font-semibold">CONTACT</a>
+        </nav>
       </div>
+    </header>
 
-      <div class="pt-6 pb-6">
-        <table class="table-auto w-full border-collapse border border-white-200">
-          <thead>
-            <tr class="colorprimary text-white">
-              <th colspan="3" class="text-center py-2">Filter Data</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="py-2 px-4 border" style="width: 10%">Periode</td>
-              <td class="py-2 px-4 border" style="width: 90%">
-                <select name="timeline_week" id="weekFilter"
-                  class="select2 w-full border border-black rounded p-1 text-black ">
+    <div class="m-5 space-y-4">
+      <div class="p-6 bg-white shadow rounded-lg">
+        <div class="pt-6 pb-6">
+          <div class="mb-4 colorprimary text-white p-4">
+            <h1 class="text-xl font-extrabold text-center text-white">
+              MONITORING CIVIL WORK UNILA
+            </h1>
+          </div>
 
-                </select>
-
-              </td>
-            </tr>
-            <tr>
-              <td class="py-2 px-4 border">Date</td>
-              <td class="py-2 px-4 border" id="weekDate">
-                December 8, 2024 - December 14, 2024
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="pt-6 pb-6">
-        <div class="overflow-x-auto pb-10">
-          <table class="table-auto w-full border-collapse border border-white-200">
-            <thead class="colorprimary text-white">
-              <tr class="colorprimary text-white">
-                <th colspan="9" class="text-center py-2">
-                  Monitoring Work Progress <span data-nameweek="true"></span>
-                </th>
-              </tr>
-              <tr>
-                <th rowspan="2" class="py-2 px-4 border">Building</th>
-                <th colspan="3" class="text-center py-2 px-4 border">Plan</th>
-                <th colspan="3" class="text-center py-2 px-4 border">
-                  Realization
-                </th>
-                <th rowspan="2" class="py-2 px-4 border">Deviation</th>
-                <th rowspan="2" class="py-2 px-4 border">
-                  Remaining Progress from (100%)
-                </th>
-              </tr>
-              <tr>
-                <th class="py-2 px-4 border">until Previous Week</th>
-                <th class="py-2 px-4 border">This Week's Progress</th>
-                <th class="py-2 px-4 border">until This Week</th>
-                <th class="py-2 px-4 border">until Previous Week</th>
-                <th class="py-2 px-4 border">This Week's Progress</th>
-                <th class="py-2 px-4 border">until This Week</th>
-              </tr>
-            </thead>
+          <table
+            class="table-auto w-full border-collapse border border-gray-200"
+          >
             <tbody>
-              <!-- <tr>
-                <td colspan="9" class="text-center font-bold py-2 px-4 border">
-                  CCO-01
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Work</td>
+                <td class="py-2 px-4 border">
+                  CWU Development of RSPTN, IRC and WWTP University of Lampung
                 </td>
-              </tr> -->
-              <tr id="buildingRSPTN">
               </tr>
-              <tr id="buildingIRC">
-
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Client</td>
+                <td class="py-2 px-4 border">University of Lampung (UNILA)</td>
               </tr>
-              <tr id="buildingWWTP">
-
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract No</td>
+                <td class="py-2 px-4 border">1484/UN26/HK.01/2024</td>
               </tr>
-              <tr class="bg-blue-200" id="buildingTotal">
-
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract Time</td>
+                <td class="py-2 px-4 border">
+                  Febuary 26, 2024 - August 29, 2025
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Contract Value</td>
+                <td class="py-2 px-4 border">IDR 198.865.665.859</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Budget</td>
+                <td class="py-2 px-4 border">LOAN ADB No. 4110-INO</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Project</td>
+                <td class="py-2 px-4 border">
+                  Higher Education for Technology and Innovation (HETI) Project
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border bg-gray-100">Location</td>
+                <td class="py-2 px-4 border">
+                  Jalan Prof. Dr. Ir. Sumantri Brojonegoro No.1, Kota Bandar
+                  Lampung, Lampung 35141
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- <div class="overflow-x-auto">
+        <div class="pt-6 pb-6">
+          <div class="block mb-4 text-bold colorprimary text-white p-4">
+            S-curve
+          </div>
+          <canvas
+            id="ctxGrafik3"
+            style="display: block; box-sizing: border-box"
+            width="400"
+          ></canvas>
+        </div>
+
+        <div class="pt-6 pb-6">
+          <table
+            class="table-auto w-full border-collapse border border-white-200"
+          >
+            <thead>
+              <tr class="colorprimary text-white">
+                <th colspan="3" class="text-center py-2">Filter Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border" style="width: 10%">Periode</td>
+                <td class="py-2 px-4 border" style="width: 90%">
+                  <select
+                    name="timeline_week"
+                    id="weekFilter"
+                    class="select2 w-full border border-black rounded p-1 text-black"
+                  ></select>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border">Date</td>
+                <td class="py-2 px-4 border" id="weekDate">
+                  December 8, 2024 - December 14, 2024
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pt-6 pb-6">
+          <div class="overflow-x-auto pb-10">
+            <table
+              class="table-auto w-full border-collapse border border-white-200"
+            >
+              <thead class="colorprimary text-white">
+                <tr class="colorprimary text-white">
+                  <th colspan="9" class="text-center py-2">
+                    Monitoring Work Progress <span data-nameweek="true"></span>
+                  </th>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="py-2 px-4 border">Building</th>
+                  <th colspan="3" class="text-center py-2 px-4 border">Plan</th>
+                  <th colspan="3" class="text-center py-2 px-4 border">
+                    Realization
+                  </th>
+                  <th rowspan="2" class="py-2 px-4 border">Deviation</th>
+                  <th rowspan="2" class="py-2 px-4 border">
+                    Remaining Progress from (100%)
+                  </th>
+                </tr>
+                <tr>
+                  <th class="py-2 px-4 border">until Previous Week</th>
+                  <th class="py-2 px-4 border">This Week's Progress</th>
+                  <th class="py-2 px-4 border">until This Week</th>
+                  <th class="py-2 px-4 border">until Previous Week</th>
+                  <th class="py-2 px-4 border">This Week's Progress</th>
+                  <th class="py-2 px-4 border">until This Week</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                <td colspan="9" class="text-center font-bold py-2 px-4 border">
+                  CCO-01
+                </td>
+              </tr> -->
+                <tr id="buildingRSPTN"></tr>
+                <tr id="buildingIRC"></tr>
+                <tr id="buildingWWTP"></tr>
+                <tr class="bg-blue-200" id="buildingTotal"></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- <div class="overflow-x-auto">
           <table class="table-auto w-full border-collapse border border-white-200">
             <thead class="colorprimary text-white">
               <tr>
@@ -409,8 +457,8 @@
             </tbody>
           </table>
         </div> -->
-      </div>
-      <!-- <div class="pt-6 pb-6">
+        </div>
+        <!-- <div class="pt-6 pb-6">
         <table class="table-auto w-full border-collapse border border-white-200">
           <thead class="colorprimary text-white">
             <tr>
@@ -462,7 +510,7 @@
         </table>
       </div> -->
 
-      <!-- <div class="pt-6 pb-6">
+        <!-- <div class="pt-6 pb-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <div class="block mb-4 text-bold colorprimary text-white p-4">
@@ -490,162 +538,220 @@
         </div>
       </div> -->
 
-
-
-      <div class="pt-6 pb-6">
-        <div class="block mb-4 text-bold colorprimary text-white p-4">
-          WORK PROGRESS (PHOTO) <span class="uppercase" data-nameweek="true"></span>
-        </div>
-        <div class="flex space-x-4 border-b-2 mb-4">
-          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none active"
-            onclick="showGallery('RSPTN', this)">
-            RSPTN
-          </button>
-          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none" onclick="showGallery('IRC', this)">
-            IRC
-          </button>
-          <button class="tab-button py-2 px-4 rounded-t-lg focus:outline-none" onclick="showGallery('WWTP', this)">
-            WWTP
-          </button>
-        </div>
-        <div class="gallery-container">
-          <div id="RSPTN" class="gallery active">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> </div>
+        <div class="pt-6 pb-6">
+          <div class="block mb-4 text-bold colorprimary text-white p-4">
+            WORK PROGRESS (PHOTO)
+            <span class="uppercase" data-nameweek="true"></span>
           </div>
-          <div id="IRC" class="gallery">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> </div>
+          <div class="flex space-x-4 border-b-2 mb-4">
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none active"
+              onclick="showGallery('RSPTN', this)"
+            >
+              RSPTN
+            </button>
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+              onclick="showGallery('IRC', this)"
+            >
+              IRC
+            </button>
+            <button
+              class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+              onclick="showGallery('WWTP', this)"
+            >
+              WWTP
+            </button>
           </div>
-          <div id="WWTP" class="gallery">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <p>No images available</p>
+          <div class="gallery-container">
+            <div id="RSPTN" class="gallery active">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              ></div>
+            </div>
+            <div id="IRC" class="gallery">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              ></div>
+            </div>
+            <div id="WWTP" class="gallery">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+              >
+                <p>No images available</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="text-white py-16" style="background-color: #26778f">
-    <div class="container mx-auto flex flex-wrap items-center justify-between px-4">
-      <div class="w-full md:w-1/2 mb-6 md:mb-0">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.307637898451!2d105.23466907014732!3d-5.369966441784363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbcd47ce7835%3A0x234fee8ad9173d21!2sHETI%20Project%20Office!5e0!3m2!1sid!2sid!4v1741123722549!5m2!1sid!2sid"
-          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="w-full md:w-1/2 text-center md:text-left md:pl-8">
-        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <p class="mb-6">
-          Get in touch with us for more information about our programs and
-          services.
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-envelope mr-2"></i><strong>Email:</strong>
-          <a href="mailto:pmsc.unilaproject@gmail.com"
-            class="text-gray-200 hover:underline">pmsc.unilaproject@gmail.com</a>
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-phone-alt mr-2"></i><strong>Phone:</strong>
-          <a href="https://wa.me/6285954041681" class="text-gray-200 hover:underline">+62 859-5404-1681</a>
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-map-marker-alt mr-2"></i><strong>Address:</strong> Jl. Sumantri Brojonegoro No.1, Bandar
-          Lampung, Indonesia
-        </p>
-        <div class="mt-6">
-          <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
-          <div class="flex justify-center md:justify-start space-x-4">
-            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline">Facebook <i
-                class="fas fa-facebook-f"></i></a>
-            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline">Twitter/X <i
-                class="fas fa-twitter"></i></a>
-            <a href="https://www.instagram.com/heti_unila/" class="text-gray-200 hover:underline">Instagram <i
-                class="fas fa-instagram"></i></a>
-            <a href="https://unilaprojectheti.id/#" class="text-gray-200 hover:underline"><i
-                class="fas fa-linkedin-in"></i>Linkedin
-            </a>
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="text-white py-16"
+      style="background-color: #26778f"
+    >
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between px-4"
+      >
+        <div class="w-full md:w-1/2 mb-6 md:mb-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.307637898451!2d105.23466907014732!3d-5.369966441784363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbcd47ce7835%3A0x234fee8ad9173d21!2sHETI%20Project%20Office!5e0!3m2!1sid!2sid!4v1741123722549!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left md:pl-8">
+          <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+          <p class="mb-6">
+            Get in touch with us for more information about our programs and
+            services.
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-envelope mr-2"></i><strong>Email:</strong>
+            <a
+              href="mailto:pmsc.unilaproject@gmail.com"
+              class="text-gray-200 hover:underline"
+              >pmsc.unilaproject@gmail.com</a
+            >
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-phone-alt mr-2"></i><strong>Phone:</strong>
+            <a
+              href="https://wa.me/6285954041681"
+              class="text-gray-200 hover:underline"
+              >+62 859-5404-1681</a
+            >
+          </p>
+          <p class="mb-2">
+            <i class="fas fa-map-marker-alt mr-2"></i
+            ><strong>Address:</strong> Jl. Sumantri Brojonegoro No.1, Bandar
+            Lampung, Indonesia
+          </p>
+          <div class="mt-6">
+            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+            <div class="flex justify-center md:justify-start space-x-4">
+              <a
+                href="https://unilaprojectheti.id/#"
+                class="text-gray-200 hover:underline"
+                >Facebook <i class="fas fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://unilaprojectheti.id/#"
+                class="text-gray-200 hover:underline"
+                >Twitter/X <i class="fas fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/heti_unila/"
+                class="text-gray-200 hover:underline"
+                >Instagram <i class="fas fa-instagram"></i
+              ></a>
+              <a
+                href="https://unilaprojectheti.id/#"
+                class="text-gray-200 hover:underline"
+                ><i class="fas fa-linkedin-in"></i>Linkedin
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer Section -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center px-4">
-      <p>
-        © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved | Created by
-        <a href="https://wiiver.id/about-us/" target="_blank" class="text-gray-200 hover:underline">Rio Ananda Putra</a>
-      </p>
-    </div>
-  </footer>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center px-4">
+        <p>
+          © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved | Created by
+          <a
+            href="https://wiiver.id/about-us/"
+            target="_blank"
+            class="text-gray-200 hover:underline"
+            >Rio Ananda Putra</a
+          >
+        </p>
+      </div>
+    </footer>
 
-  <script src="./MONITORING CIVIL WORK -41_files/jquery-3.7.1.min.js.download"></script>
-  <script src="./MONITORING CIVIL WORK -41_files/chart.js.download"></script>
-  <script src="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.js.download"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/jquery-3.7.1.min.js.download"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/chart.js.download"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.js.download"></script>
 
+    <script src="/data/scurve.js"></script>
+    <script>
+      // JavaScript untuk menyembunyikan preloader setelah halaman dimuat
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.display = "none";
+      });
+      document.querySelector("button").addEventListener("click", function () {
+        const dropdown = this.nextElementSibling;
+        dropdown.classList.toggle("hidden");
+      });
+    </script>
 
-  <script src="/data/scurve.js"></script>
-  <script>
-    // JavaScript untuk menyembunyikan preloader setelah halaman dimuat
-    window.addEventListener("load", function () {
-      const preloader = document.getElementById("preloader");
-      preloader.style.display = "none";
-    });
-    document.querySelector("button").addEventListener("click", function () {
-      const dropdown = this.nextElementSibling;
-      dropdown.classList.toggle("hidden");
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <script src="/data/scurve.js?i=1"></script>
-  <script>
-    $(document).ready(function () {
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const week = urlParams.get("week");
-      if (week) {
-        lastWeek = parseInt(week);
-      }
-      let weekoption = ''
-      for (let i = lastWeek; i >= 1; i--) {
-        let selected = ''
-        if (i === lastWeek) {
-          selected = 'selected'
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/data/scurve.js?i=1"></script>
+    <script>
+      $(document).ready(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const week = urlParams.get("week");
+        if (week) {
+          lastWeek = parseInt(week);
         }
-        weekoption += `<option ${selected} value="${i}">Week ${i}</option>`
-      }
-      $("#weekFilter").html(weekoption)
-      grafik_3();
-
-      $("#weekFilter").select2({
-        placeholder: "Select week",
-      });
-      $("#weekFilter").on("change", function () {
-        const selectedWeek = $(this).val();
-        window.location.href = `?week=${selectedWeek}`;
-      });
-
-      const selectedWeek = window.location.search.split("=")[1];
-
-      fetch(`/data/cw/${lastWeek}.json`)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          $("[data-nameweek='true']").text(data.name);
-          const startDate = new Date(data.startDate);
-          const endDate = new Date(data.endDate);
-          $("#weekDate").text(
-            `${startDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} - ${endDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`
-          );
-          const RSPTN = {
-            prevCummPlan: cco1Plan[week - 1]
+        let weekoption = "";
+        for (let i = lastWeek; i >= 1; i--) {
+          let selected = "";
+          if (i === lastWeek) {
+            selected = "selected";
           }
-          remaining = 100 - data.details.RSPTN.cummReal
-          remaining = remaining.toFixed(2)
-          $("#buildingRSPTN").html(`
+          weekoption += `<option ${selected} value="${i}">Week ${i}</option>`;
+        }
+        $("#weekFilter").html(weekoption);
+        grafik_3();
+
+        $("#weekFilter").select2({
+          placeholder: "Select week",
+        });
+        $("#weekFilter").on("change", function () {
+          const selectedWeek = $(this).val();
+          window.location.href = `?week=${selectedWeek}`;
+        });
+
+        const selectedWeek = window.location.search.split("=")[1];
+
+        fetch(`/data/cw/${lastWeek}.json`)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            $("[data-nameweek='true']").text(data.name);
+            const startDate = new Date(data.startDate);
+            const endDate = new Date(data.endDate);
+            $("#weekDate").text(
+              `${startDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })} - ${endDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}`
+            );
+            const RSPTN = {
+              prevCummPlan: cco1Plan[week - 1],
+            };
+            remaining = 100 - data.details.RSPTN.cummReal;
+            remaining = remaining.toFixed(2);
+            deviation =
+              data.details.RSPTN.deviation < 0
+                ? 'style="background-color: #ffbfab;"'
+                : "";
+            $("#buildingRSPTN").html(`
          <td class="py-2 px-4 border">RSPTN</td>
                 <td class="py-2 px-4 border">${data.details.RSPTN.prevCummPlan}%</td>
                 <td class="py-2 px-4 border">${data.details.RSPTN.plan}%</td>
@@ -653,12 +759,16 @@
                 <td class="py-2 px-4 border">${data.details.RSPTN.prevCummReal}%</td>
                 <td class="py-2 px-4 border">${data.details.RSPTN.real}%</td>
                 <td class="py-2 px-4 border">${data.details.RSPTN.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.RSPTN.deviation}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.RSPTN.deviation}%</td>
                 <td class="py-2 px-4 border">${remaining}%</td>
-          `)
-          remaining = 100 - data.details.IRC.cummReal
-          remaining = remaining.toFixed(2)
-          $("#buildingIRC").html(`
+          `);
+            remaining = 100 - data.details.IRC.cummReal;
+            remaining = remaining.toFixed(2);
+            deviation =
+              data.details.IRC.deviation < 0
+                ? 'style="background-color: #ffbfab;"'
+                : "";
+            $("#buildingIRC").html(`
          <td class="py-2 px-4 border">IRC</td>
                 <td class="py-2 px-4 border">${data.details.IRC.prevCummPlan}%</td>
                 <td class="py-2 px-4 border">${data.details.IRC.plan}%</td>
@@ -666,12 +776,16 @@
                 <td class="py-2 px-4 border">${data.details.IRC.prevCummReal}%</td>
                 <td class="py-2 px-4 border">${data.details.IRC.real}%</td>
                 <td class="py-2 px-4 border">${data.details.IRC.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.IRC.deviation}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.IRC.deviation}%</td>
                 <td class="py-2 px-4 border">${remaining}%</td>
-          `)
-          remaining = 100 - data.details.WWTP.cummReal
-          remaining = remaining.toFixed(2)
-          $("#buildingWWTP").html(`
+          `);
+            remaining = 100 - data.details.WWTP.cummReal;
+            remaining = remaining.toFixed(2);
+            deviation =
+              data.details.WWTP.deviation < 0
+                ? 'style="background-color: #ffbfab;"'
+                : "";
+            $("#buildingWWTP").html(`
          <td class="py-2 px-4 border">WWTP</td>
                 <td class="py-2 px-4 border">${data.details.WWTP.prevCummPlan}%</td>
                 <td class="py-2 px-4 border">${data.details.WWTP.plan}%</td>
@@ -679,12 +793,16 @@
                 <td class="py-2 px-4 border">${data.details.WWTP.prevCummReal}%</td>
                 <td class="py-2 px-4 border">${data.details.WWTP.real}%</td>
                 <td class="py-2 px-4 border">${data.details.WWTP.cummReal}%</td>
-                <td class="py-2 px-4 border">${data.details.WWTP.deviation}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.WWTP.deviation}%</td>
                 <td class="py-2 px-4 border">${remaining}%</td>
-          `)
-          remaining = 100 - data.details.total.cummReal
-          remaining = remaining.toFixed(2)
-          $("#buildingTotal").html(`
+          `);
+            remaining = 100 - data.details.total.cummReal;
+            remaining = remaining.toFixed(2);
+            deviation =
+              data.details.total.deviation < 0
+                ? 'style="background-color: #ffbfab;"'
+                : "";
+            $("#buildingTotal").html(`
           <td class="py-2 px-4 border">Total</td>
                   <td class="py-2 px-4 border">${data.details.total.prevCummPlan}%</td>
                   <td class="py-2 px-4 border">${data.details.total.plan}%</td>
@@ -692,182 +810,180 @@
                   <td class="py-2 px-4 border">${data.details.total.prevCummReal}%</td>
                   <td class="py-2 px-4 border">${data.details.total.real}%</td>
                   <td class="py-2 px-4 border">${data.details.total.cummReal}%</td>
-                  <td class="py-2 px-4 border">${data.details.total.deviation}%</td>
+                  <td ${deviation} class="py-2 px-4 border">${data.details.total.deviation}%</td>
                   <td class="py-2 px-4 border">${remaining}%</td>
-            `)
+            `);
 
-          const rsptnPhotos = data.photos?.filter((photo) =>
-            photo.building === "RSPTN"
-          );
+            const rsptnPhotos = data.photos?.filter(
+              (photo) => photo.building === "RSPTN"
+            );
 
-          const ircPhotos = data.photos?.filter((photo) =>
-            photo.building === "IRC"
-          );
-          const wwtpPhotos = data.photos?.filter((photo) =>
-            photo.building === "WWTP"
-          );
+            const ircPhotos = data.photos?.filter(
+              (photo) => photo.building === "IRC"
+            );
+            const wwtpPhotos = data.photos?.filter(
+              (photo) => photo.building === "WWTP"
+            );
 
-          let gall = ''
-          rsptnPhotos?.forEach((photo) => {
-            gall += `
+            let gall = "";
+            rsptnPhotos?.forEach((photo) => {
+              gall += `
         <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
         <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
         <figcaption class="bg-gray-200 p-2">
           ${photo.caption}
         </figcaption>
-      </a>`
-          })
-          if (rsptnPhotos?.length === 0 || rsptnPhotos === undefined) {
-            gall = '<p>No images available</p>'
-          }
-          $("#RSPTN>div")[0].innerHTML = gall
-          gall = ''
-          ircPhotos?.forEach((photo) => {
-            gall += `
-        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
-        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
-        <figcaption class="bg-gray-200 p-2">
-          ${photo.caption}
-        </figcaption>
-      </a>
-        `
-          })
-          if (ircPhotos?.length === 0 || ircPhotos === undefined) {
-            gall = '<p>No images available</p>'
-          }
-          $("#IRC>div")[0].innerHTML = gall
-          gall = ''
-          wwtpPhotos?.forEach((photo) => {
-            gall += `
+      </a>`;
+            });
+            if (rsptnPhotos?.length === 0 || rsptnPhotos === undefined) {
+              gall = "<p>No images available</p>";
+            }
+            $("#RSPTN>div")[0].innerHTML = gall;
+            gall = "";
+            ircPhotos?.forEach((photo) => {
+              gall += `
         <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
         <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
         <figcaption class="bg-gray-200 p-2">
           ${photo.caption}
         </figcaption>
       </a>
-        `
-          })
-          if (wwtpPhotos?.length === 0 || wwtpPhotos === undefined) {
-            gall = '<p>No images available</p>'
-          }
-          $("#WWTP>div")[0].innerHTML = gall
+        `;
+            });
+            if (ircPhotos?.length === 0 || ircPhotos === undefined) {
+              gall = "<p>No images available</p>";
+            }
+            $("#IRC>div")[0].innerHTML = gall;
+            gall = "";
+            wwtpPhotos?.forEach((photo) => {
+              gall += `
+        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
+        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
+        <figcaption class="bg-gray-200 p-2">
+          ${photo.caption}
+        </figcaption>
+      </a>
+        `;
+            });
+            if (wwtpPhotos?.length === 0 || wwtpPhotos === undefined) {
+              gall = "<p>No images available</p>";
+            }
+            $("#WWTP>div")[0].innerHTML = gall;
+          });
+      });
+
+      function showGallery(location, btn) {
+        document.querySelectorAll(".gallery").forEach((gallery) => {
+          gallery.classList.remove("active");
         });
-    });
-
-
-    function showGallery(location, btn) {
-      document.querySelectorAll(".gallery").forEach((gallery) => {
-        gallery.classList.remove("active");
-      });
-      document.getElementById(location).classList.add("active");
-      document.querySelectorAll(".tab-button").forEach((button) => {
-        button.classList.remove("active");
-      });
-      btn.classList.add("active");
-    }
-
-    function grafik_3() {
-      const ctx = document.getElementById("ctxGrafik3");
-      const labels = [];
-      const datasets = [
-        {
-          label: "PLAN CUMULATIVE [ INITIAL ]",
-          data: initialPlan,
-          borderColor: "orange",
-          backgroundColor: "orange",
-        },
-        {
-          label: "REAL CUMULATIVE [ INITIAL ]",
-          data: initialReal,
-          borderColor: "#05f746",
-          backgroundColor: "#05f746",
-        },
-        {
-          label: "PLAN CUMULATIVE [ CCO-01 ]",
-          data: cco1Plan,
-          borderColor: "red",
-          backgroundColor: "red",
-        },
-        {
-          label: "REAL CUMULATIVE [ CCO-01 ]",
-          data: cco1Real,
-          borderColor: "#167d10",
-          backgroundColor: "#167d10",
-        },
-      ];
-
-      for (let i = 0; i < 85; i++) {
-        labels.push(i + 1);
+        document.getElementById(location).classList.add("active");
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+        btn.classList.add("active");
       }
 
-      new Chart(ctx, {
-        type: "line",
-        data: {
-          labels: labels,
-          datasets: datasets,
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
+      function grafik_3() {
+        const ctx = document.getElementById("ctxGrafik3");
+        const labels = [];
+        const datasets = [
+          {
+            label: "PLAN CUMULATIVE [ INITIAL ]",
+            data: initialPlan,
+            borderColor: "orange",
+            backgroundColor: "orange",
           },
-          interaction: {
-            intersect: false,
-            mode: "index",
+          {
+            label: "REAL CUMULATIVE [ INITIAL ]",
+            data: initialReal,
+            borderColor: "#05f746",
+            backgroundColor: "#05f746",
           },
-          plugins: {
-            legend: {
-              display: true,
-              labels: {
-                boxWidth: 20,
+          {
+            label: "PLAN CUMULATIVE [ CCO-01 ]",
+            data: cco1Plan,
+            borderColor: "red",
+            backgroundColor: "red",
+          },
+          {
+            label: "REAL CUMULATIVE [ CCO-01 ]",
+            data: cco1Real,
+            borderColor: "#167d10",
+            backgroundColor: "#167d10",
+          },
+        ];
+
+        for (let i = 0; i < 85; i++) {
+          labels.push(i + 1);
+        }
+
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: labels,
+            datasets: datasets,
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
               },
-              position: "top",
-              maxWidth: 1,
             },
-            tooltip: {
-              callbacks: {
-                title: function (context) {
-                  return "WEEK " + context[0].label;
+            interaction: {
+              intersect: false,
+              mode: "index",
+            },
+            plugins: {
+              legend: {
+                display: true,
+                labels: {
+                  boxWidth: 20,
                 },
-                label: function (context) {
-                  let label = context.dataset.label || "";
-                  if (label) {
-                    label += " : ";
-                  }
-                  if (context.parsed.y !== null) {
-                    label += context.parsed.y.toFixed(2) + "%";
-                  }
-                  if (context.dataset.label.includes("REAL")) {
-                    if (context.dataset.label.includes("INITIAL")) {
-                      const deviation =
-                        initialPlan[context.dataIndex] === 0
-                          ? 0
-                          : initialReal[context.dataIndex] -
-                          initialPlan[context.dataIndex];
-                      label +=
-                        " ( Deviation: " + deviation.toFixed(2) + "% )";
-                    } else if (context.dataset.label.includes("CCO-01")) {
-                      const deviation =
-                        cco1Plan[context.dataIndex] === 0
-                          ? 0
-                          : cco1Real[context.dataIndex] -
-                          cco1Plan[context.dataIndex];
-                      label +=
-                        " ( Deviation: " + deviation.toFixed(2) + "% )";
+                position: "top",
+                maxWidth: 1,
+              },
+              tooltip: {
+                callbacks: {
+                  title: function (context) {
+                    return "WEEK " + context[0].label;
+                  },
+                  label: function (context) {
+                    let label = context.dataset.label || "";
+                    if (label) {
+                      label += " : ";
                     }
-                  }
+                    if (context.parsed.y !== null) {
+                      label += context.parsed.y.toFixed(2) + "%";
+                    }
+                    if (context.dataset.label.includes("REAL")) {
+                      if (context.dataset.label.includes("INITIAL")) {
+                        const deviation =
+                          initialPlan[context.dataIndex] === 0
+                            ? 0
+                            : initialReal[context.dataIndex] -
+                              initialPlan[context.dataIndex];
+                        label +=
+                          " ( Deviation: " + deviation.toFixed(2) + "% )";
+                      } else if (context.dataset.label.includes("CCO-01")) {
+                        const deviation =
+                          cco1Plan[context.dataIndex] === 0
+                            ? 0
+                            : cco1Real[context.dataIndex] -
+                              cco1Plan[context.dataIndex];
+                        label +=
+                          " ( Deviation: " + deviation.toFixed(2) + "% )";
+                      }
+                    }
 
-                  return label;
+                    return label;
+                  },
                 },
               },
+              responsive: true,
             },
-            responsive: true,
           },
-        },
-      });
-    }
-  </script>
-</body>
-
+        });
+      }
+    </script>
+  </body>
 </html>
