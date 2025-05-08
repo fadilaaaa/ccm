@@ -361,7 +361,7 @@
                   </th>
                   <th rowspan="2" class="py-2 px-4 border">Deviation</th>
                   <th rowspan="2" class="py-2 px-4 border">
-                    Remaining Progress from (100%)
+                    Remaining Progress
                   </th>
                 </tr>
                 <tr>
@@ -665,15 +665,7 @@
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto text-center px-4">
-        <p>
-          © PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved | Created by
-          <a
-            href="https://wiiver.id/about-us/"
-            target="_blank"
-            class="text-gray-200 hover:underline"
-            >Rio Ananda Putra</a
-          >
-        </p>
+        <p>© PMSC UNILA HETI PROJECT ADB 2024 | All rights reserved</p>
       </div>
     </footer>
 
@@ -681,7 +673,6 @@
     <script src="./MONITORING CIVIL WORK -41_files/chart.js.download"></script>
     <script src="./MONITORING CIVIL WORK -41_files/jquery.fancybox.min.js.download"></script>
 
-    <script src="/data/scurve.js"></script>
     <script>
       // JavaScript untuk menyembunyikan preloader setelah halaman dimuat
       window.addEventListener("load", function () {
@@ -695,18 +686,21 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="/data/scurve.js?i=1"></script>
+    <script src="/data/scurve.js?i=4"></script>
     <script>
       $(document).ready(function () {
         const urlParams = new URLSearchParams(window.location.search);
         const week = urlParams.get("week");
         if (week) {
-          lastWeek = parseInt(week);
+          thisWeek = parseInt(week);
+        }
+        if (!thisWeek) {
+          thisWeek = lastWeek;
         }
         let weekoption = "";
         for (let i = lastWeek; i >= 1; i--) {
           let selected = "";
-          if (i === lastWeek) {
+          if (i === thisWeek) {
             selected = "selected";
           }
           weekoption += `<option ${selected} value="${i}">Week ${i}</option>`;
@@ -724,7 +718,7 @@
 
         const selectedWeek = window.location.search.split("=")[1];
 
-        fetch(`/data/cw/${lastWeek}.json`)
+        fetch(`/data/cw/${thisWeek}.json`)
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
@@ -745,7 +739,7 @@
             const RSPTN = {
               prevCummPlan: cco1Plan[week - 1],
             };
-            remaining = 100 - data.details.RSPTN.cummReal;
+            remaining = 71.9 - data.details.RSPTN.cummReal;
             remaining = remaining.toFixed(2);
             deviation =
               data.details.RSPTN.deviation < 0
@@ -762,7 +756,7 @@
                 <td ${deviation} class="py-2 px-4 border">${data.details.RSPTN.deviation}%</td>
                 <td class="py-2 px-4 border">${remaining}%</td>
           `);
-            remaining = 100 - data.details.IRC.cummReal;
+            remaining = 28.1 - data.details.IRC.cummReal;
             remaining = remaining.toFixed(2);
             deviation =
               data.details.IRC.deviation < 0
@@ -777,7 +771,7 @@
                 <td class="py-2 px-4 border">${data.details.IRC.real}%</td>
                 <td class="py-2 px-4 border">${data.details.IRC.cummReal}%</td>
                 <td ${deviation} class="py-2 px-4 border">${data.details.IRC.deviation}%</td>
-                <td class="py-2 px-4 border">${remaining}%</td>
+                <td class="py-2 px-4 border">${remaining}% </td>
           `);
             remaining = 100 - data.details.WWTP.cummReal;
             remaining = remaining.toFixed(2);
@@ -794,7 +788,7 @@
                 <td class="py-2 px-4 border">${data.details.WWTP.real}%</td>
                 <td class="py-2 px-4 border">${data.details.WWTP.cummReal}%</td>
                 <td ${deviation} class="py-2 px-4 border">${data.details.WWTP.deviation}%</td>
-                <td class="py-2 px-4 border">${remaining}%</td>
+                <td class="py-2 px-4 border">-</td>
           `);
             remaining = 100 - data.details.total.cummReal;
             remaining = remaining.toFixed(2);

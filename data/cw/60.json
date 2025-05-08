@@ -1,0 +1,50 @@
+{
+    "name": "Week 60",
+    "startDate": "2025-04-20",
+    "endDate": "2025-04-26",
+    "weekNumber": 60,
+    "planCummulative": 50.25,
+    "realCummulative": 47.96,
+    "details": {
+        "RSPTN": {
+            "prevCummPlan": 38.30,
+            "plan": 0.93,
+            "cummPlan": 39.23,
+            "prevCummReal": 33.57,
+            "real": 0.27,
+            "cummReal": 33.84,
+            "deviation": -5.39,
+            "remaining": 0
+        },
+        "IRC": {
+            "prevCummPlan": 10.71,
+            "plan": 0.31,
+            "cummPlan": 11.02,
+            "prevCummReal": 14.01,
+            "real": 0.11,
+            "cummReal": 14.28,
+            "deviation": 3.10,
+            "remaining": 0
+        },
+        "WWTP": {
+            "plan": 0.00,
+            "real": 0.00,
+            "cummPlan": 0.00,
+            "cummReal": 0.00,
+            "prevCummPlan": 0.00,
+            "prevCummReal": 0.00,
+            "deviation": 0.00,
+            "remaining": 0
+        },
+        "total": {
+            "prevCummPlan": 49.00,
+            "plan": 1.25,
+            "cummPlan": 50.25,
+            "prevCummReal": 47.57,
+            "real": 0.39,
+            "cummReal": 47.96,
+            "deviation": -2.29,
+            "remaining": 0
+        }
+    }
+}

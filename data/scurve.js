@@ -1,4 +1,5 @@
-var lastWeek = 54;
+var lastWeek = 61;
+var thisWeek = null;
 var initialPlan = [
   0.02,
   0.03,
@@ -311,10 +312,10 @@ var cco1Real = [
   44.65,
   44.86,
   45.08,
-  NaN,
-  NaN,
-  NaN,
-  NaN,
+  45.48,
+  45.48,
+  45.48,
+  46.47,
   NaN,
   NaN,
   NaN,
