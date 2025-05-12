@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="./img/logopotrait.png" type="image/x-icon" />
+    <link rel="icon" href="/img/logopotrait.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - PMSC HETI ADB RSPTN UNILA</title>
-    <link rel="stylesheet" type="text/css" href="./Home - PMSC HETI ADB RSPTN UNILA_files/tailwind.min.css" />
-    <link rel="stylesheet" type="text/css" href="./Home - PMSC HETI ADB RSPTN UNILA_files/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./Home - PMSC HETI ADB RSPTN UNILA_files/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="./Home - PMSC HETI ADB RSPTN UNILA_files/jquery.fancybox.min.css" />
+    <title><?= $PAGE_TITLE ?> - HETI UNILA</title>
+    <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/tailwind.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/jquery.fancybox.min.css" />
 
     <style>
         #preloader {
