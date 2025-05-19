@@ -4,8 +4,6 @@
 $PAGE_TITLE = "News";
 include_once '../partial/meta.php'; ?>
 
-
-
 <body>
     <?php include_once '../partial/header.php'; ?>
 

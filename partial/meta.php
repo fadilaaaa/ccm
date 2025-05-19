@@ -1,8 +1,15 @@
 <head>
+    <?php
+    $PAGE_TITLE = $PAGE_TITLE ?? "";
+    $PAGE_DESCRIPTION = $PAGE_DESCRIPTION ?? "";
+    $PAGE_KEYWORDS = $PAGE_KEYWORDS ?? "";
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" href="/img/logopotrait.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?= $PAGE_TITLE ?> - HETI UNILA</title>
+    <meta name="description" content="<?= $PAGE_DESCRIPTION ?>" />
+    <meta name="keywords" content="<?= $PAGE_KEYWORDS ?>" />
     <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/tailwind.min.css" />
     <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/slick.css" />
     <link rel="stylesheet" type="text/css" href="/Home - PMSC HETI ADB RSPTN UNILA_files/slick-theme.css" />
@@ -202,4 +209,78 @@
             object-fit: cover;
         }
     </style>
+    <style>
+        .tab-button.active {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+
+        .tab-button {
+            cursor: pointer;
+            background-color: #d1d5db;
+            color: #1f2937;
+        }
+
+        .gallery {
+            display: none;
+        }
+
+        .gallery.active {
+            display: block;
+        }
+
+        .gallery img {
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+        }
+
+        .gallery a {
+            display: block;
+        }
+
+        .gallery figcaption {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #f1f1f1;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            padding: 10px;
+            font-size: 0.8em;
+            text-align: center;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            max-width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            figcaption {
+                font-size: 0.9em;
+            }
+        }
+
+        .colorprimary {
+            background-color: #26778f;
+        }
+    </style>
+    <link
+        href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+        rel="stylesheet" />
 </head>

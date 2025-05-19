@@ -1,642 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <?php
-$PAGE_TITLE = "Home";
-include_once 'partial/meta.php'; ?>
+$PAGE_TITLE = "Monitoring Civil Work";
+$PAGE_DESCRIPTION = "Monitoring Civil Work UNILA";
+$PAGE_KEYWORDS = "Monitoring, Civil Work, UNILA";
+include_once __DIR__ . '/partial/meta.php'; ?>
 
 <body>
-    <?php include_once 'partial/header.php'; ?>
-
-    <!-- Hero Section -->
-    <section id="hero" class="h-screen relative flex items-center justify-center overflow-hidden">
-        <iframe class="video-bg"
-            src="https://www.youtube.com/embed/gDrywz8vqjU?si=RbAEW0fniLPhPpJB&autoplay=1&mute=1&playsinline=1&loop=1&controls=0&disablekb=1"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-        <div class="video-overlay"></div>
-        <div class="text-center text-white px-4 fade-in relative">
-            <h2 class="text-3xl font-bold">
-                Development Of Teaching Hospital, <br />Integrated Research Center and
-                Wastewater Treatment Plant
-            </h2>
-            <p class="mt-4 text-1xl">
-                <i>Higher Education for Technology and Innovation (HETI) Project ADB
-                    Universitas Lampung</i>
-            </p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6">About Us</h2>
-            The Higher Education for Technology and Innovation (HETI) project is
-            supported by the Asian Development Bank (ADB) and the Ministry of
-            Education, Culture, Research, and Technology (Kemendikbudristek). This
-            project aims to enhance the educational and research capacities at two
-            higher education institutions: the Sepuluh Nopember Institute of
-            Technology (ITS) in East Java and the University of Lampung (UNILA) in
-            Sumatra.
-            <br /><br />
-            Project Objectives for Education and Research Development: Integrating
-            advanced technology in teaching and research to expand UNILA's capacity
-            to offer programs relevant to the market and high-quality research.
-            Improvement in Healthcare Services: Establishing an educational hospital
-            prepared to handle pandemics and an integrated research center to
-            support the development of quality healthcare professionals.
-        </div>
-    </section>
-
-    <!-- Program Section -->
-    <section id="program" class="pb-16">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
-                <div class="md:w-1/2 px-4">
-                    <div class="slider slick-initialized slick-slider slick-dotted">
-                        <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">
-                            Previous
-                        </button>
-                        <div class="slick-list draggable" style="height: 400px">
-                            <div class="slick-track" style="
-                    opacity: 1;
-                    width: 2960px;
-                    transform: translate3d(-1184px, 0px, 0px);
-                  ">
-                                <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1"
-                                    style="width: 592px">
-                                    <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" tabindex="-1">
-                                        <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" alt="Gambar 2"
-                                            class="w-full h-auto rounded-lg shadow-lg" />
-                                    </a>
-                                </div>
-                                <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel"
-                                    id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 592px">
-                                    <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/rsptn.jpg" tabindex="-1">
-                                        <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/rsptn.jpg" alt="Gambar 1"
-                                            class="w-full h-auto rounded-lg shadow-lg" />
-                                    </a>
-                                </div>
-                                <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false"
-                                    tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01"
-                                    style="width: 592px">
-                                    <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" tabindex="0">
-                                        <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" alt="Gambar 2"
-                                            class="w-full h-auto rounded-lg shadow-lg" />
-                                    </a>
-                                </div>
-                                <div class="slick-slide slick-cloned" data-slick-index="2" id="" aria-hidden="true" tabindex="-1"
-                                    style="width: 592px">
-                                    <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/rsptn.jpg" tabindex="-1">
-                                        <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/rsptn.jpg" alt="Gambar 1"
-                                            class="w-full h-auto rounded-lg shadow-lg" />
-                                    </a>
-                                </div>
-                                <div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1"
-                                    style="width: 592px">
-                                    <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" tabindex="-1">
-                                        <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/irc.jpg" alt="Gambar 2"
-                                            class="w-full h-auto rounded-lg shadow-lg" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">
-                            Next
-                        </button>
-                        <ul class="slick-dots" style="" role="tablist">
-                            <li class="" role="presentation">
-                                <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00"
-                                    aria-label="1 of 2" tabindex="-1">
-                                    1
-                                </button>
-                            </li>
-                            <li role="presentation" class="slick-active">
-                                <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01"
-                                    aria-label="2 of 2" tabindex="0" aria-selected="true">
-                                    2
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+    <?php include_once __DIR__ . '/partial/header.php'; ?>
+    <div class="m-5 space-y-4">
+        <div class="p-6 bg-white shadow rounded-lg">
+            <div class="pt-6 pb-6">
+                <div class="mb-4 colorprimary text-white p-4">
+                    <h1 class="text-xl font-extrabold text-center text-white">
+                        MONITORING CIVIL WORK UNILA
+                    </h1>
                 </div>
 
-                <!-- Right Side: Descriptions -->
-                <div class="md:w-1/2 px-4">
-                    <div class="mb-8">
-                        <h3 class="text-xl font-semibold">
-                            Capacity Strengthening in Medical Education and Research
-                        </h3>
-                        <p class="mt-4">
-                            Construction of an educational hospital prepared to handle
-                            pandemics, gender-responsive, and disability-friendly.
-                            Development of an integrated research center to provide
-                            laboratories for research in tropical medicine, biomedical
-                            sciences, pathology, and nutrition.
-                        </p>
+                <table
+                    class="table-auto w-full border-collapse border border-gray-200">
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Work</td>
+                            <td class="py-2 px-4 border">
+                                CWU Development of RSPTN, IRC and WWTP University of Lampung
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Client</td>
+                            <td class="py-2 px-4 border">University of Lampung (UNILA)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Contract No</td>
+                            <td class="py-2 px-4 border">1484/UN26/HK.01/2024</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Contract Time</td>
+                            <td class="py-2 px-4 border">
+                                Febuary 26, 2024 - August 29, 2025
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Contract Value</td>
+                            <td class="py-2 px-4 border">IDR 198.865.665.859</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Budget</td>
+                            <td class="py-2 px-4 border">LOAN ADB No. 4110-INO</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Project</td>
+                            <td class="py-2 px-4 border">
+                                Higher Education for Technology and Innovation (HETI) Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border bg-gray-100">Location</td>
+                            <td class="py-2 px-4 border">
+                                Jalan Prof. Dr. Ir. Sumantri Brojonegoro No.1, Kota Bandar
+                                Lampung, Lampung 35141
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pt-6 pb-6">
+                <div class="block mb-4 text-bold colorprimary text-white p-4">
+                    S-curve
+                </div>
+                <canvas
+                    id="ctxGrafik3"
+                    style="display: block; box-sizing: border-box"
+                    width="400"></canvas>
+            </div>
+
+            <div class="pt-6 pb-6">
+                <table
+                    class="table-auto w-full border-collapse border border-white-200">
+                    <thead>
+                        <tr class="colorprimary text-white">
+                            <th colspan="3" class="text-center py-2">Filter Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border" style="width: 10%">Periode</td>
+                            <td class="py-2 px-4 border" style="width: 90%">
+                                <select
+                                    name="timeline_week"
+                                    id="weekFilter"
+                                    class="select2 w-full border border-black rounded p-1 text-black"></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border">Date</td>
+                            <td class="py-2 px-4 border" id="weekDate">
+                                December 8, 2024 - December 14, 2024
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pt-6 pb-6">
+                <div class="overflow-x-auto pb-10">
+                    <table
+                        class="table-auto w-full border-collapse border border-white-200">
+                        <thead class="colorprimary text-white">
+                            <tr class="colorprimary text-white">
+                                <th colspan="9" class="text-center py-2">
+                                    Monitoring Work Progress <span data-nameweek="true"></span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" class="py-2 px-4 border">Building</th>
+                                <th colspan="3" class="text-center py-2 px-4 border">Plan</th>
+                                <th colspan="3" class="text-center py-2 px-4 border">
+                                    Realization
+                                </th>
+                                <th rowspan="2" class="py-2 px-4 border">Deviation</th>
+                                <th rowspan="2" class="py-2 px-4 border">
+                                    Remaining Progress
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="py-2 px-4 border">until Previous Week</th>
+                                <th class="py-2 px-4 border">This Week's Progress</th>
+                                <th class="py-2 px-4 border">until This Week</th>
+                                <th class="py-2 px-4 border">until Previous Week</th>
+                                <th class="py-2 px-4 border">This Week's Progress</th>
+                                <th class="py-2 px-4 border">until This Week</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                <td colspan="9" class="text-center font-bold py-2 px-4 border">
+                  CCO-01
+                </td>
+              </tr> -->
+                            <tr id="buildingRSPTN"></tr>
+                            <tr id="buildingIRC"></tr>
+                            <tr id="buildingWWTP"></tr>
+                            <tr class="bg-blue-200" id="buildingTotal"></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <div class="pt-6 pb-6">
+                <div class="block mb-4 text-bold colorprimary text-white p-4">
+                    WORK PROGRESS (PHOTO)
+                    <span class="uppercase" data-nameweek="true"></span>
+                </div>
+                <div class="flex space-x-4 border-b-2 mb-4">
+                    <button
+                        class="tab-button py-2 px-4 rounded-t-lg focus:outline-none active"
+                        onclick="showGallery('all', this)">
+                        All
+                    </button>
+                    <button
+                        class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+                        onclick="showGallery('RSPTN', this)">
+                        RSPTN
+                    </button>
+                    <button
+                        class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+                        onclick="showGallery('IRC', this)">
+                        IRC
+                    </button>
+                    <button
+                        class="tab-button py-2 px-4 rounded-t-lg focus:outline-none"
+                        onclick="showGallery('WWTP', this)">
+                        WWTP
+                    </button>
+
+                </div>
+                <div class="gallery-container">
+                    <div id="all" class="gallery active">
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                        </div>
                     </div>
-                    <div class="mb-8">
-                        <h3 class="text-xl font-semibold">Development Details</h3>
-                        <p class="mt-4">
-                            Educational Hospital: Class C with 100 beds, expandable to Class
-                            B. <br />Integrated Research Center: Providing research
-                            facilities across various life sciences disciplines.
-                        </p>
+                    <div id="RSPTN" class="gallery">
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
                     </div>
+                    <div id="IRC" class="gallery">
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+                    </div>
+                    <div id="WWTP" class="gallery">
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <p>No images available</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Vision & Mission Section -->
-    <section id="vision" class="bg-gray-200 py-16">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
-                <div class="px-4 slide-in-bottom">
-                    <h3 class="text-xl font-semibold">Organization Structure</h3>
-                    <ul class="list-disc list-inside mt-4 text-left mx-auto">
-                        <li>
-                            Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
-                            (Kemendikbudristek): Serving as the project implementing agency.
-                        </li>
-                        <li>
-                            Universitas Lampung (UNILA): Acting as one of the project
-                            implementing bodies, along with ITS.
-                        </li>
-                        <li>
-                            Project Management Unit (PMU): Responsible for project
-                            management and implementation.
-                        </li>
-                        <li>
-                            Project Management and Supervision Consultant (PMSC): Assisting
-                            the PIU in project management and supervision.
-                        </li>
-                    </ul>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 mt-8">
-                        <div>
-                            <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/pmu.png">
-                                <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/pmu.png" alt="Gambar 1" class="w-full h-full" />
-                            </a>
-                        </div>
-                        <div>
-                            <a data-fancybox="gallery" href="./Home - PMSC HETI ADB RSPTN UNILA_files/piu.png">
-                                <img src="./Home - PMSC HETI ADB RSPTN UNILA_files/piu.png" alt="Gambar 2" class="w-full h-full" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <!-- <section id="gallery" class="bg-gray-200 py-8 p-3">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Gallery</h2>
-        <div class="gallery-slider slick-initialized slick-slider slick-dotted">
-          <button
-            class="slick-prev slick-arrow"
-            aria-label="Previous"
-            type="button"
-            style=""
-          >
-            Previous
-          </button>
-
-          <div class="slick-list draggable">
-            <div
-              class="slick-track"
-              style="
-                opacity: 1;
-                width: 4912px;
-                transform: translate3d(-2149px, 0px, 0px);
-              "
-            >
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="-4"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="-3"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="-2"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="-1"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide"
-                data-slick-index="0"
-                aria-hidden="true"
-                tabindex="-1"
-                role="tabpanel"
-                id="slick-slide10"
-                aria-describedby="slick-slide-control10"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/GuyJK5RioiY4N8rRoOwIUw0IEcsn9KbXbhhUGyXz.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/GuyJK5RioiY4N8rRoOwIUw0IEcsn9KbXbhhUGyXz.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide"
-                data-slick-index="1"
-                aria-hidden="true"
-                tabindex="-1"
-                role="tabpanel"
-                id="slick-slide11"
-                aria-describedby="slick-slide-control11"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/k11afsOQVzcSeU5k9Nnco944iLUYmtoy7WAsesOd.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/k11afsOQVzcSeU5k9Nnco944iLUYmtoy7WAsesOd.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide"
-                data-slick-index="2"
-                aria-hidden="true"
-                tabindex="-1"
-                role="tabpanel"
-                id="slick-slide12"
-                aria-describedby="slick-slide-control12"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-current slick-active"
-                data-slick-index="3"
-                aria-hidden="false"
-                tabindex="0"
-                role="tabpanel"
-                id="slick-slide13"
-                aria-describedby="slick-slide-control13"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                  tabindex="0"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-active"
-                data-slick-index="4"
-                aria-hidden="false"
-                tabindex="0"
-                role="tabpanel"
-                id="slick-slide14"
-                aria-describedby="slick-slide-control14"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                  tabindex="0"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-active"
-                data-slick-index="5"
-                aria-hidden="false"
-                tabindex="0"
-                role="tabpanel"
-                id="slick-slide15"
-                aria-describedby="slick-slide-control15"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                  tabindex="0"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned slick-active"
-                data-slick-index="6"
-                id=""
-                aria-hidden="false"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/GuyJK5RioiY4N8rRoOwIUw0IEcsn9KbXbhhUGyXz.jpg"
-                  tabindex="0"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/GuyJK5RioiY4N8rRoOwIUw0IEcsn9KbXbhhUGyXz.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="7"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/k11afsOQVzcSeU5k9Nnco944iLUYmtoy7WAsesOd.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/k11afsOQVzcSeU5k9Nnco944iLUYmtoy7WAsesOd.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="8"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/x7x12uTugcanq65jgKEJbEwIlWuSApbA2lEXUQB9.jpg"
-                    alt="Gambar CVW Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="9"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/j6yuuGOg0kMsV7BjKEgKef1IZnmFLxIsfvyUBejd.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="10"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/hQ3b0jHOIQvQTdaDMTtI1ykgTuxu9E2tmdKlWcTv.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-              <div
-                class="slick-slide slick-cloned"
-                data-slick-index="11"
-                id=""
-                aria-hidden="true"
-                tabindex="-1"
-                style="width: 287px"
-              >
-                <a
-                  data-fancybox="gallery"
-                  href="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                  tabindex="-1"
-                >
-                  <img
-                    src="./Home - PMSC HETI ADB RSPTN UNILA_files/jVyLKyjUypryduckp2jt99iPyzxlrcdLWiBwWhUW.jpg"
-                    alt="Gambar PMSC Gallery"
-                    class="gallery-image"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="slick-next slick-arrow"
-            aria-label="Next"
-            type="button"
-            style=""
-          >
-            Next
-          </button>
-          <ul class="slick-dots" style="" role="tablist">
-            <li class="" role="presentation">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control10"
-                aria-controls="slick-slide10"
-                aria-label="1 of 2"
-                tabindex="-1"
-              >
-                1
-              </button>
-            </li>
-            <li role="presentation" class="">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control11"
-                aria-controls="slick-slide11"
-                aria-label="2 of 2"
-                tabindex="-1"
-              >
-                2
-              </button>
-            </li>
-            <li role="presentation" class="">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control12"
-                aria-controls="slick-slide12"
-                aria-label="3 of 2"
-                tabindex="-1"
-              >
-                3
-              </button>
-            </li>
-            <li role="presentation" class="slick-active">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control13"
-                aria-controls="slick-slide13"
-                aria-label="4 of 2"
-                tabindex="0"
-                aria-selected="true"
-              >
-                4
-              </button>
-            </li>
-            <li role="presentation" class="">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control14"
-                aria-controls="slick-slide14"
-                aria-label="5 of 2"
-                tabindex="-1"
-              >
-                5
-              </button>
-            </li>
-            <li role="presentation" class="">
-              <button
-                type="button"
-                role="tab"
-                id="slick-slide-control15"
-                aria-controls="slick-slide15"
-                aria-label="6 of 2"
-                tabindex="-1"
-              >
-                6
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
+    </div>
 
 
+    <?php include_once './partial/footer.php'; ?>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./MONITORING CIVIL WORK -41_files/chart.js.download"></script>
+    <?php include_once __DIR__ . '/data/scurve.php'; ?>
 
-    <?php include_once 'partial/footer.php'; ?>
+    <script>
+        $(document).ready(function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const week = urlParams.get("week");
+            if (week) {
+                thisWeek = parseInt(week);
+            }
+            if (!thisWeek) {
+                thisWeek = lastWeek;
+            }
+            let weekoption = "";
+            for (let i = lastWeek; i >= 1; i--) {
+                let selected = "";
+                if (i === thisWeek) {
+                    selected = "selected";
+                }
+                weekoption += `<option ${selected} value="${i}">Week ${i}</option>`;
+            }
+            $("#weekFilter").html(weekoption);
+            grafik_3();
+
+            $("#weekFilter").select2({
+                placeholder: "Select week",
+            });
+            $("#weekFilter").on("change", function() {
+                const selectedWeek = $(this).val();
+                window.location.href = `?week=${selectedWeek}`;
+            });
+
+            const selectedWeek = window.location.search.split("=")[1];
+
+            fetch(`/img/cw/${thisWeek}/images.json`)
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+
+                    const images = data.images;
+                    let gall = "";
+                    images.forEach((image) => {
+                        let url = `/img/cw/${thisWeek}/` + image.filename;
+                        gall += `<a href="${url}" data-fancybox="gallery" class="block" data-caption="${image.caption}">
+        <img src="${url}" alt="${image.caption}" class="w-full h-auto shadow-md" />
+        <figcaption class="bg-gray-200 p-2">
+          ${image.caption}
+        </figcaption>
+      </a>`;
+                    });
+                    if (images.length === 0 || images === undefined) {
+                        gall = "<p>No images available</p>";
+                    }
+                    $("#all>div")[0].innerHTML = gall;
+                });
+
+            fetch(`/data/cw/${thisWeek}.json`)
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    $("[data-nameweek='true']").text(data.name);
+                    const startDate = new Date(data.startDate);
+                    const endDate = new Date(data.endDate);
+                    $("#weekDate").text(
+                        `${startDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })} - ${endDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}`
+                    );
+                    const RSPTN = {
+                        prevCummPlan: cco1Plan[week - 1],
+                    };
+                    remaining = 71.9 - data.details.RSPTN.cummReal;
+                    remaining = remaining.toFixed(2);
+                    deviation =
+                        data.details.RSPTN.deviation < 0 ?
+                        'style="background-color: #ffbfab;"' :
+                        "";
+                    $("#buildingRSPTN").html(`
+         <td class="py-2 px-4 border">RSPTN</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.prevCummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.plan}%</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.cummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.prevCummReal}%</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.real}%</td>
+                <td class="py-2 px-4 border">${data.details.RSPTN.cummReal}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.RSPTN.deviation}%</td>
+                <td class="py-2 px-4 border">${remaining}%</td>
+          `);
+                    remaining = 28.1 - data.details.IRC.cummReal;
+                    remaining = remaining.toFixed(2);
+                    deviation =
+                        data.details.IRC.deviation < 0 ?
+                        'style="background-color: #ffbfab;"' :
+                        "";
+                    $("#buildingIRC").html(`
+         <td class="py-2 px-4 border">IRC</td>
+                <td class="py-2 px-4 border">${data.details.IRC.prevCummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.IRC.plan}%</td>
+                <td class="py-2 px-4 border">${data.details.IRC.cummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.IRC.prevCummReal}%</td>
+                <td class="py-2 px-4 border">${data.details.IRC.real}%</td>
+                <td class="py-2 px-4 border">${data.details.IRC.cummReal}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.IRC.deviation}%</td>
+                <td class="py-2 px-4 border">${remaining}% </td>
+          `);
+                    remaining = 100 - data.details.WWTP.cummReal;
+                    remaining = remaining.toFixed(2);
+                    deviation =
+                        data.details.WWTP.deviation < 0 ?
+                        'style="background-color: #ffbfab;"' :
+                        "";
+                    $("#buildingWWTP").html(`
+         <td class="py-2 px-4 border">WWTP</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.prevCummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.plan}%</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.cummPlan}%</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.prevCummReal}%</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.real}%</td>
+                <td class="py-2 px-4 border">${data.details.WWTP.cummReal}%</td>
+                <td ${deviation} class="py-2 px-4 border">${data.details.WWTP.deviation}%</td>
+                <td class="py-2 px-4 border">-</td>
+          `);
+                    remaining = 100 - data.details.total.cummReal;
+                    remaining = remaining.toFixed(2);
+                    deviation =
+                        data.details.total.deviation < 0 ?
+                        'style="background-color: #ffbfab;"' :
+                        "";
+                    $("#buildingTotal").html(`
+          <td class="py-2 px-4 border">Total</td>
+                  <td class="py-2 px-4 border">${data.details.total.prevCummPlan}%</td>
+                  <td class="py-2 px-4 border">${data.details.total.plan}%</td>
+                  <td class="py-2 px-4 border">${data.details.total.cummPlan}%</td>
+                  <td class="py-2 px-4 border">${data.details.total.prevCummReal}%</td>
+                  <td class="py-2 px-4 border">${data.details.total.real}%</td>
+                  <td class="py-2 px-4 border">${data.details.total.cummReal}%</td>
+                  <td ${deviation} class="py-2 px-4 border">${data.details.total.deviation}%</td>
+                  <td class="py-2 px-4 border">${remaining}%</td>
+            `);
+
+                    const rsptnPhotos = data.photos?.filter(
+                        (photo) => photo.building === "RSPTN"
+                    );
+
+                    const ircPhotos = data.photos?.filter(
+                        (photo) => photo.building === "IRC"
+                    );
+                    const wwtpPhotos = data.photos?.filter(
+                        (photo) => photo.building === "WWTP"
+                    );
+
+                    let gall = "";
+                    rsptnPhotos?.forEach((photo) => {
+                        gall += `
+        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
+        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
+        <figcaption class="bg-gray-200 p-2">
+          ${photo.caption}
+        </figcaption>
+      </a>`;
+                    });
+                    if (rsptnPhotos?.length === 0 || rsptnPhotos === undefined) {
+                        gall = "<p>No images available</p>";
+                    }
+                    $("#RSPTN>div")[0].innerHTML = gall;
+                    gall = "";
+                    ircPhotos?.forEach((photo) => {
+                        gall += `
+        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
+        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
+        <figcaption class="bg-gray-200 p-2">
+          ${photo.caption}
+        </figcaption>
+      </a>
+        `;
+                    });
+                    if (ircPhotos?.length === 0 || ircPhotos === undefined) {
+                        gall = "<p>No images available</p>";
+                    }
+                    $("#IRC>div")[0].innerHTML = gall;
+                    gall = "";
+                    wwtpPhotos?.forEach((photo) => {
+                        gall += `
+        <a href="${photo.file_name}" data-fancybox="gallery" class="block" data-caption="${photo.caption}">
+        <img src="${photo.file_name}" alt="${photo.caption}" class="w-full h-auto shadow-md" />
+        <figcaption class="bg-gray-200 p-2">
+          ${photo.caption}
+        </figcaption>
+      </a>
+        `;
+                    });
+                    if (wwtpPhotos?.length === 0 || wwtpPhotos === undefined) {
+                        gall = "<p>No images available</p>";
+                    }
+                    $("#WWTP>div")[0].innerHTML = gall;
+                });
+        });
+
+        function showGallery(location, btn) {
+            document.querySelectorAll(".gallery").forEach((gallery) => {
+                gallery.classList.remove("active");
+            });
+            document.getElementById(location).classList.add("active");
+            document.querySelectorAll(".tab-button").forEach((button) => {
+                button.classList.remove("active");
+            });
+            btn.classList.add("active");
+        }
+
+        function grafik_3() {
+            const ctx = document.getElementById("ctxGrafik3");
+            const labels = [];
+            const datasets = [{
+                    label: "PLAN CUMULATIVE [ INITIAL ]",
+                    data: initialPlan,
+                    borderColor: "orange",
+                    backgroundColor: "orange",
+                },
+                {
+                    label: "REAL CUMULATIVE [ INITIAL ]",
+                    data: initialReal,
+                    borderColor: "#05f746",
+                    backgroundColor: "#05f746",
+                },
+                {
+                    label: "PLAN CUMULATIVE [ CCO-01 ]",
+                    data: cco1Plan,
+                    borderColor: "red",
+                    backgroundColor: "red",
+                },
+                {
+                    label: "REAL CUMULATIVE [ CCO-01 ]",
+                    data: cco1Real,
+                    borderColor: "#167d10",
+                    backgroundColor: "#167d10",
+                },
+            ];
+
+            for (let i = 0; i < 85; i++) {
+                labels.push(i + 1);
+            }
+
+            new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: labels,
+                    datasets: datasets,
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                        },
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: "index",
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                boxWidth: 20,
+                            },
+                            position: "top",
+                            maxWidth: 1,
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(context) {
+                                    return "WEEK " + context[0].label;
+                                },
+                                label: function(context) {
+                                    let label = context.dataset.label || "";
+                                    if (label) {
+                                        label += " : ";
+                                    }
+                                    if (context.parsed.y !== null) {
+                                        label += context.parsed.y.toFixed(2) + "%";
+                                    }
+                                    if (context.dataset.label.includes("REAL")) {
+                                        if (context.dataset.label.includes("INITIAL")) {
+                                            const deviation =
+                                                initialPlan[context.dataIndex] === 0 ?
+                                                0 :
+                                                initialReal[context.dataIndex] -
+                                                initialPlan[context.dataIndex];
+                                            label +=
+                                                " ( Deviation: " + deviation.toFixed(2) + "% )";
+                                        } else if (context.dataset.label.includes("CCO-01")) {
+                                            const deviation =
+                                                cco1Plan[context.dataIndex] === 0 ?
+                                                0 :
+                                                cco1Real[context.dataIndex] -
+                                                cco1Plan[context.dataIndex];
+                                            label +=
+                                                " ( Deviation: " + deviation.toFixed(2) + "% )";
+                                        }
+                                    }
+
+                                    return label;
+                                },
+                            },
+                        },
+                        responsive: true,
+                    },
+                },
+            });
+        }
+    </script>
 </body>
 
 </html>
