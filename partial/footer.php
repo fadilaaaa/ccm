@@ -20,7 +20,7 @@
             </p>
             <p class="mb-2">
                 <i class="fas fa-phone-alt mr-2"></i><strong>Phone:</strong>
-                <a href="https://wa.me/6285954041681" class="text-gray-200 hover:underline">+62 859-5404-1681</a>
+                <a href="https://wa.me/6283113153691" class="text-gray-200 hover:underline">+62 831-1315-3691</a>
             </p>
             <p class="mb-2">
                 <i class="fas fa-map-marker-alt mr-2"></i><strong>Address:</strong> Jl. Sumantri Brojonegoro No.1, Bandar
