@@ -14,7 +14,7 @@
             <div class="relative">
                 <button class="text-gray-800 font-semibold">MONITORING</button>
                 <div class="absolute mt-2 w-48 bg-white shadow-lg rounded hidden">
-                    <a href="/monitoringcw.html" class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL
+                    <a href="/monitoringcw.php" class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">CIVIL
                         WORK</a>
                     <a href="/monitoringpmsc.html"
                         class="block px-4 py-2 text-gray-800 font-semibold hover:bg-gray-100">PMSC</a>
